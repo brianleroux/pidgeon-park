@@ -1,0 +1,2 @@
+#!/bin/sh
+node index.js > output/index.html && open output/index.html
