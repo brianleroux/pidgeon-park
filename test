@@ -1,2 +1,13 @@
 #!/bin/sh
-node index.js > output/index.html && open output/index.html
+
+# clobber everything
+rm -rf output
+
+# recursive copy the theme
+cp -r templates/oldschool output
+
+# pump out of module to index.html
+node index.js
+
+# open in browser
+open output/default/index.html
