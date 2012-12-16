@@ -5,9 +5,10 @@ var toHTML            = require('./to-html')
 ,   walk              = require('./walk')
 ,   removeFrontmatter = require('./remove-frontmatter')
 
-module.exports = function createBody (dir) {
+module.exports = function createBody (dir, callback) {
+    var r = ''
     walk(dir, function (err, markdownFiles) {
-        if (err) throw err
+        if (err) callback(err)
         // concat the md
         var md = markdownFiles.map(function (f) {
             // log the file title
@@ -16,6 +17,6 @@ module.exports = function createBody (dir) {
             return removeFrontmatter(fs.readFileSync(f, 'utf8'))
         })
 
-        toHTML(md.join("\n"))
+        callback(null, toHTML(md.join("\n")))
     })
 }
