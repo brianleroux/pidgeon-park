@@ -15,6 +15,9 @@
     "cordova",
     "docs"
   ],
+  "dependencies":{
+    "marked":"0.2.6"
+  },
   "author": "brianleroux",
   "license": "Apache2"
 }
