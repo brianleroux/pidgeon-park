@@ -17,7 +17,7 @@ module.exports = function (dir, callback) {
         // grab the section title and concat
         var title = _.last(concatFile.split('/')).replace('.md', '')
         ,   tmpl  = '<h1 id=' + title + '>' + title + '</h1>'
-        out += '<ul>' + tmpl
+        out += tmpl + '<ul>'
         // loop thru sub files building sub toc
         config.merge[concatFile].forEach(function (file) {
             // markdownFiles.push(path.join(base, file))
