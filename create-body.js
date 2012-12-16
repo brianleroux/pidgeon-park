@@ -22,8 +22,8 @@ module.exports = function (dir, callback) {
         // linking in index from header section to impl 
         var title = _.last(f.split('/')).replace('.md','')
         ,   tmpl  = '<h1 id=' + title + '>' + title + '</h1>'
-        return tmpl + removeFrontmatter(fs.readFileSync(f, 'utf8'))
+        return tmpl + toHTML(removeFrontmatter(fs.readFileSync(f, 'utf8')))
     })
 
-    callback(null, toHTML(md.join("\n")))
+    callback(null, md.join("\n"))
 }

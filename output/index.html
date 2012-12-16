@@ -9,9 +9,7 @@
 <li><a href=#geolocation>geolocation</a></li>
 <li><a href=#media>media</a></li>
 <li><a href=#notification>notification</a></li>
-<li><a href=#storage>storage</a></li></ul><p>&lt;h1 id=accelerometer&gt;accelerometer&lt;/h1&gt;
-</p>
-<h1>Accelerometer</h1>
+<li><a href=#storage>storage</a></li></ul><h1 id=accelerometer>accelerometer</h1><h1>Accelerometer</h1>
 <blockquote>
 <p>Captures device motion in the x, y, and z direction.
 
@@ -60,11 +58,9 @@
     &lt;Capability Name=&quot;ID_CAP_SENSORS&quot; /&gt;
 &lt;/Capabilities&gt;</code></pre>
 <p>Reference: <a href="http://msdn.microsoft.com/en-us/library/ff769509%28v=vs.92%29.aspx">Application Manifest for Windows Phone</a>
+</p>
 
-</p>
-<p>&lt;h1 id=accelerometer.getCurrentAcceleration&gt;accelerometer.getCurrentAcceleration&lt;/h1&gt;
-</p>
-<h1>accelerometer.getCurrentAcceleration</h1>
+<h1 id=accelerometer.getCurrentAcceleration>accelerometer.getCurrentAcceleration</h1><h1>accelerometer.getCurrentAcceleration</h1>
 <p>Get the current acceleration along the x, y, and z axis.
 
 </p>
@@ -144,9 +140,8 @@ navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);</code></pre>
 <li>You must watch the acceleration and capture the data at given time intervals.</li>
 <li>Thus, the <code>getCurrentAcceleration</code> function will give you the last value reported from a Cordova <code>watchAccelerometer</code> call.</li>
 </ul>
-<p>&lt;h1 id=accelerometer.watchAcceleration&gt;accelerometer.watchAcceleration&lt;/h1&gt;
-</p>
-<h1>accelerometer.watchAcceleration</h1>
+
+<h1 id=accelerometer.watchAcceleration>accelerometer.watchAcceleration</h1><h1>accelerometer.watchAcceleration</h1>
 <p>At a regular interval, get the acceleration along the x, y, and z axis.
 
 </p>
@@ -257,9 +252,8 @@ var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, opti
 </ul>
 </li>
 </ul>
-<p>&lt;h1 id=accelerometer.clearWatch&gt;accelerometer.clearWatch&lt;/h1&gt;
-</p>
-<h1>accelerometer.clearWatch</h1>
+
+<h1 id=accelerometer.clearWatch>accelerometer.clearWatch</h1><h1>accelerometer.clearWatch</h1>
 <p>Stop watching the <code>Acceleration</code> referenced by the watch ID parameter.
 
 </p>
@@ -345,9 +339,8 @@ navigator.accelerometer.clearWatch(watchID);</code></pre>
     &lt;button onclick=&quot;stopWatch();&quot;&gt;Stop Watching&lt;/button&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=acceleration&gt;acceleration&lt;/h1&gt;
-</p>
-<h1>Acceleration</h1>
+
+<h1 id=acceleration>acceleration</h1><h1>Acceleration</h1>
 <p>Contains <code>Accelerometer</code> data captured at a specific point in time.
 
 </p>
@@ -425,9 +418,8 @@ navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);</code></pre>
     &lt;p&gt;getCurrentAcceleration&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=accelerometerSuccess&gt;accelerometerSuccess&lt;/h1&gt;
-</p>
-<h1>accelerometerSuccess</h1>
+
+<h1 id=accelerometerSuccess>accelerometerSuccess</h1><h1>accelerometerSuccess</h1>
 <p>onSuccess callback function that provides the Acceleration information.
 
 </p>
@@ -445,27 +437,25 @@ navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);</code></pre>
           &#39;Acceleration Z: &#39; + acceleration.z + &#39;\n&#39; +
           &#39;Timestamp: &#39;      + acceleration.timestamp + &#39;\n&#39;);
 };</code></pre>
-<p>&lt;h1 id=accelerometerError&gt;accelerometerError&lt;/h1&gt;
-</p>
-<h1>accelerometerError</h1>
+
+<h1 id=accelerometerError>accelerometerError</h1><h1>accelerometerError</h1>
 <p>onError callback function for acceleration functions.
 
 </p>
 <pre><code>function() {
     // Handle the error
 }</code></pre>
-<p>&lt;h1 id=accelerometerOptions&gt;accelerometerOptions&lt;/h1&gt;
-</p>
-<h1>accelerometerOptions</h1>
+
+<h1 id=accelerometerOptions>accelerometerOptions</h1><h1>accelerometerOptions</h1>
 <p>An optional parameter to customize the retrieval of the accelerometer.
 
 </p>
 <h2>Options</h2>
 <ul>
-<li><strong>frequency:</strong> How often to retrieve the <code>Acceleration</code> in milliseconds. <em>(Number)</em> (Default: 10000)
-&lt;h1 id=camera&gt;camera&lt;/h1&gt;<h1>Camera</h1>
-</li>
+<li><strong>frequency:</strong> How often to retrieve the <code>Acceleration</code> in milliseconds. <em>(Number)</em> (Default: 10000)</li>
 </ul>
+
+<h1 id=camera>camera</h1><h1>Camera</h1>
 <blockquote>
 <p>The <code>camera</code> object provides access to the device&#39;s default camera application.
 
@@ -516,11 +506,9 @@ navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);</code></pre>
     &lt;Capability Name=&quot;ID_HW_FRONTCAMERA&quot; /&gt;
 &lt;/Capabilities&gt;</code></pre>
 <p>Reference: <a href="http://msdn.microsoft.com/en-us/library/ff769509%28v=vs.92%29.aspx">Application Manifest for Windows Phone</a>
+</p>
 
-</p>
-<p>&lt;h1 id=camera.getPicture&gt;camera.getPicture&lt;/h1&gt;
-</p>
-<h1>camera.getPicture</h1>
+<h1 id=camera.getPicture>camera.getPicture</h1><h1>camera.getPicture</h1>
 <p>Takes a photo using the camera or retrieves a photo from the device&#39;s album.  The image is returned as a base64 encoded <code>String</code> or as the URI of an image file.
 
 </p>
@@ -703,9 +691,8 @@ function onFail(message) {
     &lt;img style=&quot;display:none;&quot; id=&quot;largeImage&quot; src=&quot;&quot; /&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=cameraSuccess&gt;cameraSuccess&lt;/h1&gt;
-</p>
-<h1>cameraSuccess</h1>
+
+<h1 id=cameraSuccess>cameraSuccess</h1><h1>cameraSuccess</h1>
 <p>onSuccess callback function that provides the image data.
 
 </p>
@@ -723,9 +710,8 @@ function cameraCallback(imageData) {
     var image = document.getElementById(&#39;myImage&#39;);
     image.src = &quot;data:image/jpeg;base64,&quot; + imageData;
 }</code></pre>
-<p>&lt;h1 id=cameraError&gt;cameraError&lt;/h1&gt;
-</p>
-<h1>cameraError</h1>
+
+<h1 id=cameraError>cameraError</h1><h1>cameraError</h1>
 <p>onError callback function that provides an error message.
 
 </p>
@@ -734,10 +720,10 @@ function cameraCallback(imageData) {
 }</code></pre>
 <h2>Parameters</h2>
 <ul>
-<li><strong>message:</strong> The message is provided by the device&#39;s native code. (<code>String</code>)
-&lt;h1 id=cameraOptions&gt;cameraOptions&lt;/h1&gt;<h1>cameraOptions</h1>
-</li>
+<li><strong>message:</strong> The message is provided by the device&#39;s native code. (<code>String</code>)</li>
 </ul>
+
+<h1 id=cameraOptions>cameraOptions</h1><h1>cameraOptions</h1>
 <p>Optional parameters to customize the camera settings.
 
 </p>
@@ -830,9 +816,8 @@ function cameraCallback(imageData) {
 <li>options not supported</li>
 <li>always returns a FILE URI</li>
 </ul>
-<p>&lt;h1 id=CameraPopoverOptions&gt;CameraPopoverOptions&lt;/h1&gt;
-</p>
-<h1>CameraPopoverOptions</h1>
+
+<h1 id=CameraPopoverOptions>CameraPopoverOptions</h1><h1>CameraPopoverOptions</h1>
 <p>Parameters only used by iOS to specify the anchor element location and arrow direction of popover used on iPad when selecting images from the library or album.
 
 </p>
@@ -879,9 +864,8 @@ function cameraCallback(imageData) {
 function onFail(message) {
     alert(&#39;Failed because: &#39; + message);
 }</code></pre>
-<p>&lt;h1 id=capture&gt;capture&lt;/h1&gt;
-</p>
-<h1>Capture</h1>
+
+<h1 id=capture>capture</h1><h1>Capture</h1>
 <blockquote>
 <p>Provides access to the audio, image, and video capture capabilities of the device.
 
@@ -967,9 +951,8 @@ var capture = navigator.device.capture;</code></pre>
     &lt;Capability Name=&quot;ID_CAP_ISV_CAMERA&quot; /&gt;
     &lt;Capability Name=&quot;ID_CAP_CAMERA&quot; /&gt;
 &lt;/Capabilities&gt;</code></pre>
-<p>&lt;h1 id=captureAudio&gt;captureAudio&lt;/h1&gt;
-</p>
-<h1>capture.captureAudio</h1>
+
+<h1 id=captureAudio>captureAudio</h1><h1>capture.captureAudio</h1>
 <blockquote>
 <p>Start the audio recorder application and return information about captured audio clip file(s).
 
@@ -1082,9 +1065,8 @@ navigator.device.capture.captureAudio(captureSuccess, captureError, {limit:2});<
 <ul>
 <li>Windows Phone 7 does not have a default audio recording application so a simple user interface is provided.</li>
 </ul>
-<p>&lt;h1 id=captureAudioOptions&gt;captureAudioOptions&lt;/h1&gt;
-</p>
-<h1>CaptureAudioOptions</h1>
+
+<h1 id=captureAudioOptions>captureAudioOptions</h1><h1>CaptureAudioOptions</h1>
 <blockquote>
 <p>Encapsulates audio capture configuration options.
 
@@ -1116,9 +1098,8 @@ navigator.device.capture.captureAudio(captureSuccess, captureError, options);</c
 <li>The <strong>limit</strong> parameter is not supported. One recording can be created for each invocation.</li>
 <li>The <strong>mode</strong> parameter is not supported.  The audio recording format cannot be altered programmatically.  Recordings are encoded using Waveform Audio (WAV) format (audio/wav).</li>
 </ul>
-<p>&lt;h1 id=captureImage&gt;captureImage&lt;/h1&gt;
-</p>
-<h1>capture.captureImage</h1>
+
+<h1 id=captureImage>captureImage</h1><h1>capture.captureImage</h1>
 <blockquote>
 <p>Start the camera application and return information about captured image file(s).
 
@@ -1245,9 +1226,8 @@ navigator.device.capture.captureImage(captureSuccess, captureError, {limit:2});<
 <pre><code> navigator.camera.hidePreview(&quot;preview&quot;);</code></pre>
 </li>
 </ol>
-<p>&lt;h1 id=captureImageOptions&gt;captureImageOptions&lt;/h1&gt;
-</p>
-<h1>CaptureImageOptions</h1>
+
+<h1 id=captureImageOptions>captureImageOptions</h1><h1>CaptureImageOptions</h1>
 <blockquote>
 <p>Encapsulates image capture configuration options.
 
@@ -1276,9 +1256,8 @@ navigator.device.capture.captureImage(captureSuccess, captureError, options);</c
 <li>The <strong>limit</strong> parameter is not supported. One image is taken per invocation.</li>
 <li>The <strong>mode</strong> parameter is not supported.  The image size and format cannot be altered programmatically.  Images are saved in JPEG format (image/jpeg).</li>
 </ul>
-<p>&lt;h1 id=captureVideo&gt;captureVideo&lt;/h1&gt;
-</p>
-<h1>capture.captureVideo</h1>
+
+<h1 id=captureVideo>captureVideo</h1><h1>capture.captureVideo</h1>
 <blockquote>
 <p>Start the video recorder application and return information about captured video clip file(s).
 
@@ -1405,9 +1384,8 @@ navigator.device.capture.captureVideo(captureSuccess, captureError, {limit:2});<
 <pre><code> navigator.camera.hidePreview(&quot;preview&quot;);</code></pre>
 </li>
 </ol>
-<p>&lt;h1 id=captureVideoOptions&gt;captureVideoOptions&lt;/h1&gt;
-</p>
-<h1>CaptureVideoOptions</h1>
+
+<h1 id=captureVideoOptions>captureVideoOptions</h1><h1>CaptureVideoOptions</h1>
 <blockquote>
 <p>Encapsulates video capture configuration options.
 
@@ -1440,9 +1418,8 @@ navigator.device.capture.captureVideo(captureSuccess, captureError, options);</c
 <li>The <strong>duration</strong> parameter is not supported.  Recording lengths cannot be limited programmatically.</li>
 <li>The <strong>mode</strong> parameter is not supported.  The video size and format cannot be altered programmatically. By default, videos are recorded in MOV (video/quicktime) format.</li>
 </ul>
-<p>&lt;h1 id=CaptureError&gt;CaptureError&lt;/h1&gt;
-</p>
-<h1>CaptureError</h1>
+
+<h1 id=CaptureError>CaptureError</h1><h1>CaptureError</h1>
 <blockquote>
 <p>Encapsulates the error code resulting from a failed media capture operation.
 
@@ -1460,9 +1437,8 @@ navigator.device.capture.captureVideo(captureSuccess, captureError, options);</c
 <li>CaptureError.<code>CAPTURE_NO_MEDIA_FILES</code>: User exited camera application or audio capture application before capturing anything.</li>
 <li>CaptureError.<code>CAPTURE_NOT_SUPPORTED</code>: The requested capture operation is not supported.</li>
 </ul>
-<p>&lt;h1 id=CaptureCB&gt;CaptureCB&lt;/h1&gt;
-</p>
-<h1>CaptureCB</h1>
+
+<h1 id=CaptureCB>CaptureCB</h1><h1>CaptureCB</h1>
 <blockquote>
 <p>Invoked upon a successful media capture operation.
 
@@ -1485,9 +1461,8 @@ function captureSuccess(mediaFiles) {
         // do something interesting with the file
     }
 };</code></pre>
-<p>&lt;h1 id=CaptureErrorCB&gt;CaptureErrorCB&lt;/h1&gt;
-</p>
-<h1>CaptureErrorCB</h1>
+
+<h1 id=CaptureErrorCB>CaptureErrorCB</h1><h1>CaptureErrorCB</h1>
 <blockquote>
 <p>Invoked if an error occurs during a media capture operation.
 
@@ -1506,9 +1481,8 @@ function captureSuccess(mediaFiles) {
 var captureError = function(error) {
     navigator.notification.alert(&#39;Error code: &#39; + error.code, null, &#39;Capture Error&#39;);
 };</code></pre>
-<p>&lt;h1 id=ConfigurationData&gt;ConfigurationData&lt;/h1&gt;
-</p>
-<h1>ConfigurationData</h1>
+
+<h1 id=ConfigurationData>ConfigurationData</h1><h1>ConfigurationData</h1>
 <blockquote>
 <p>Encapsulates a set of media capture parameters that a device supports.
 
@@ -1547,11 +1521,9 @@ for each (var mode in imageModes) {
         selectedmode = mode;
     }
 }</code></pre>
-<p>Not supported by any platform.  All configuration data arrays are empty.
-</p>
-<p>&lt;h1 id=MediaFile&gt;MediaFile&lt;/h1&gt;
-</p>
-<h1>MediaFile</h1>
+<p>Not supported by any platform.  All configuration data arrays are empty.</p>
+
+<h1 id=MediaFile>MediaFile</h1><h1>MediaFile</h1>
 <blockquote>
 <p>Encapsulates properties of a media capture file.
 
@@ -1567,10 +1539,10 @@ for each (var mode in imageModes) {
 </ul>
 <h2>Methods</h2>
 <ul>
-<li><strong>MediaFile.getFormatData:</strong> Retrieves the format information of the media file.
-&lt;h1 id=MediaFile.getFormatData&gt;MediaFile.getFormatData&lt;/h1&gt;<h1>MediaFile.getFormatData</h1>
-</li>
+<li><strong>MediaFile.getFormatData:</strong> Retrieves the format information of the media file.</li>
 </ul>
+
+<h1 id=MediaFile.getFormatData>MediaFile.getFormatData</h1><h1>MediaFile.getFormatData</h1>
 <blockquote>
 <p>Retrieves format information about the media capture file.
 
@@ -1600,11 +1572,9 @@ for each (var mode in imageModes) {
 
 </p>
 <h2>iOS Quirks</h2>
-<p>The API for retrieving media file format information is limited.  Therefore, not all MediaFileData properties are supported.  See MediaFileData documentation.
-</p>
-<p>&lt;h1 id=MediaFileData&gt;MediaFileData&lt;/h1&gt;
-</p>
-<h1>MediaFileData</h1>
+<p>The API for retrieving media file format information is limited.  Therefore, not all MediaFileData properties are supported.  See MediaFileData documentation.</p>
+
+<h1 id=MediaFileData>MediaFileData</h1><h1>MediaFileData</h1>
 <blockquote>
 <p>Encapsulates format information about a media file.
 
@@ -1649,10 +1619,10 @@ for each (var mode in imageModes) {
 <li><strong>bitrate:</strong> Supported on iOS4 devices for audio only. The attribute will always be 0 for image and video.</li>
 <li><strong>height:</strong> Supported.  (Image and video files only).  </li>
 <li><strong>width:</strong> Supported.  (Image and video files only). </li>
-<li><strong>duration:</strong> Supported.  (Audio and video files only).
-&lt;h1 id=compass&gt;compass&lt;/h1&gt;<h1>Compass</h1>
-</li>
+<li><strong>duration:</strong> Supported.  (Audio and video files only).</li>
 </ul>
+
+<h1 id=compass>compass</h1><h1>Compass</h1>
 <blockquote>
 <p>Obtains the direction that the device is pointing.
 
@@ -1696,11 +1666,9 @@ for each (var mode in imageModes) {
     &lt;Capability Name=&quot;ID_CAP_SENSORS&quot; /&gt;
 &lt;/Capabilities&gt;</code></pre>
 <p>Reference: <a href="http://msdn.microsoft.com/en-us/library/ff769509%28v=vs.92%29.aspx">Application Manifest for Windows Phone</a>
+</p>
 
-</p>
-<p>&lt;h1 id=compass.getCurrentHeading&gt;compass.getCurrentHeading&lt;/h1&gt;
-</p>
-<h1>compass.getCurrentHeading</h1>
+<h1 id=compass.getCurrentHeading>compass.getCurrentHeading</h1><h1>compass.getCurrentHeading</h1>
 <p>Get the current compass heading.
 
 </p>
@@ -1768,9 +1736,8 @@ navigator.compass.getCurrentHeading(onSuccess, onError);</code></pre>
     &lt;p&gt;getCurrentHeading&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=compass.watchHeading&gt;compass.watchHeading&lt;/h1&gt;
-</p>
-<h1>compass.watchHeading</h1>
+
+<h1 id=compass.watchHeading>compass.watchHeading</h1><h1>compass.watchHeading</h1>
 <p>At a regular interval, get the compass heading in degrees.
 
 </p>
@@ -1873,11 +1840,9 @@ var watchID = navigator.compass.watchHeading(onSuccess, onError, options);</code
 
 </p>
 <p>In iOS only one watchHeading can be in effect at one time.  If a watchHeading via filter is in effect, calling getCurrentHeading or watchHeading will use the existing filter value for specifying heading changes. On iOS watching heading changes via a filter is more efficient than via time.
+</p>
 
-</p>
-<p>&lt;h1 id=compass.clearWatch&gt;compass.clearWatch&lt;/h1&gt;
-</p>
-<h1>compass.clearWatch</h1>
+<h1 id=compass.clearWatch>compass.clearWatch</h1><h1>compass.clearWatch</h1>
 <p>Stop watching the compass referenced by the watch ID parameter.
 
 </p>
@@ -1962,20 +1927,15 @@ navigator.compass.clearWatch(watchID);</code></pre>
     &lt;button onclick=&quot;stopWatch();&quot;&gt;Stop Watching&lt;/button&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=compass.watchHeadingFilter&gt;compass.watchHeadingFilter&lt;/h1&gt;
-</p>
-<h1>compass.watchHeadingFilter</h1>
-<p>No longer supported as of 1.6, see <code>compass.watchHeading</code> for equivalent functionality.
 
+<h1 id=compass.watchHeadingFilter>compass.watchHeadingFilter</h1><h1>compass.watchHeadingFilter</h1>
+<p>No longer supported as of 1.6, see <code>compass.watchHeading</code> for equivalent functionality.
 </p>
-<p>&lt;h1 id=compass.clearWatchFilter&gt;compass.clearWatchFilter&lt;/h1&gt;
-</p>
-<h1>compass.clearWatchFilter</h1>
-<p>No longer supported as of 1.6.  See <code>compass.clearWatch</code>.
-</p>
-<p>&lt;h1 id=compassSuccess&gt;compassSuccess&lt;/h1&gt;
-</p>
-<h1>compassSuccess</h1>
+
+<h1 id=compass.clearWatchFilter>compass.clearWatchFilter</h1><h1>compass.clearWatchFilter</h1>
+<p>No longer supported as of 1.6.  See <code>compass.clearWatch</code>.</p>
+
+<h1 id=compassSuccess>compassSuccess</h1><h1>compassSuccess</h1>
 <p>onSuccess callback function that provides the compass heading information via a compassHeading object.
 
 </p>
@@ -1990,9 +1950,8 @@ navigator.compass.clearWatch(watchID);</code></pre>
 <pre><code>function onSuccess(heading) {
     alert(&#39;Heading: &#39; + heading.magneticHeading);
 };</code></pre>
-<p>&lt;h1 id=compassError&gt;compassError&lt;/h1&gt;
-</p>
-<h1>compassError</h1>
+
+<h1 id=compassError>compassError</h1><h1>compassError</h1>
 <p>onError callback function for compass functions. 
 
 </p>
@@ -2000,11 +1959,9 @@ navigator.compass.clearWatch(watchID);</code></pre>
 <p>function(CompassError) {
     // Handle the error
 }
+</p>
 
-</p>
-<p>&lt;h1 id=compassOptions&gt;compassOptions&lt;/h1&gt;
-</p>
-<h1>compassOptions</h1>
+<h1 id=compassOptions>compassOptions</h1><h1>compassOptions</h1>
 <p>An optional parameter to customize the retrieval of the compass.
 
 </p>
@@ -2027,9 +1984,8 @@ navigator.compass.clearWatch(watchID);</code></pre>
 <ul>
 <li>filter is not supported.</li>
 </ul>
-<p>&lt;h1 id=compassHeading&gt;compassHeading&lt;/h1&gt;
-</p>
-<h1>compassHeading</h1>
+
+<h1 id=compassHeading>compassHeading</h1><h1>compassHeading</h1>
 <p>A <code>CompassHeading</code> object is returned to the <code>compassSuccess</code> callback function when an error occurs.
 
 </p>
@@ -2055,9 +2011,8 @@ navigator.compass.clearWatch(watchID);</code></pre>
 <li>For iOS &gt; 4 devices, if the device is rotated and the app supports that orientation, the heading values will be reported 
 back with respect to the current orientation. </li>
 </ul>
-<p>&lt;h1 id=compassError&gt;compassError&lt;/h1&gt;
-</p>
-<h1>CompassError</h1>
+
+<h1 id=compassError>compassError</h1><h1>CompassError</h1>
 <p>A <code>CompassError</code> object is returned to the <code>compassError</code> callback function when an error occurs.
 
 </p>
@@ -2074,11 +2029,9 @@ back with respect to the current orientation. </li>
 <p>The <code>CompassError</code> object is returned to the user through the <code>compassError</code> callback function when an error occurs.
 
 
+</p>
 
-</p>
-<p>&lt;h1 id=contacts&gt;contacts&lt;/h1&gt;
-</p>
-<h1>Contacts</h1>
+<h1 id=contacts>contacts</h1><h1>Contacts</h1>
 <blockquote>
 <p>The <code>contacts</code> object provides access to the device contacts database.
 
@@ -2142,11 +2095,9 @@ back with respect to the current orientation. </li>
     &lt;Capability Name=&quot;ID_CAP_CONTACTS&quot; /&gt;
 &lt;/Capabilities&gt;</code></pre>
 <p>Reference: <a href="http://msdn.microsoft.com/en-us/library/ff769509%28v=vs.92%29.aspx">Application Manifest for Windows Phone</a>
+</p>
 
-</p>
-<p>&lt;h1 id=contacts.create&gt;contacts.create&lt;/h1&gt;
-</p>
-<h1>contacts.create</h1>
+<h1 id=contacts.create>contacts.create</h1><h1>contacts.create</h1>
 <p>Returns a new Contact object.
 
 </p>
@@ -2196,9 +2147,8 @@ back with respect to the current orientation. </li>
     &lt;p&gt;Create Contact&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=contacts.find&gt;contacts.find&lt;/h1&gt;
-</p>
-<h1>contacts.find</h1>
+
+<h1 id=contacts.find>contacts.find</h1><h1>contacts.find</h1>
 <p>Queries the device contacts database and returns one or more <code>Contact</code> objects, each containing the fields specified.
 
 </p>
@@ -2285,9 +2235,8 @@ navigator.contacts.find(fields, onSuccess, onError, options);</code></pre>
     &lt;p&gt;Find Contacts&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=contact&gt;contact&lt;/h1&gt;
-</p>
-<h1>Contact</h1>
+
+<h1 id=contact>contact</h1><h1>Contact</h1>
 <p>Contains properties that describe a contact, such as a user&#39;s personal or business contact.
 
 </p>
@@ -2478,9 +2427,8 @@ contact.remove(onSuccess,onError);</code></pre>
 <li><strong>categories:</strong> This property is not supported</li>
 <li><strong>ims:</strong> This property is not supported</li>
 </ul>
-<p>&lt;h1 id=contactaddress&gt;contactaddress&lt;/h1&gt;
-</p>
-<h1>ContactAddress</h1>
+
+<h1 id=contactaddress>contactaddress</h1><h1>ContactAddress</h1>
 <p>Contains address properties for a <code>Contact</code> object.
 
 </p>
@@ -2621,9 +2569,8 @@ navigator.contacts.find(filter, onSuccess, onError, options);</code></pre>
 <li><strong>formatted:</strong> This property is not supported</li>
 <li><strong>type:</strong> Has to be one of the following: WORK, HOME</li>
 </ul>
-<p>&lt;h1 id=contactfield&gt;contactfield&lt;/h1&gt;
-</p>
-<h1>ContactField</h1>
+
+<h1 id=contactfield>contactfield</h1><h1>ContactField</h1>
 <p>Supports generic fields in a <code>Contact</code> object.  Some properties that are stored as <code>ContactField</code> objects include email addresses, phone numbers, and urls.
 
 </p>
@@ -2740,9 +2687,8 @@ contact.save();</code></pre>
 <ul>
 <li><strong>type:</strong> Property has to be one of the following for Email or Address fields: &quot;WORK&quot;, &quot;HOME&quot;. Property has to be one of the following for Phone fields: &quot;WORK&quot;, &quot;HOME&quot;, &quot;VOICE&quot;, &quot;FAX&quot;, &quot;MSG&quot;, &quot;CELL&quot;, &quot;PAGER&quot;,&quot;BBS&quot;, &quot;MODEM&quot;, &quot;CAR&quot;, &quot;ISDN&quot;,&quot;VIDEO&quot;, &quot;PCS&quot;</li>
 </ul>
-<p>&lt;h1 id=contactfindoptions&gt;contactfindoptions&lt;/h1&gt;
-</p>
-<h1>ContactFindOptions</h1>
+
+<h1 id=contactfindoptions>contactfindoptions</h1><h1>ContactFindOptions</h1>
 <p>Contains properties that can be used to filter the results of a <code>contacts.find</code> operation.
 
 </p>
@@ -2828,11 +2774,9 @@ navigator.contacts.find(filter, onSuccess, onError, options);</code></pre>
 &lt;/html&gt;</code></pre>
 <h2>Bada Quirks</h2>
 <p><strong>filter:</strong> Property can only apply to the following: &quot;firstName&quot;, &quot;lastName&quot;, &quot;nickname&quot;, &quot;phoneNumber&quot;, &quot;email&quot;, &quot;address&quot;
+</p>
 
-</p>
-<p>&lt;h1 id=contactname&gt;contactname&lt;/h1&gt;
-</p>
-<h1>ContactName</h1>
+<h1 id=contactname>contactname</h1><h1>ContactName</h1>
 <p>Contains name properties of a <code>Contact</code> object.
 
 </p>
@@ -2948,9 +2892,8 @@ navigator.contacts.find(filter, onSuccess, onError, options);</code></pre>
 <em> <em>_honorificPrefix:</em></em> Property not supported</li>
 <li><strong>honorificSuffix:</strong> Property not supported</li>
 </ul>
-<p>&lt;h1 id=contactorganization&gt;contactorganization&lt;/h1&gt;
-</p>
-<h1>ContactOrganization</h1>
+
+<h1 id=contactorganization>contactorganization</h1><h1>ContactOrganization</h1>
 <p>Contains organization properties of a <code>Contact</code> object.
 
 </p>
@@ -3073,9 +3016,8 @@ navigator.contacts.find(filter, onSuccess, onError, options);</code></pre>
 <ul>
 <li>ContactOrganization not supported</li>
 </ul>
-<p>&lt;h1 id=contactError&gt;contactError&lt;/h1&gt;
-</p>
-<h1>ContactError</h1>
+
+<h1 id=contactError>contactError</h1><h1>ContactError</h1>
 <p>A <code>ContactError</code> object is returned to the <code>contactError</code> callback when an error occurs.
 
 </p>
@@ -3096,11 +3038,9 @@ navigator.contacts.find(filter, onSuccess, onError, options);</code></pre>
 <h2>Description</h2>
 <p>The <code>ContactError</code> object is returned to the user through the <code>contactError</code> callback function when an error occurs.
 
+</p>
 
-</p>
-<p>&lt;h1 id=contactSuccess&gt;contactSuccess&lt;/h1&gt;
-</p>
-<h1>contactSuccess</h1>
+<h1 id=contactSuccess>contactSuccess</h1><h1>contactSuccess</h1>
 <p>Success callback function that provides the <code>Contact</code> array resulting from a <code>contacts.find</code> operation.
 
 </p>
@@ -3116,25 +3056,22 @@ navigator.contacts.find(filter, onSuccess, onError, options);</code></pre>
     for (var i=0; i&lt;contacts.length; i++) {
         console.log(&quot;Display Name = &quot; + contacts[i].displayName;
 }</code></pre>
-<p>&lt;h1 id=contactError&gt;contactError&lt;/h1&gt;
-</p>
-<h1>contactError</h1>
+
+<h1 id=contactError>contactError</h1><h1>contactError</h1>
 <p>Error callback function for contact functions.
 
 </p>
 <pre><code>function(error) {
     // Handle the error
 }</code></pre>
-<p>&lt;h1 id=contactFields&gt;contactFields&lt;/h1&gt;
-</p>
-<h1>contactFields</h1>
+
+<h1 id=contactFields>contactFields</h1><h1>contactFields</h1>
 <p>Required parameter of the <code>contacts.find</code> method.  Use this parameter to specify which fields should be included in the <code>Contact</code> objects resulting from a find operation.
 
 </p>
 <pre><code>[&quot;name&quot;, &quot;phoneNumbers&quot;, &quot;emails&quot;]</code></pre>
-<p>&lt;h1 id=contactFindOptions&gt;contactFindOptions&lt;/h1&gt;
-</p>
-<h1>contactFindOptions</h1>
+
+<h1 id=contactFindOptions>contactFindOptions</h1><h1>contactFindOptions</h1>
 <p>Optional parameter of the <code>contacts.find</code> method.  Use this parameter to filter the contacts returned from the contacts database.
 
 </p>
@@ -3147,9 +3084,8 @@ navigator.contacts.find(filter, onSuccess, onError, options);</code></pre>
 <li><strong>filter:</strong> The search string used to filter contacts. <em>(DOMString)</em> (Default: &quot;&quot;)</li>
 <li><strong>multiple:</strong> Determines if the find operation should return multiple contacts. <em>(Boolean)</em> (Default: false)</li>
 </ul>
-<p>&lt;h1 id=device&gt;device&lt;/h1&gt;
-</p>
-<h1>Device</h1>
+
+<h1 id=device>device</h1><h1>Device</h1>
 <blockquote>
 <p>The <code>device</code> object describes the device&#39;s hardware and software.
 
@@ -3201,11 +3137,9 @@ var phoneName = device.name;</code></pre>
     &lt;Capability Name=&quot;ID_CAP_IDENTITY_USER&quot; /&gt;
 &lt;/Capabilities&gt;</code></pre>
 <p>Reference: <a href="http://msdn.microsoft.com/en-us/library/ff769509%28v=vs.92%29.aspx">Application Manifest for Windows Phone</a>
+</p>
 
-</p>
-<p>&lt;h1 id=device.name&gt;device.name&lt;/h1&gt;
-</p>
-<h1>device.name</h1>
+<h1 id=device.name>device.name</h1><h1>device.name</h1>
 <p>Get the device&#39;s model name.
 
 </p>
@@ -3285,9 +3219,8 @@ var name = device.name;</code></pre>
 <ul>
 <li>returns the manufacturer model name. For example &#39;Samsung Wave S8500&#39;</li>
 </ul>
-<p>&lt;h1 id=device.cordova&gt;device.cordova&lt;/h1&gt;
-</p>
-<h1>device.cordova</h1>
+
+<h1 id=device.cordova>device.cordova</h1><h1>device.cordova</h1>
 <p>Get the version of Cordova running on the device.
 
 </p>
@@ -3337,9 +3270,8 @@ var name = device.name;</code></pre>
     &lt;p id=&quot;deviceProperties&quot;&gt;Loading device properties...&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=device.platform&gt;device.platform&lt;/h1&gt;
-</p>
-<h1>device.platform</h1>
+
+<h1 id=device.platform>device.platform</h1><h1>device.platform</h1>
 <p>Get the device&#39;s operating system name.
 
 </p>
@@ -3402,11 +3334,9 @@ var devicePlatform = device.platform;</code></pre>
 </p>
 <h2>Windows Phone 7 Quirks</h2>
 <p>Windows Phone 7 devices report platform as &#39;WinCE&#39;
+</p>
 
-</p>
-<p>&lt;h1 id=device.uuid&gt;device.uuid&lt;/h1&gt;
-</p>
-<h1>device.uuid</h1>
+<h1 id=device.uuid>device.uuid</h1><h1>device.uuid</h1>
 <p>Get the device&#39;s Universally Unique Identifier (<a href="http://en.wikipedia.org/wiki/Universally_Unique_Identifier">UUID</a>).
 
 </p>
@@ -3477,11 +3407,9 @@ var deviceID = device.uuid;</code></pre>
 </p>
 <h2>Windows Phone 7 Quirks</h2>
 <p>The uuid for Windows Phone 7 requires the permission ID_CAP_IDENTITY_DEVICE.  Microsoft will likely be deprecating this property in the near future.  If the capablility is not available, the application generates a persistent guid, that will be maintained for the install-lifetime of the application on the device.
+</p>
 
-</p>
-<p>&lt;h1 id=device.version&gt;device.version&lt;/h1&gt;
-</p>
-<h1>device.version</h1>
+<h1 id=device.version>device.version</h1><h1>device.version</h1>
 <p>Get the operating system version.
 
 </p>
@@ -3538,9 +3466,8 @@ var deviceVersion = device.version;</code></pre>
     &lt;p id=&quot;deviceProperties&quot;&gt;Loading device properties...&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=events&gt;events&lt;/h1&gt;
-</p>
-<h1>Events</h1>
+
+<h1 id=events>events</h1><h1>Events</h1>
 <blockquote>
 <p>Cordova lifecycle events.
 
@@ -3593,9 +3520,8 @@ var deviceVersion = device.version;</code></pre>
 <pre><code>No permissions are required.</code></pre>
 <h3>Windows Phone</h3>
 <pre><code>No permissions are required.</code></pre>
-<p>&lt;h1 id=events.deviceready&gt;events.deviceready&lt;/h1&gt;
-</p>
-<h1>deviceready</h1>
+
+<h1 id=events.deviceready>events.deviceready</h1><h1>deviceready</h1>
 <p>This is an event that fires when Cordova is fully loaded.
 
 </p>
@@ -3657,9 +3583,8 @@ function onDeviceReady() {
   &lt;body onload=&quot;onLoad()&quot;&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=events.pause&gt;events.pause&lt;/h1&gt;
-</p>
-<h1>pause</h1>
+
+<h1 id=events.pause>events.pause</h1><h1>pause</h1>
 <p>This is an event that fires when a Cordova application is put into the background.
 
 </p>
@@ -3729,9 +3654,8 @@ function onPause() {
 <p>  Under iOS 5, if you want your app to still run when the device is locked, you will have to disable multi-tasking (UIApplicationExitsOnSuspend - YES) for your app. This is different when you are on iOS 4 - to have your app run when the device is locked, the multi-tasking setting for your app does not matter.</p>
 </li>
 </ul>
-<p>&lt;h1 id=events.resume&gt;events.resume&lt;/h1&gt;
-</p>
-<h1>resume</h1>
+
+<h1 id=events.resume>events.resume</h1><h1>resume</h1>
 <p>This is an event that fires when a Cordova application is retrieved from the background.
 
 </p>
@@ -3801,9 +3725,8 @@ function onResume() {
 <p>  Under iOS 5,  if you want your app to still run when the device is locked, you will have to disable multi-tasking (UIApplicationExitsOnSuspend - YES) for your app. This is different when you are on iOS 4 - to have your app run when the device is locked, the multi-tasking setting for your app does not matter.</p>
 </li>
 </ul>
-<p>&lt;h1 id=events.online&gt;events.online&lt;/h1&gt;
-</p>
-<h1>online</h1>
+
+<h1 id=events.online>events.online</h1><h1>online</h1>
 <p>This is an event that fires when a Cordova application is online (connected to the Internet).
 
 </p>
@@ -3869,11 +3792,9 @@ function onOnline() {
 </p>
 <h2>Windows Phone 7 Quirks</h2>
 <p>When running in the Emulator, the connection.status of the device is always unknown, and this event will NOT fire.
+</p>
 
-</p>
-<p>&lt;h1 id=events.offline&gt;events.offline&lt;/h1&gt;
-</p>
-<h1>offline</h1>
+<h1 id=events.offline>events.offline</h1><h1>offline</h1>
 <p>This is an event that fires when a Cordova application is offline (not connected to the Internet).
 
 </p>
@@ -3939,11 +3860,9 @@ function onOffline() {
 </p>
 <h2>Windows Phone 7 Quirks</h2>
 <p>When running in the Emulator, the connection.status of the device is always unknown, and this event will NOT fire.
+</p>
 
-</p>
-<p>&lt;h1 id=events.backbutton&gt;events.backbutton&lt;/h1&gt;
-</p>
-<h1>backbutton</h1>
+<h1 id=events.backbutton>events.backbutton</h1><h1>backbutton</h1>
 <p>This is an event that fires when the user presses the back button.
 
 </p>
@@ -4003,9 +3922,8 @@ function onBackKeyDown() {
   &lt;body onload=&quot;onLoad()&quot;&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=events.batterycritical&gt;events.batterycritical&lt;/h1&gt;
-</p>
-<h1>batterycritical</h1>
+
+<h1 id=events.batterycritical>events.batterycritical</h1><h1>batterycritical</h1>
 <p>This is an event that fires when a Cordova application detects the battery has reached the critical level threshold.
 
 </p>
@@ -4073,9 +3991,8 @@ function onBatteryCritical(info) {
   &lt;body onload=&quot;onLoad()&quot;&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=events.batterylow&gt;events.batterylow&lt;/h1&gt;
-</p>
-<h1>batterylow</h1>
+
+<h1 id=events.batterylow>events.batterylow</h1><h1>batterylow</h1>
 <p>This is an event that fires when a Cordova application detects the battery has reached the low level threshold.
 
 </p>
@@ -4143,9 +4060,8 @@ function onBatteryLow(info) {
   &lt;body onload=&quot;onLoad()&quot;&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=events.batterystatus&gt;events.batterystatus&lt;/h1&gt;
-</p>
-<h1>batterystatus</h1>
+
+<h1 id=events.batterystatus>events.batterystatus</h1><h1>batterystatus</h1>
 <p>This is an event that fires when a Cordova application detects a change in the battery status.
 
 </p>
@@ -4220,9 +4136,8 @@ function onBatteryStatus(info) {
   &lt;body onload=&quot;onLoad()&quot;&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=events.menubutton&gt;events.menubutton&lt;/h1&gt;
-</p>
-<h1>menubutton</h1>
+
+<h1 id=events.menubutton>events.menubutton</h1><h1>menubutton</h1>
 <p>This is an event that fires when the user presses the menu button.
 
 </p>
@@ -4282,9 +4197,8 @@ function onMenuKeyDown() {
   &lt;body onload=&quot;onLoad()&quot;&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=events.searchbutton&gt;events.searchbutton&lt;/h1&gt;
-</p>
-<h1>searchbutton</h1>
+
+<h1 id=events.searchbutton>events.searchbutton</h1><h1>searchbutton</h1>
 <p>This is an event that fires when the user presses the search button on Android.
 
 </p>
@@ -4343,9 +4257,8 @@ function onSearchKeyDown() {
   &lt;body onload=&quot;onLoad()&quot;&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=events.startcallbutton&gt;events.startcallbutton&lt;/h1&gt;
-</p>
-<h1>startcallbutton</h1>
+
+<h1 id=events.startcallbutton>events.startcallbutton</h1><h1>startcallbutton</h1>
 <p>This is an event that fires when the user presses the start call button.
 
 </p>
@@ -4404,9 +4317,8 @@ function onStartCallKeyDown() {
   &lt;body onload=&quot;onLoad()&quot;&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=events.endcallbutton&gt;events.endcallbutton&lt;/h1&gt;
-</p>
-<h1>endcallbutton</h1>
+
+<h1 id=events.endcallbutton>events.endcallbutton</h1><h1>endcallbutton</h1>
 <p>This is an event that fires when the user presses the end call button.
 
 </p>
@@ -4465,9 +4377,8 @@ function onEndCallKeyDown() {
   &lt;body onload=&quot;onLoad()&quot;&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=events.volumedownbutton&gt;events.volumedownbutton&lt;/h1&gt;
-</p>
-<h1>volumedownbutton</h1>
+
+<h1 id=events.volumedownbutton>events.volumedownbutton</h1><h1>volumedownbutton</h1>
 <p>This is an event that fires when the user presses the volume down button.
 
 </p>
@@ -4526,9 +4437,8 @@ function onVolumeDownKeyDown() {
   &lt;body onload=&quot;onLoad()&quot;&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=events.volumeupbutton&gt;events.volumeupbutton&lt;/h1&gt;
-</p>
-<h1>volumeupbutton</h1>
+
+<h1 id=events.volumeupbutton>events.volumeupbutton</h1><h1>volumeupbutton</h1>
 <p>This is an event that fires when the user presses the volume up button.
 
 </p>
@@ -4587,9 +4497,8 @@ function onVolumeUpKeyDown() {
   &lt;body onload=&quot;onLoad()&quot;&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=file&gt;file&lt;/h1&gt;
-</p>
-<h1>File</h1>
+
+<h1 id=file>file</h1><h1>File</h1>
 <blockquote>
 <p> This API is based on the W3C <a href="http://www.w3.org/TR/FileAPI">File API</a>. An API to read, write and navigate file system hierarchies.
 
@@ -4650,9 +4559,8 @@ function onVolumeUpKeyDown() {
 <pre><code>No permissions are required.</code></pre>
 <h3>Windows Phone</h3>
 <pre><code>No permissions are required.</code></pre>
-<p>&lt;h1 id=fileobj&gt;fileobj&lt;/h1&gt;
-</p>
-<h1>File</h1>
+
+<h1 id=fileobj>fileobj</h1><h1>File</h1>
 <p>This object contains attributes of a single file.
 
 </p>
@@ -4675,9 +4583,8 @@ function onVolumeUpKeyDown() {
 <li>iOS</li>
 <li>Windows Phone 7 ( Mango )</li>
 </ul>
-<p>&lt;h1 id=filereader&gt;filereader&lt;/h1&gt;
-</p>
-<h1>FileReader</h1>
+
+<h1 id=filereader>filereader</h1><h1>FileReader</h1>
 <p>FileReader is an object that allows one to read a file.
 
 </p>
@@ -4835,10 +4742,10 @@ entry.file(win, fail);</code></pre>
 &lt;/html&gt;</code></pre>
 <h2>iOS Quirks</h2>
 <ul>
-<li><strong>encoding</strong> parameter is not supported, UTF8 encoding is always used.
-&lt;h1 id=filewriter&gt;filewriter&lt;/h1&gt;<h1>FileWriter</h1>
-</li>
+<li><strong>encoding</strong> parameter is not supported, UTF8 encoding is always used.</li>
 </ul>
+
+<h1 id=filewriter>filewriter</h1><h1>FileWriter</h1>
 <p>FileWriter is an object that allows one to write a file.
 
 </p>
@@ -4993,9 +4900,8 @@ entry.createWriter(win, fail);</code></pre>
     &lt;p&gt;Write File&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=filesystem&gt;filesystem&lt;/h1&gt;
-</p>
-<h1>FileSystem</h1>
+
+<h1 id=filesystem>filesystem</h1><h1>FileSystem</h1>
 <p>This object represents a file system.
 
 </p>
@@ -5058,9 +4964,8 @@ window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onSuccess, null);</code>
     &lt;p&gt;File System&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=fileentry&gt;fileentry&lt;/h1&gt;
-</p>
-<h1>FileEntry</h1>
+
+<h1 id=fileentry>fileentry</h1><h1>FileEntry</h1>
 <p>This object represents a file on a file system.  It is defined in the <a href="http://www.w3.org/TR/file-system-api/">W3C Directories and Systems</a> specification.
 
 </p>
@@ -5332,9 +5237,8 @@ function fail(error) {
 
 // obtain properties of a file
 entry.file(success, fail);</code></pre>
-<p>&lt;h1 id=directoryentry&gt;directoryentry&lt;/h1&gt;
-</p>
-<h1>DirectoryEntry</h1>
+
+<h1 id=directoryentry>directoryentry</h1><h1>DirectoryEntry</h1>
 <p>This object represents a directory on a file system.  It is defined in the <a href="http://www.w3.org/TR/file-system-api/">W3C Directories and Systems</a> specification.
 
 </p>
@@ -5671,9 +5575,8 @@ function fail(error) {
 
 // remove the directory and all it&#39;s contents
 entry.removeRecursively(success, fail);</code></pre>
-<p>&lt;h1 id=directoryreader&gt;directoryreader&lt;/h1&gt;
-</p>
-<h1>DirectoryReader</h1>
+
+<h1 id=directoryreader>directoryreader</h1><h1>DirectoryReader</h1>
 <p>An object that lists files and directories in a directory.  Defined in the <a href="http://www.w3.org/TR/file-system-api/">Directories and Systems</a> specification.
 
 </p>
@@ -5718,9 +5621,8 @@ var directoryReader = dirEntry.createReader();
 
 // Get a list of all the entries in the directory
 directoryReader.readEntries(success,fail);</code></pre>
-<p>&lt;h1 id=filetransfer&gt;filetransfer&lt;/h1&gt;
-</p>
-<h1>FileTransfer</h1>
+
+<h1 id=filetransfer>filetransfer</h1><h1>FileTransfer</h1>
 <p>FileTransfer is an object that allows you to upload files to a server or download files from a server.
 
 </p>
@@ -5913,9 +5815,8 @@ fileTransfer.download(
         console.log(&quot;upload error code&quot; + error.code);
     }
 );</code></pre>
-<p>&lt;h1 id=fileuploadoptions&gt;fileuploadoptions&lt;/h1&gt;
-</p>
-<h1>FileUploadOptions</h1>
+
+<h1 id=fileuploadoptions>fileuploadoptions</h1><h1>FileUploadOptions</h1>
 <p>A <code>FileUploadOptions</code> object can be passed to the FileTransfer objects upload method in order to specify additional parameters to the upload script.
 
 </p>
@@ -5936,9 +5837,8 @@ fileTransfer.download(
 <li><strong>chunkedMode:</strong>
   This parameter is ignored on WP7.    </li>
 </ul>
-<p>&lt;h1 id=fileuploadresult&gt;fileuploadresult&lt;/h1&gt;
-</p>
-<h1>FileUploadResult</h1>
+
+<h1 id=fileuploadresult>fileuploadresult</h1><h1>FileUploadResult</h1>
 <p>A <code>FileUploadResult</code> object is returned via the success callback of the FileTransfer upload method.
 
 </p>
@@ -5956,9 +5856,8 @@ fileTransfer.download(
 <ul>
 <li>iOS does not include values for responseCode nor bytesSent in the success callback FileUploadResult object. </li>
 </ul>
-<p>&lt;h1 id=flags&gt;flags&lt;/h1&gt;
-</p>
-<h1>Flags</h1>
+
+<h1 id=flags>flags</h1><h1>Flags</h1>
 <p>This object is used to supply arguments to the <code>DirectoryEntry</code> <strong>getFile</strong> and <strong>getDirectory</strong> methods, which look up or create files and directories, respectively.
 
 </p>
@@ -5980,9 +5879,8 @@ dataDir = fileSystem.root.getDirectory(&quot;data&quot;, {create: true});
 
 // Create the lock file, if and only if it doesn&#39;t exist.
 lockFile = dataDir.getFile(&quot;lockfile.txt&quot;, {create: true, exclusive: true});</code></pre>
-<p>&lt;h1 id=localfilesystem&gt;localfilesystem&lt;/h1&gt;
-</p>
-<h1>LocalFileSystem</h1>
+
+<h1 id=localfilesystem>localfilesystem</h1><h1>LocalFileSystem</h1>
 <p>This object provides a way to obtain root file systems.
 
 </p>
@@ -6059,9 +5957,8 @@ window.resolveLocalFileSystemURI(&quot;file:///example.txt&quot;, onSuccess, onE
     &lt;p&gt;Local File System&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=metadata&gt;metadata&lt;/h1&gt;
-</p>
-<h1>Metadata</h1>
+
+<h1 id=metadata>metadata</h1><h1>Metadata</h1>
 <p>This interface supplies information about the state of a file or directory.
 
 </p>
@@ -6087,9 +5984,8 @@ window.resolveLocalFileSystemURI(&quot;file:///example.txt&quot;, onSuccess, onE
 
 // Request the metadata object for this entry
 entry.getMetadata(win, null);</code></pre>
-<p>&lt;h1 id=fileerror&gt;fileerror&lt;/h1&gt;
-</p>
-<h1>FileError</h1>
+
+<h1 id=fileerror>fileerror</h1><h1>FileError</h1>
 <p>A &#39;FileError&#39; object is set when an error occurs in any of the File API methods. 
 
 </p>
@@ -6113,11 +6009,9 @@ entry.getMetadata(win, null);</code></pre>
 <li><code>FileError.PATH_EXISTS_ERR</code></li>
 </ul>
 <h2>Description</h2>
-<p>The <code>FileError</code> object is the only parameter of any of the File API&#39;s error callbacks.  Developers must read the code property to determine the type of error.
-</p>
-<p>&lt;h1 id=filetransfererror&gt;filetransfererror&lt;/h1&gt;
-</p>
-<h1>FileTransferError</h1>
+<p>The <code>FileError</code> object is the only parameter of any of the File API&#39;s error callbacks.  Developers must read the code property to determine the type of error.</p>
+
+<h1 id=filetransfererror>filetransfererror</h1><h1>FileTransferError</h1>
 <p>A <code>FileTransferError</code> object is returned via the error callback when an error occurs.
 
 </p>
@@ -6136,11 +6030,9 @@ entry.getMetadata(win, null);</code></pre>
 </ul>
 <h2>Description</h2>
 <p>The <code>FileTransferError</code> object is returned via the error callback when an error occurs when uploading or downloading a file.
+</p>
 
-</p>
-<p>&lt;h1 id=geolocation&gt;geolocation&lt;/h1&gt;
-</p>
-<h1>Geolocation</h1>
+<h1 id=geolocation>geolocation</h1><h1>Geolocation</h1>
 <blockquote>
 <p>The <code>geolocation</code> object provides access to the device&#39;s GPS sensor.
 
@@ -6202,11 +6094,9 @@ entry.getMetadata(win, null);</code></pre>
     &lt;Capability Name=&quot;ID_CAP_LOCATION&quot; /&gt;
 &lt;/Capabilities&gt;</code></pre>
 <p>Reference: <a href="http://msdn.microsoft.com/en-us/library/ff769509%28v=vs.92%29.aspx">Application Manifest for Windows Phone</a>
+</p>
 
-</p>
-<p>&lt;h1 id=geolocation.getCurrentPosition&gt;geolocation.getCurrentPosition&lt;/h1&gt;
-</p>
-<h1>geolocation.getCurrentPosition</h1>
+<h1 id=geolocation.getCurrentPosition>geolocation.getCurrentPosition</h1><h1>geolocation.getCurrentPosition</h1>
 <p>Returns the device&#39;s current position as a <code>Position</code> object.
 
 </p>
@@ -6303,9 +6193,8 @@ navigator.geolocation.getCurrentPosition(onSuccess, onError);</code></pre>
     &lt;p id=&quot;geolocation&quot;&gt;Finding geolocation...&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=geolocation.watchPosition&gt;geolocation.watchPosition&lt;/h1&gt;
-</p>
-<h1>geolocation.watchPosition</h1>
+
+<h1 id=geolocation.watchPosition>geolocation.watchPosition</h1><h1>geolocation.watchPosition</h1>
 <p>Watches for changes to the device&#39;s current position.
 
 </p>
@@ -6402,9 +6291,8 @@ var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { timeout:
     &lt;p id=&quot;geolocation&quot;&gt;Watching geolocation...&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=geolocation.clearWatch&gt;geolocation.clearWatch&lt;/h1&gt;
-</p>
-<h1>geolocation.clearWatch</h1>
+
+<h1 id=geolocation.clearWatch>geolocation.clearWatch</h1><h1>geolocation.clearWatch</h1>
 <p>Stop watching for changes to the device&#39;s location referenced by the <code>watchID</code> parameter.
 
 </p>
@@ -6491,9 +6379,8 @@ navigator.geolocation.clearWatch(watchID);</code></pre>
     &lt;button onclick=&quot;clearWatch();&quot;&gt;Clear Watch&lt;/button&gt;     
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=coordinates&gt;coordinates&lt;/h1&gt;
-</p>
-<h1>Coordinates</h1>
+
+<h1 id=coordinates>coordinates</h1><h1>Coordinates</h1>
 <p>A set of properties that describe the geographic coordinates of a position.
 
 </p>
@@ -6587,11 +6474,9 @@ navigator.geolocation.getCurrentPosition(onSuccess, onError);</code></pre>
 &lt;/html&gt;</code></pre>
 <h2>Android Quirks</h2>
 <p><strong>altitudeAccuracy:</strong> This property is not support by Android devices, it will always return null.
+</p>
 
-</p>
-<p>&lt;h1 id=position&gt;position&lt;/h1&gt;
-</p>
-<h1>Position</h1>
+<h1 id=position>position</h1><h1>Position</h1>
 <p>Contains <code>Position</code> coordinates and timestamp, created by the geolocation API.
 
 </p>
@@ -6682,9 +6567,8 @@ navigator.geolocation.getCurrentPosition(onSuccess, onError);</code></pre>
     &lt;p id=&quot;geolocation&quot;&gt;Finding geolocation...&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=positionError&gt;positionError&lt;/h1&gt;
-</p>
-<h1>PositionError</h1>
+
+<h1 id=positionError>positionError</h1><h1>PositionError</h1>
 <p>A <code>PositionError</code> object is returned to the <code>geolocationError</code> callback when an error occurs.
 
 </p>
@@ -6719,11 +6603,9 @@ satellite fix.
 time specified in the <code>geolocationOptions</code>&#39; <code>timeout</code> property. When using
 in conjunction with <code>geolocation.watchPosition</code>, this error could be
 called into the <code>geolocationError</code> callback every <code>timeout</code> milliseconds.
+</p>
 
-</p>
-<p>&lt;h1 id=geolocationSuccess&gt;geolocationSuccess&lt;/h1&gt;
-</p>
-<h1>geolocationSuccess</h1>
+<h1 id=geolocationSuccess>geolocationSuccess</h1><h1>geolocationSuccess</h1>
 <p>The user&#39;s callback function that is called when a geolocation position becomes available (when using with <code>geolocation.getCurrentPosition</code>), or when the position changes (when using with <code>geolocation.watchPosition</code>).
 
 </p>
@@ -6745,9 +6627,8 @@ called into the <code>geolocationError</code> callback every <code>timeout</code
           &#39;Speed: &#39;             + position.coords.speed             + &#39;\n&#39; +
           &#39;Timestamp: &#39;         + position.timestamp                + &#39;\n&#39;);
 }</code></pre>
-<p>&lt;h1 id=geolocationError&gt;geolocationError&lt;/h1&gt;
-</p>
-<h1>geolocationError</h1>
+
+<h1 id=geolocationError>geolocationError</h1><h1>geolocationError</h1>
 <p>The user&#39;s callback function that is called when there is an error for geolocation functions.
 
 </p>
@@ -6758,9 +6639,8 @@ called into the <code>geolocationError</code> callback every <code>timeout</code
 <ul>
 <li><strong>error:</strong> The error returned by the device. (<code>PositionError</code>)</li>
 </ul>
-<p>&lt;h1 id=geolocation.options&gt;geolocation.options&lt;/h1&gt;
-</p>
-<h1>geolocationOptions</h1>
+
+<h1 id=geolocation.options>geolocation.options</h1><h1>geolocationOptions</h1>
 <p>Optional parameters to customize the retrieval of the geolocation
 <code>Position</code>.
 
@@ -6777,9 +6657,8 @@ called into the <code>geolocationError</code> callback every <code>timeout</code
 
 </p>
 <pre><code>{ enableHighAccuracy: true }</code></pre>
-<p>&lt;h1 id=media&gt;media&lt;/h1&gt;
-</p>
-<h1>Media</h1>
+
+<h1 id=media>media</h1><h1>Media</h1>
 <blockquote>
 <p>The <code>Media</code> object provides the ability to record and play back audio files on a device.
 
@@ -6858,11 +6737,9 @@ called into the <code>geolocationError</code> callback every <code>timeout</code
     &lt;Capability Name=&quot;ID_CAP_CAMERA&quot; /&gt;
 &lt;/Capabilities&gt;</code></pre>
 <p>Reference: <a href="http://msdn.microsoft.com/en-us/library/ff769509%28v=vs.92%29.aspx">Application Manifest for Windows Phone</a>
+</p>
 
-</p>
-<p>&lt;h1 id=media.getCurrentPosition&gt;media.getCurrentPosition&lt;/h1&gt;
-</p>
-<h1>media.getCurrentPosition</h1>
+<h1 id=media.getCurrentPosition>media.getCurrentPosition</h1><h1>media.getCurrentPosition</h1>
 <p>Returns the current position within an audio file.
 
 </p>
@@ -7005,9 +6882,8 @@ called into the <code>geolocationError</code> callback every <code>timeout</code
         &lt;p id=&quot;audio_position&quot;&gt;&lt;/p&gt;
       &lt;/body&gt;
     &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=media.getDuration&gt;media.getDuration&lt;/h1&gt;
-</p>
-<h1>media.getDuration</h1>
+
+<h1 id=media.getDuration>media.getDuration</h1><h1>media.getDuration</h1>
 <p>Returns the duration of an audio file.
 
 </p>
@@ -7142,9 +7018,8 @@ called into the <code>geolocationError</code> callback every <code>timeout</code
         &lt;p id=&quot;audio_position&quot;&gt;&lt;/p&gt;
       &lt;/body&gt;
     &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=media.pause&gt;media.pause&lt;/h1&gt;
-</p>
-<h1>media.pause</h1>
+
+<h1 id=media.pause>media.pause</h1><h1>media.pause</h1>
 <p>Pauses playing an audio file.
 
 </p>
@@ -7284,9 +7159,8 @@ function playAudio(url) {
         &lt;p id=&quot;audio_position&quot;&gt;&lt;/p&gt;
       &lt;/body&gt;
     &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=media.play&gt;media.play&lt;/h1&gt;
-</p>
-<h1>media.play</h1>
+
+<h1 id=media.play>media.play</h1><h1>media.play</h1>
 <p>Starts or resumes playing an audio file.
 
 </p>
@@ -7439,9 +7313,8 @@ function playAudio(url) {
   myMedia.play({ playAudioWhenScreenIsLocked : false })</code></pre>
 </li>
 </ul>
-<p>&lt;h1 id=media.release&gt;media.release&lt;/h1&gt;
-</p>
-<h1>media.release</h1>
+
+<h1 id=media.release>media.release</h1><h1>media.release</h1>
 <p>Releases the underlying operating systems audio resources.
 
 </p>
@@ -7566,9 +7439,8 @@ function playAudio(url) {
         &lt;p id=&quot;audio_position&quot;&gt;&lt;/p&gt;
       &lt;/body&gt;
     &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=media.seekTo&gt;media.seekTo&lt;/h1&gt;
-</p>
-<h1>media.seekTo</h1>
+
+<h1 id=media.seekTo>media.seekTo</h1><h1>media.seekTo</h1>
 <p>Sets the current position within an audio file.
 
 </p>
@@ -7693,9 +7565,8 @@ function playAudio(url) {
 <ul>
 <li>This API is not supported on BlackBerry OS 5 devices.</li>
 </ul>
-<p>&lt;h1 id=media.startRecord&gt;media.startRecord&lt;/h1&gt;
-</p>
-<h1>media.startRecord</h1>
+
+<h1 id=media.startRecord>media.startRecord</h1><h1>media.startRecord</h1>
 <p>Starts recording an audio file.
 
 </p>
@@ -7804,9 +7675,8 @@ function recordAudio() {
 <ul>
 <li>The file to record to must already exist and should be of type .wav. The File API&#39;s can be used to create the file.</li>
 </ul>
-<p>&lt;h1 id=media.stop&gt;media.stop&lt;/h1&gt;
-</p>
-<h1>media.stop</h1>
+
+<h1 id=media.stop>media.stop</h1><h1>media.stop</h1>
 <p>Stops playing an audio file.
 
 </p>
@@ -7946,9 +7816,8 @@ function playAudio(url) {
         &lt;p id=&quot;audio_position&quot;&gt;&lt;/p&gt;
       &lt;/body&gt;
     &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=media.stopRecord&gt;media.stopRecord&lt;/h1&gt;
-</p>
-<h1>media.stopRecord</h1>
+
+<h1 id=media.stopRecord>media.stopRecord</h1><h1>media.stopRecord</h1>
 <p>Stops recording an audio file.
 
 </p>
@@ -8054,9 +7923,8 @@ function recordAudio() {
     &lt;p id=&quot;audio_position&quot;&gt;&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=mediaError&gt;mediaError&lt;/h1&gt;
-</p>
-<h1>MediaError</h1>
+
+<h1 id=mediaError>mediaError</h1><h1>MediaError</h1>
 <p>A <code>MediaError</code> object is returned to the <code>mediaError</code> callback function when an error occurs.
 
 </p>
@@ -8075,11 +7943,9 @@ function recordAudio() {
 <h2>Description</h2>
 <p>The <code>MediaError</code> object is returned to the user through the <code>mediaError</code> callback function when an error occurs.
 
+</p>
 
-</p>
-<p>&lt;h1 id=mediaError&gt;mediaError&lt;/h1&gt;
-</p>
-<h1>mediaError</h1>
+<h1 id=mediaError>mediaError</h1><h1>mediaError</h1>
 <p>A user specified callback function that is invoked when there is an error in media functions.
 
 </p>
@@ -8090,9 +7956,8 @@ function recordAudio() {
 <ul>
 <li><strong>error:</strong> The error returned by the device. (<code>MediaError</code>)</li>
 </ul>
-<p>&lt;h1 id=connection&gt;connection&lt;/h1&gt;
-</p>
-<h1>Connection</h1>
+
+<h1 id=connection>connection</h1><h1>Connection</h1>
 <blockquote>
 <p>The <code>connection</code> object gives access to the device&#39;s cellular and wifi connection information.
 
@@ -8145,11 +8010,9 @@ function recordAudio() {
     &lt;Capability Name=&quot;ID_CAP_NETWORKING&quot; /&gt;
 &lt;/Capabilities&gt;</code></pre>
 <p>Reference: <a href="http://msdn.microsoft.com/en-us/library/ff769509%28v=vs.92%29.aspx">Application Manifest for Windows Phone</a>
+</p>
 
-</p>
-<p>&lt;h1 id=connection.type&gt;connection.type&lt;/h1&gt;
-</p>
-<h1>connection.type</h1>
+<h1 id=connection.type>connection.type</h1><h1>connection.type</h1>
 <p>Checks the active network connection that is being used.
 
 </p>
@@ -8245,9 +8108,8 @@ checkConnection();</code></pre>
 <ul>
 <li>Windows Phone Emulator always detects <code>navigator.network.connection.type</code> as <code>Connection.UNKNOWN</code>.</li>
 </ul>
-<p>&lt;h1 id=notification&gt;notification&lt;/h1&gt;
-</p>
-<h1>Notification</h1>
+
+<h1 id=notification>notification</h1><h1>Notification</h1>
 <blockquote>
 <p>Visual, audible, and tactile device notifications.
 
@@ -8287,9 +8149,8 @@ checkConnection();</code></pre>
 <pre><code>No permissions are required.</code></pre>
 <h3>Windows Phone</h3>
 <pre><code>No permissions are required.</code></pre>
-<p>&lt;h1 id=notification.alert&gt;notification.alert&lt;/h1&gt;
-</p>
-<h1>notification.alert</h1>
+
+<h1 id=notification.alert>notification.alert</h1><h1>notification.alert</h1>
 <p>Shows a custom alert or dialog box.
 
 </p>
@@ -8377,9 +8238,8 @@ navigator.notification.alert(
 <ul>
 <li>alert uses javascript alert</li>
 </ul>
-<p>&lt;h1 id=notification.confirm&gt;notification.confirm&lt;/h1&gt;
-</p>
-<h1>notification.confirm</h1>
+
+<h1 id=notification.confirm>notification.confirm</h1><h1>notification.confirm</h1>
 <p>Shows a customizable confirmation dialog box.
 
 </p>
@@ -8483,9 +8343,8 @@ function showConfirm() {
 <ul>
 <li>Ignore button names, always <code>&#39;OK|Cancel&#39;</code>.</li>
 </ul>
-<p>&lt;h1 id=notification.beep&gt;notification.beep&lt;/h1&gt;
-</p>
-<h1>notification.beep</h1>
+
+<h1 id=notification.beep>notification.beep</h1><h1>notification.beep</h1>
 <p>The device will play a beep sound.
 
 </p>
@@ -8571,9 +8430,8 @@ navigator.notification.beep(2);</code></pre>
 <ul>
 <li>WP7 Cordova lib includes a generic beep file that is used. </li>
 </ul>
-<p>&lt;h1 id=notification.vibrate&gt;notification.vibrate&lt;/h1&gt;
-</p>
-<h1>notification.vibrate</h1>
+
+<h1 id=notification.vibrate>notification.vibrate</h1><h1>notification.vibrate</h1>
 <p>Vibrates the device for the specified amount of time.
 
 </p>
@@ -8649,9 +8507,8 @@ navigator.notification.vibrate(2500);</code></pre>
   navigator.notification.vibrate(2500);   // 2500 is ignored</code></pre>
 </li>
 </ul>
-<p>&lt;h1 id=storage&gt;storage&lt;/h1&gt;
-</p>
-<h1>Storage</h1>
+
+<h1 id=storage>storage</h1><h1>Storage</h1>
 <blockquote>
 <p>Provides access to the devices storage options.
 
@@ -8695,9 +8552,8 @@ navigator.notification.vibrate(2500);</code></pre>
 <pre><code>No permissions are required.</code></pre>
 <h3>Windows Phone</h3>
 <pre><code>No permissions are required.</code></pre>
-<p>&lt;h1 id=storage.opendatabase&gt;storage.opendatabase&lt;/h1&gt;
-</p>
-<h1>openDatabase</h1>
+
+<h1 id=storage.opendatabase>storage.opendatabase</h1><h1>openDatabase</h1>
 <p>Returns a new Database object.
 
 </p>
@@ -8744,30 +8600,21 @@ navigator.notification.vibrate(2500);</code></pre>
     &lt;p&gt;Open Database&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=name&gt;name&lt;/h1&gt;
-</p>
-<h1>database_name</h1>
-<p>The name of the database.
-</p>
-<p>&lt;h1 id=version&gt;version&lt;/h1&gt;
-</p>
-<h1>database_version</h1>
-<p>The version of the database.
 
+<h1 id=name>name</h1><h1>database_name</h1>
+<p>The name of the database.</p>
+
+<h1 id=version>version</h1><h1>database_version</h1>
+<p>The version of the database.
 </p>
-<p>&lt;h1 id=display_name&gt;display_name&lt;/h1&gt;
-</p>
-<h1>database_displayname</h1>
-<p>The display name of the database.
-</p>
-<p>&lt;h1 id=size&gt;size&lt;/h1&gt;
-</p>
-<h1>database_size</h1>
-<p>The size of the database in bytes.
-</p>
-<p>&lt;h1 id=database&gt;database&lt;/h1&gt;
-</p>
-<h1>Database</h1>
+
+<h1 id=display_name>display_name</h1><h1>database_displayname</h1>
+<p>The display name of the database.</p>
+
+<h1 id=size>size</h1><h1>database_size</h1>
+<p>The size of the database in bytes.</p>
+
+<h1 id=database>database</h1><h1>Database</h1>
 <p>Contains methods that allow the user to manipulate the Database
 
 </p>
@@ -8860,9 +8707,8 @@ db.changeVersion(&quot;1.0&quot;, &quot;1.1&quot;);</code></pre>
 <ul>
 <li><strong>changeVersion:</strong> This method is not support by Android 1.X devices.</li>
 </ul>
-<p>&lt;h1 id=sqltransaction&gt;sqltransaction&lt;/h1&gt;
-</p>
-<h1>SQLTransaction</h1>
+
+<h1 id=sqltransaction>sqltransaction</h1><h1>SQLTransaction</h1>
 <p>Contains methods that allow the user to execute SQL statements against the Database.
 
 </p>
@@ -8947,9 +8793,8 @@ db.transaction(populateDB, errorCB, successCB);</code></pre>
     &lt;p&gt;SQLTransaction&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=sqlresultset&gt;sqlresultset&lt;/h1&gt;
-</p>
-<h1>SQLResultSet</h1>
+
+<h1 id=sqlresultset>sqlresultset</h1><h1>SQLResultSet</h1>
 <p>When the executeSql method of a SQLTransaction is called it will invoke it&#39;s callback with a SQLResultSet.
 
 </p>
@@ -9060,9 +8905,8 @@ db.transaction(queryDB, errorCB);</code></pre>
     &lt;p&gt;Database&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=sqlresultsetlist&gt;sqlresultsetlist&lt;/h1&gt;
-</p>
-<h1>SQLResultSetList</h1>
+
+<h1 id=sqlresultsetlist>sqlresultsetlist</h1><h1>SQLResultSetList</h1>
 <p>One of the properties of the SQLResultSet containing the rows returned from a SQL query.
 
 </p>
@@ -9169,9 +9013,8 @@ db.transaction(queryDB, errorCB);</code></pre>
     &lt;p&gt;Database&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p>&lt;h1 id=sqlerror&gt;sqlerror&lt;/h1&gt;
-</p>
-<h1>SQLError</h1>
+
+<h1 id=sqlerror>sqlerror</h1><h1>SQLError</h1>
 <p>A <code>SQLError</code> object is thrown when an error occurs.
 
 </p>
@@ -9194,11 +9037,9 @@ db.transaction(queryDB, errorCB);</code></pre>
 <h2>Description</h2>
 <p>The <code>SQLError</code> object is thrown when an error occurs when manipulating a database.
 
+</p>
 
-</p>
-<p>&lt;h1 id=localstorage&gt;localstorage&lt;/h1&gt;
-</p>
-<h1>localStorage</h1>
+<h1 id=localstorage>localstorage</h1><h1>localStorage</h1>
 <p>Provides access to a W3C Storage interface (<a href="http://dev.w3.org/html5/webstorage/#the-localstorage-attribute">http://dev.w3.org/html5/webstorage/#the-localstorage-attribute</a>)
 
 </p>
