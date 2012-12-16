@@ -13,7 +13,7 @@
     </head>
     <body>
         <div id="header">
-            <h1 id=index><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
+            <h1 id=something><a href="index.html">Apache <strong>Cordova</strong> Documentation</a></h1>
             <small>
                 <select></select>
             </small>
@@ -25,23 +25,23 @@
 
         <div id="sidebar">
             <div class="vertical_divider"></div>
-            <h1>Cordova/Docs</h1><ul><li><a href=#accelerometer>accelerometer</a></li>
-<li><a href=#camera>camera</a></li>
-<li><a href=#compass>compass</a></li>
-<li><a href=#connection>connection</a></li>
-<li><a href=#contacts>contacts</a></li>
-<li><a href=#device>device</a></li>
-<li><a href=#events>events</a></li>
-<li><a href=#file>file</a></li>
-<li><a href=#geolocation>geolocation</a></li>
-<li><a href=#media>media</a></li>
-<li><a href=#notification>notification</a></li>
-<li><a href=#storage>storage</a></li></ul>
+            <h1 id=api>API Reference</h1><ul><li><a href=#accelerometer>Accelerometer</a></li>
+<li><a href=#camera>Camera</a></li>
+<li><a href=#compass>Compass</a></li>
+<li><a href=#connection>Connection</a></li>
+<li><a href=#contacts>Contacts</a></li>
+<li><a href=#device>Device</a></li>
+<li><a href=#events>Events</a></li>
+<li><a href=#file>File</a></li>
+<li><a href=#geolocation>Geolocation</a></li>
+<li><a href=#media>Media</a></li>
+<li><a href=#notification>Notification</a></li>
+<li><a href=#storage>Storage</a></li></ul>
         </div>
 
         <div id="scrollable">
             <div id="content">
-                <h1 id=accelerometer>accelerometer</h1><ul><li><a href=#accelerometer>accelerometer</a></li><li><a href=#accelerometer.getCurrentAcceleration>accelerometer.getCurrentAcceleration</a></li><li><a href=#accelerometer.watchAcceleration>accelerometer.watchAcceleration</a></li><li><a href=#accelerometer.clearWatch>accelerometer.clearWatch</a></li><li><a href=#acceleration>acceleration</a></li><li><a href=#accelerometerSuccess>accelerometerSuccess</a></li><li><a href=#accelerometerError>accelerometerError</a></li><li><a href=#accelerometerOptions>accelerometerOptions</a></li></ul><h1 id=accelerometer>accelerometer</h1><h1>Accelerometer</h1>
+                <span id=top></span><h1 id=accelerometer>Accelerometer</h1><ul><li><a href=#accelerometer>accelerometer</a></li><li><a href=#accelerometer.getCurrentAcceleration>accelerometer.getCurrentAcceleration</a></li><li><a href=#accelerometer.watchAcceleration>accelerometer.watchAcceleration</a></li><li><a href=#accelerometer.clearWatch>accelerometer.clearWatch</a></li><li><a href=#acceleration>acceleration</a></li><li><a href=#accelerometerSuccess>accelerometerSuccess</a></li><li><a href=#accelerometerError>accelerometerError</a></li><li><a href=#accelerometerOptions>accelerometerOptions</a></li></ul><h1 id=accelerometer>Accelerometer</h1><h1>Accelerometer</h1>
 <blockquote>
 <p>Captures device motion in the x, y, and z direction.
 
@@ -66,36 +66,36 @@
 <h2>Permissions</h2>
 <h3>Android</h3>
 <h4>app/res/xml/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;Accelerometer&quot; value=&quot;org.apache.cordova.AccelListener&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;plugin name=&quot;Accelerometer&quot; value=&quot;org.apache.cordova.AccelListener&quot; /&gt;</code></pre>
 <h3>Bada</h3>
-<pre><code>No permissions are required.</code></pre>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
 <h3>BlackBerry WebWorks</h3>
 <h4>www/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;Accelerometer&quot; value=&quot;org.apache.cordova.accelerometer.Accelerometer&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;plugin name=&quot;Accelerometer&quot; value=&quot;org.apache.cordova.accelerometer.Accelerometer&quot; /&gt;</code></pre>
 <h4>www/config.xml</h4>
-<pre><code>&lt;feature id=&quot;blackberry.system&quot;  required=&quot;true&quot; version=&quot;1.0.0.0&quot; /&gt;
+<pre class=prettyprint><code>&lt;feature id=&quot;blackberry.system&quot;  required=&quot;true&quot; version=&quot;1.0.0.0&quot; /&gt;
 &lt;feature id=&quot;org.apache.cordova&quot; required=&quot;true&quot; version=&quot;1.0.0&quot; /&gt;</code></pre>
 <h3>iOS</h3>
 <h4>App/Supporting Files/Cordova.plist</h4>
-<pre><code>&lt;key&gt;Plugins&lt;/key&gt;
+<pre class=prettyprint><code>&lt;key&gt;Plugins&lt;/key&gt;
 &lt;dict&gt;
     &lt;key&gt;Accelerometer&lt;/key&gt;
     &lt;string&gt;CDVAccelerometer&lt;/string&gt;
 &lt;/dict&gt;</code></pre>
 <h3>webOS</h3>
-<pre><code>No permissions are required.</code></pre>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
 <h3>Windows Phone</h3>
 <h4>Properties/WPAppManifest.xml</h4>
-<pre><code>&lt;Capabilities&gt;
+<pre class=prettyprint><code>&lt;Capabilities&gt;
     &lt;Capability Name=&quot;ID_CAP_SENSORS&quot; /&gt;
 &lt;/Capabilities&gt;</code></pre>
 <p>Reference: <a href="http://msdn.microsoft.com/en-us/library/ff769509%28v=vs.92%29.aspx">Application Manifest for Windows Phone</a>
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=accelerometer.getCurrentAcceleration>accelerometer.getCurrentAcceleration</h1><h1>accelerometer.getCurrentAcceleration</h1>
+<a class=top href=#top>Back to top.</a><h1 id=accelerometer.getCurrentAcceleration>Accelerometer.getCurrentAcceleration</h1><h1>accelerometer.getCurrentAcceleration</h1>
 <p>Get the current acceleration along the x, y, and z axis.
 
 </p>
-<pre><code>navigator.accelerometer.getCurrentAcceleration(accelerometerSuccess, accelerometerError);</code></pre>
+<pre class=prettyprint><code>navigator.accelerometer.getCurrentAcceleration(accelerometerSuccess, accelerometerError);</code></pre>
 <h2>Description</h2>
 <p>The accelerometer is a motion sensor that detects the change (delta) in movement relative to the current device orientation. The accelerometer can detect 3D movement along the x, y, and z axis.
 
@@ -112,7 +112,7 @@
 <li>Bada 1.2 &amp; 2.x</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>function onSuccess(acceleration) {
+<pre class=prettyprint><code>function onSuccess(acceleration) {
     alert(&#39;Acceleration X: &#39; + acceleration.x + &#39;\n&#39; +
           &#39;Acceleration Y: &#39; + acceleration.y + &#39;\n&#39; +
           &#39;Acceleration Z: &#39; + acceleration.z + &#39;\n&#39; +
@@ -125,7 +125,7 @@ function onError() {
 
 navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Acceleration Example&lt;/title&gt;
@@ -171,11 +171,11 @@ navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);</code></pre>
 <li>You must watch the acceleration and capture the data at given time intervals.</li>
 <li>Thus, the <code>getCurrentAcceleration</code> function will give you the last value reported from a Cordova <code>watchAccelerometer</code> call.</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=accelerometer.watchAcceleration>accelerometer.watchAcceleration</h1><h1>accelerometer.watchAcceleration</h1>
+<a class=top href=#top>Back to top.</a><h1 id=accelerometer.watchAcceleration>Accelerometer.watchAcceleration</h1><h1>accelerometer.watchAcceleration</h1>
 <p>At a regular interval, get the acceleration along the x, y, and z axis.
 
 </p>
-<pre><code>var watchID = navigator.accelerometer.watchAcceleration(accelerometerSuccess,
+<pre class=prettyprint><code>var watchID = navigator.accelerometer.watchAcceleration(accelerometerSuccess,
                                                        accelerometerError,
                                                        [accelerometerOptions]);</code></pre>
 <h2>Description</h2>
@@ -197,7 +197,7 @@ navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);</code></pre>
 <li>Bada 1.2 &amp; 2.x</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>function onSuccess(acceleration) {
+<pre class=prettyprint><code>function onSuccess(acceleration) {
     alert(&#39;Acceleration X: &#39; + acceleration.x + &#39;\n&#39; +
           &#39;Acceleration Y: &#39; + acceleration.y + &#39;\n&#39; +
           &#39;Acceleration Z: &#39; + acceleration.z + &#39;\n&#39; +
@@ -212,7 +212,7 @@ var options = { frequency: 3000 };  // Update every 3 seconds
 
 var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Acceleration Example&lt;/title&gt;
@@ -282,11 +282,11 @@ var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, opti
 </ul>
 </li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=accelerometer.clearWatch>accelerometer.clearWatch</h1><h1>accelerometer.clearWatch</h1>
+<a class=top href=#top>Back to top.</a><h1 id=accelerometer.clearWatch>Accelerometer.clearWatch</h1><h1>accelerometer.clearWatch</h1>
 <p>Stop watching the <code>Acceleration</code> referenced by the watch ID parameter.
 
 </p>
-<pre><code>navigator.accelerometer.clearWatch(watchID);</code></pre>
+<pre class=prettyprint><code>navigator.accelerometer.clearWatch(watchID);</code></pre>
 <ul>
 <li><strong>watchID</strong>: The ID returned by <code>accelerometer.watchAcceleration</code>.</li>
 </ul>
@@ -299,13 +299,13 @@ var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, opti
 <li>Bada 1.2 &amp; 2.x</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
+<pre class=prettyprint><code>var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
 
 // ... later on ...
 
 navigator.accelerometer.clearWatch(watchID);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Acceleration Example&lt;/title&gt;
@@ -368,7 +368,7 @@ navigator.accelerometer.clearWatch(watchID);</code></pre>
     &lt;button onclick=&quot;stopWatch();&quot;&gt;Stop Watching&lt;/button&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=acceleration>acceleration</h1><h1>Acceleration</h1>
+<a class=top href=#top>Back to top.</a><h1 id=acceleration>Acceleration</h1><h1>Acceleration</h1>
 <p>Contains <code>Accelerometer</code> data captured at a specific point in time.
 
 </p>
@@ -393,7 +393,7 @@ navigator.accelerometer.clearWatch(watchID);</code></pre>
 <li>webOS</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>function onSuccess(acceleration) {
+<pre class=prettyprint><code>function onSuccess(acceleration) {
     alert(&#39;Acceleration X: &#39; + acceleration.x + &#39;\n&#39; +
           &#39;Acceleration Y: &#39; + acceleration.y + &#39;\n&#39; +
           &#39;Acceleration Z: &#39; + acceleration.z + &#39;\n&#39; +
@@ -406,7 +406,7 @@ function onError() {
 
 navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Acceleration Example&lt;/title&gt;
@@ -446,11 +446,11 @@ navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);</code></pre>
     &lt;p&gt;getCurrentAcceleration&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=accelerometerSuccess>accelerometerSuccess</h1><h1>accelerometerSuccess</h1>
+<a class=top href=#top>Back to top.</a><h1 id=accelerometerSuccess>AccelerometerSuccess</h1><h1>accelerometerSuccess</h1>
 <p>onSuccess callback function that provides the Acceleration information.
 
 </p>
-<pre><code>function(acceleration) {
+<pre class=prettyprint><code>function(acceleration) {
     // Do something
 }</code></pre>
 <h2>Parameters</h2>
@@ -458,20 +458,20 @@ navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);</code></pre>
 <li><strong>acceleration:</strong> The acceleration at a single moment in time. (Acceleration)</li>
 </ul>
 <h2>Example</h2>
-<pre><code>function onSuccess(acceleration) {
+<pre class=prettyprint><code>function onSuccess(acceleration) {
     alert(&#39;Acceleration X: &#39; + acceleration.x + &#39;\n&#39; +
           &#39;Acceleration Y: &#39; + acceleration.y + &#39;\n&#39; +
           &#39;Acceleration Z: &#39; + acceleration.z + &#39;\n&#39; +
           &#39;Timestamp: &#39;      + acceleration.timestamp + &#39;\n&#39;);
 };</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=accelerometerError>accelerometerError</h1><h1>accelerometerError</h1>
+<a class=top href=#top>Back to top.</a><h1 id=accelerometerError>AccelerometerError</h1><h1>accelerometerError</h1>
 <p>onError callback function for acceleration functions.
 
 </p>
-<pre><code>function() {
+<pre class=prettyprint><code>function() {
     // Handle the error
 }</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=accelerometerOptions>accelerometerOptions</h1><h1>accelerometerOptions</h1>
+<a class=top href=#top>Back to top.</a><h1 id=accelerometerOptions>AccelerometerOptions</h1><h1>accelerometerOptions</h1>
 <p>An optional parameter to customize the retrieval of the accelerometer.
 
 </p>
@@ -479,7 +479,7 @@ navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);</code></pre>
 <ul>
 <li><strong>frequency:</strong> How often to retrieve the <code>Acceleration</code> in milliseconds. <em>(Number)</em> (Default: 10000)</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=camera>camera</h1><ul><li><a href=#camera>camera</a></li><li><a href=#camera.getPicture>camera.getPicture</a></li><li><a href=#cameraSuccess>cameraSuccess</a></li><li><a href=#cameraError>cameraError</a></li><li><a href=#cameraOptions>cameraOptions</a></li><li><a href=#CameraPopoverOptions>CameraPopoverOptions</a></li></ul><h1 id=camera>camera</h1><h1>Camera</h1>
+<a class=top href=#top>Back to top.</a><h1 id=camera>Camera</h1><ul><li><a href=#camera>camera</a></li><li><a href=#camera.getPicture>camera.getPicture</a></li><li><a href=#cameraSuccess>cameraSuccess</a></li><li><a href=#cameraError>cameraError</a></li><li><a href=#cameraOptions>cameraOptions</a></li><li><a href=#CameraPopoverOptions>CameraPopoverOptions</a></li></ul><h1 id=camera>Camera</h1><h1>Camera</h1>
 <blockquote>
 <p>The <code>camera</code> object provides access to the device&#39;s default camera application.
 
@@ -493,12 +493,12 @@ navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);</code></pre>
 <h2>Permissions</h2>
 <h3>Android</h3>
 <h4>app/res/xml/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;Camera&quot; value=&quot;org.apache.cordova.CameraLauncher&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;plugin name=&quot;Camera&quot; value=&quot;org.apache.cordova.CameraLauncher&quot; /&gt;</code></pre>
 <h4>app/AndroidManifest</h4>
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot; /&gt;</code></pre>
 <h3>Bada</h3>
 <h4>manifest.xml</h4>
-<pre><code>&lt;Privilege&gt;
+<pre class=prettyprint><code>&lt;Privilege&gt;
     &lt;Name&gt;CAMERA&lt;/Name&gt;
 &lt;/Privilege&gt;
 &lt;Privilege&gt;
@@ -506,36 +506,36 @@ navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);</code></pre>
 &lt;/Privilege&gt;</code></pre>
 <h3>BlackBerry WebWorks</h3>
 <h4>www/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;Camera&quot; value=&quot;org.apache.cordova.camera.Camera&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;plugin name=&quot;Camera&quot; value=&quot;org.apache.cordova.camera.Camera&quot; /&gt;</code></pre>
 <h4>www/config.xml</h4>
-<pre><code>&lt;feature id=&quot;blackberry.media.camera&quot; /&gt;
+<pre class=prettyprint><code>&lt;feature id=&quot;blackberry.media.camera&quot; /&gt;
 
 &lt;rim:permissions&gt;
     &lt;rim:permit&gt;use_camera&lt;/rim:permit&gt;
 &lt;/rim:permissions&gt;</code></pre>
 <h3>iOS</h3>
 <h4>App/Supporting Files/Cordova.plist</h4>
-<pre><code>&lt;key&gt;Plugins&lt;/key&gt;
+<pre class=prettyprint><code>&lt;key&gt;Plugins&lt;/key&gt;
 &lt;dict&gt;
     &lt;key&gt;Camera&lt;/key&gt;
     &lt;string&gt;CDVCamera&lt;/string&gt;
 &lt;/dict&gt;</code></pre>
 <h3>webOS</h3>
-<pre><code>No permissions are required.</code></pre>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
 <h3>Windows Phone</h3>
 <h4>Properties/WPAppManifest.xml</h4>
-<pre><code>&lt;Capabilities&gt;
+<pre class=prettyprint><code>&lt;Capabilities&gt;
     &lt;Capability Name=&quot;ID_CAP_CAMERA&quot; /&gt;
     &lt;Capability Name=&quot;ID_CAP_ISV_CAMERA&quot; /&gt;
     &lt;Capability Name=&quot;ID_HW_FRONTCAMERA&quot; /&gt;
 &lt;/Capabilities&gt;</code></pre>
 <p>Reference: <a href="http://msdn.microsoft.com/en-us/library/ff769509%28v=vs.92%29.aspx">Application Manifest for Windows Phone</a>
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=camera.getPicture>camera.getPicture</h1><h1>camera.getPicture</h1>
+<a class=top href=#top>Back to top.</a><h1 id=camera.getPicture>Camera.getPicture</h1><h1>camera.getPicture</h1>
 <p>Takes a photo using the camera or retrieves a photo from the device&#39;s album.  The image is returned as a base64 encoded <code>String</code> or as the URI of an image file.
 
 </p>
-<pre><code>navigator.camera.getPicture( cameraSuccess, cameraError, [ cameraOptions ] );</code></pre>
+<pre class=prettyprint><code>navigator.camera.getPicture( cameraSuccess, cameraError, [ cameraOptions ] );</code></pre>
 <h2>Description</h2>
 <p>Function <code>camera.getPicture</code> opens the device&#39;s default camera application so that the user can take a picture (if <code>Camera.sourceType = Camera.PictureSourceType.CAMERA</code>, which is the default). Once the photo is taken, the camera application closes and your application is restored.
 
@@ -583,7 +583,7 @@ via Zune will not work, and the error callback will be triggered.
 <p>Take photo and retrieve Base64-encoded image:
 
 </p>
-<pre><code>navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
+<pre class=prettyprint><code>navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
     destinationType: Camera.DestinationType.DATA_URL
  }); 
 
@@ -598,7 +598,7 @@ function onFail(message) {
 <p>Take photo and retrieve image file location: 
 
 </p>
-<pre><code>navigator.camera.getPicture(onSuccess, onFail, { quality: 50, 
+<pre class=prettyprint><code>navigator.camera.getPicture(onSuccess, onFail, { quality: 50, 
     destinationType: Camera.DestinationType.FILE_URI }); 
 
 function onSuccess(imageURI) {
@@ -610,7 +610,7 @@ function onFail(message) {
     alert(&#39;Failed because: &#39; + message);
 }</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Capture Photo&lt;/title&gt;
@@ -714,11 +714,11 @@ function onFail(message) {
     &lt;img style=&quot;display:none;&quot; id=&quot;largeImage&quot; src=&quot;&quot; /&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=cameraSuccess>cameraSuccess</h1><h1>cameraSuccess</h1>
+<a class=top href=#top>Back to top.</a><h1 id=cameraSuccess>CameraSuccess</h1><h1>cameraSuccess</h1>
 <p>onSuccess callback function that provides the image data.
 
 </p>
-<pre><code>function(imageData) {
+<pre class=prettyprint><code>function(imageData) {
     // Do something with the image
 }</code></pre>
 <h2>Parameters</h2>
@@ -726,28 +726,28 @@ function onFail(message) {
 <li><strong>imageData:</strong> Base64 encoding of the image data, OR the image file URI, depending on <code>cameraOptions</code> used. (<code>String</code>)</li>
 </ul>
 <h2>Example</h2>
-<pre><code>// Show image
+<pre class=prettyprint><code>// Show image
 //
 function cameraCallback(imageData) {
     var image = document.getElementById(&#39;myImage&#39;);
     image.src = &quot;data:image/jpeg;base64,&quot; + imageData;
 }</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=cameraError>cameraError</h1><h1>cameraError</h1>
+<a class=top href=#top>Back to top.</a><h1 id=cameraError>CameraError</h1><h1>cameraError</h1>
 <p>onError callback function that provides an error message.
 
 </p>
-<pre><code>function(message) {
+<pre class=prettyprint><code>function(message) {
     // Show a helpful message
 }</code></pre>
 <h2>Parameters</h2>
 <ul>
 <li><strong>message:</strong> The message is provided by the device&#39;s native code. (<code>String</code>)</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=cameraOptions>cameraOptions</h1><h1>cameraOptions</h1>
+<a class=top href=#top>Back to top.</a><h1 id=cameraOptions>CameraOptions</h1><h1>cameraOptions</h1>
 <p>Optional parameters to customize the camera settings.
 
 </p>
-<pre><code>{ quality : 75, 
+<pre class=prettyprint><code>{ quality : 75, 
   destinationType : Camera.DestinationType.DATA_URL, 
   sourceType : Camera.PictureSourceType.CAMERA, 
   allowEdit : true,
@@ -761,13 +761,13 @@ function cameraCallback(imageData) {
 <li><p><strong>quality:</strong> Quality of saved image. Range is [0, 100]. (<code>Number</code>)</p>
 </li>
 <li><p><strong>destinationType:</strong> Choose the format of the return value.  Defined in navigator.camera.DestinationType (<code>Number</code>)</p>
-<pre><code>      Camera.DestinationType = {
+<pre class=prettyprint><code>      Camera.DestinationType = {
           DATA_URL : 0,                // Return image as base64 encoded string
           FILE_URI : 1                 // Return image file URI
       };</code></pre>
 </li>
 <li><p><strong>sourceType:</strong> Set the source of the picture.  Defined in nagivator.camera.PictureSourceType (<code>Number</code>)</p>
-<pre><code>  Camera.PictureSourceType = {
+<pre class=prettyprint><code>  Camera.PictureSourceType = {
       PHOTOLIBRARY : 0,
       CAMERA : 1,
       SAVEDPHOTOALBUM : 2
@@ -776,7 +776,7 @@ function cameraCallback(imageData) {
 <li><p><strong>allowEdit:</strong> Allow simple editing of image before selection. (<code>Boolean</code>)</p>
 </li>
 <li><p><strong>encodingType:</strong> Choose the encoding of the returned image file.  Defined in navigator.camera.EncodingType (<code>Number</code>)</p>
-<pre><code>      Camera.EncodingType = {
+<pre class=prettyprint><code>      Camera.EncodingType = {
           JPEG : 0,               // Return JPEG encoded image
           PNG : 1                 // Return PNG encoded image
       };</code></pre>
@@ -786,7 +786,7 @@ function cameraCallback(imageData) {
 <li><p><strong>targetHeight:</strong> Height in pixels to scale image. Must be used with targetWidth. Aspect ratio is maintained. (<code>Number</code>)</p>
 </li>
 <li><p><strong>mediaType:</strong> Set the type of media to select from.  Only works when PictureSourceType is PHOTOLIBRARY or SAVEDPHOTOALBUM. Defined in nagivator.camera.MediaType (<code>Number</code>)</p>
-<pre><code>  Camera.MediaType = { 
+<pre class=prettyprint><code>  Camera.MediaType = { 
       PICTURE: 0,             // allow selection of still pictures only. DEFAULT. Will return format specified via DestinationType
       VIDEO: 1,               // allow selection of video only, WILL ALWAYS RETURN FILE_URI
       ALLMEDIA : 2            // allow selection from all media types</code></pre>
@@ -840,7 +840,7 @@ function cameraCallback(imageData) {
 <p>Parameters only used by iOS to specify the anchor element location and arrow direction of popover used on iPad when selecting images from the library or album.
 
 </p>
-<pre><code>{ x : 0, 
+<pre class=prettyprint><code>{ x : 0, 
   y :  32,
   width : 320,
   height : 480,
@@ -857,7 +857,7 @@ function cameraCallback(imageData) {
 <li><p><strong>height:</strong> height, in pixels, of the element on the screen to anchor popover onto. (<code>Number</code>)</p>
 </li>
 <li><p><strong>arrowDir:</strong> Direction the arrow on the popover should point.  Defined in Camera.PopoverArrowDirection (<code>Number</code>)</p>
-<pre><code>      Camera.PopoverArrowDirection = {
+<pre class=prettyprint><code>      Camera.PopoverArrowDirection = {
           ARROW_UP : 1,        // matches iOS UIPopoverArrowDirection constants
           ARROW_DOWN : 2,
           ARROW_LEFT : 4,
@@ -870,7 +870,7 @@ function cameraCallback(imageData) {
 
 </p>
 <h2>Quick Example</h2>
-<pre><code> var popover = new CameraPopoverOptions(300,300,100,100,Camera.PopoverArrowDirection.ARROW_ANY);
+<pre class=prettyprint><code> var popover = new CameraPopoverOptions(300,300,100,100,Camera.PopoverArrowDirection.ARROW_ANY);
  var options = { quality: 50, destinationType: Camera.DestinationType.DATA_URL,sourceType: Camera.PictureSource.SAVEDPHOTOALBUM, popoverOptions : popover };
 
  navigator.camera.getPicture(onSuccess, onFail, options);
@@ -883,7 +883,7 @@ function cameraCallback(imageData) {
 function onFail(message) {
     alert(&#39;Failed because: &#39; + message);
 }</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=capture>capture</h1><ul><li><a href=#capture>capture</a></li><li><a href=#captureAudio>captureAudio</a></li><li><a href=#captureAudioOptions>captureAudioOptions</a></li><li><a href=#captureImage>captureImage</a></li><li><a href=#captureImageOptions>captureImageOptions</a></li><li><a href=#captureVideo>captureVideo</a></li><li><a href=#captureVideoOptions>captureVideoOptions</a></li><li><a href=#CaptureError>CaptureError</a></li><li><a href=#CaptureCB>CaptureCB</a></li><li><a href=#CaptureErrorCB>CaptureErrorCB</a></li><li><a href=#ConfigurationData>ConfigurationData</a></li><li><a href=#MediaFile>MediaFile</a></li><li><a href=#MediaFile.getFormatData>MediaFile.getFormatData</a></li><li><a href=#MediaFileData>MediaFileData</a></li></ul><h1 id=capture>capture</h1><h1>Capture</h1>
+<a class=top href=#top>Back to top.</a><h1 id=capture>Capture</h1><ul><li><a href=#capture>capture</a></li><li><a href=#captureAudio>captureAudio</a></li><li><a href=#captureAudioOptions>captureAudioOptions</a></li><li><a href=#captureImage>captureImage</a></li><li><a href=#captureImageOptions>captureImageOptions</a></li><li><a href=#captureVideo>captureVideo</a></li><li><a href=#captureVideoOptions>captureVideoOptions</a></li><li><a href=#CaptureError>CaptureError</a></li><li><a href=#CaptureCB>CaptureCB</a></li><li><a href=#CaptureErrorCB>CaptureErrorCB</a></li><li><a href=#ConfigurationData>ConfigurationData</a></li><li><a href=#MediaFile>MediaFile</a></li><li><a href=#MediaFile.getFormatData>MediaFile.getFormatData</a></li><li><a href=#MediaFileData>MediaFileData</a></li></ul><h1 id=capture>Capture</h1><h1>Capture</h1>
 <blockquote>
 <p>Provides access to the audio, image, and video capture capabilities of the device.
 
@@ -912,7 +912,7 @@ function onFail(message) {
 <p>The <strong>capture</strong> object is assigned to the <strong>navigator.device</strong> object, and therefore has global scope.
 
 </p>
-<pre><code>// The global capture object
+<pre class=prettyprint><code>// The global capture object
 var capture = navigator.device.capture;</code></pre>
 <h2>Properties</h2>
 <ul>
@@ -936,46 +936,46 @@ var capture = navigator.device.capture;</code></pre>
 <h2>Permissions</h2>
 <h3>Android</h3>
 <h4>app/res/xml/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;Capture&quot; value=&quot;org.apache.cordova.Capture&quot;/&gt;</code></pre>
+<pre class=prettyprint><code>&lt;plugin name=&quot;Capture&quot; value=&quot;org.apache.cordova.Capture&quot;/&gt;</code></pre>
 <h4>app/AndroidManifest.xml</h4>
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.RECORD_AUDIO&quot; /&gt;
+<pre class=prettyprint><code>&lt;uses-permission android:name=&quot;android.permission.RECORD_AUDIO&quot; /&gt;
 &lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot; /&gt;   </code></pre>
 <h3>Bada</h3>
 <h4>manifest.xml</h4>
-<pre><code>&lt;Privilege&gt;
+<pre class=prettyprint><code>&lt;Privilege&gt;
     &lt;Name&gt;RECORDING&lt;/Name&gt;
 &lt;/Privilege&gt;</code></pre>
 <h3>BlackBerry WebWorks</h3>
 <h4>www/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;Capture&quot; value=&quot;org.apache.cordova.capture.MediaCapture&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;plugin name=&quot;Capture&quot; value=&quot;org.apache.cordova.capture.MediaCapture&quot; /&gt;</code></pre>
 <h4>www/config.xml</h4>
-<pre><code>&lt;feature id=&quot;blackberry.system&quot;  required=&quot;true&quot; version=&quot;1.0.0.0&quot; /&gt;
+<pre class=prettyprint><code>&lt;feature id=&quot;blackberry.system&quot;  required=&quot;true&quot; version=&quot;1.0.0.0&quot; /&gt;
 &lt;feature id=&quot;blackberry.io.file&quot; required=&quot;true&quot; version=&quot;1.0.0.0&quot; /&gt;</code></pre>
 <h3>iOS</h3>
 <h4>App/Supporting Files/Cordova.plist</h4>
-<pre><code>&lt;key&gt;Plugins&lt;/key&gt;
+<pre class=prettyprint><code>&lt;key&gt;Plugins&lt;/key&gt;
 &lt;dict&gt;
     &lt;key&gt;Capture&lt;/key&gt;
     &lt;string&gt;CDVCapture&lt;/string&gt;
 &lt;/dict&gt;</code></pre>
 <h3>webOS</h3>
-<pre><code>No permissions are required.</code></pre>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
 <h3>Windows Phone</h3>
 <h4>Properties/WPAppManifest.xml</h4>
-<pre><code>&lt;Capabilities&gt;
+<pre class=prettyprint><code>&lt;Capabilities&gt;
     &lt;Capability Name=&quot;ID_CAP_MEDIALIB&quot; /&gt;
     &lt;Capability Name=&quot;ID_CAP_MICROPHONE&quot; /&gt;
     &lt;Capability Name=&quot;ID_HW_FRONTCAMERA&quot; /&gt;
     &lt;Capability Name=&quot;ID_CAP_ISV_CAMERA&quot; /&gt;
     &lt;Capability Name=&quot;ID_CAP_CAMERA&quot; /&gt;
 &lt;/Capabilities&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=captureAudio>captureAudio</h1><h1>capture.captureAudio</h1>
+<a class=top href=#top>Back to top.</a><h1 id=captureAudio>CaptureAudio</h1><h1>capture.captureAudio</h1>
 <blockquote>
 <p>Start the audio recorder application and return information about captured audio clip file(s).
 
 </p>
 </blockquote>
-<pre><code>navigator.device.capture.captureAudio( 
+<pre class=prettyprint><code>navigator.device.capture.captureAudio( 
     CaptureCB captureSuccess, CaptureErrorCB captureError,  [CaptureAudioOptions options]
 );</code></pre>
 <h2>Description</h2>
@@ -996,7 +996,7 @@ var capture = navigator.device.capture;</code></pre>
 <li>Windows Phone 7 ( Mango )</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// capture callback
+<pre class=prettyprint><code>// capture callback
 var captureSuccess = function(mediaFiles) {
     var i, path, len;
     for (i = 0, len = mediaFiles.length; i &lt; len; i += 1) {
@@ -1013,7 +1013,7 @@ var captureError = function(error) {
 // start audio capture
 navigator.device.capture.captureAudio(captureSuccess, captureError, {limit:2});</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Capture Audio&lt;/title&gt;
@@ -1082,7 +1082,7 @@ navigator.device.capture.captureAudio(captureSuccess, captureError, {limit:2});<
 <ul>
 <li>Windows Phone 7 does not have a default audio recording application so a simple user interface is provided.</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=captureAudioOptions>captureAudioOptions</h1><h1>CaptureAudioOptions</h1>
+<a class=top href=#top>Back to top.</a><h1 id=captureAudioOptions>CaptureAudioOptions</h1><h1>CaptureAudioOptions</h1>
 <blockquote>
 <p>Encapsulates audio capture configuration options.
 
@@ -1095,7 +1095,7 @@ navigator.device.capture.captureAudio(captureSuccess, captureError, {limit:2});<
 <li><strong>mode:</strong> The selected audio mode.  The value must match one of the elements in <code>capture.supportedAudioModes</code>.</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// limit capture operation to 3 media files, no longer than 10 seconds each
+<pre class=prettyprint><code>// limit capture operation to 3 media files, no longer than 10 seconds each
 var options = { limit: 3, duration: 10 };
 
 navigator.device.capture.captureAudio(captureSuccess, captureError, options);</code></pre>
@@ -1114,13 +1114,13 @@ navigator.device.capture.captureAudio(captureSuccess, captureError, options);</c
 <li>The <strong>limit</strong> parameter is not supported. One recording can be created for each invocation.</li>
 <li>The <strong>mode</strong> parameter is not supported.  The audio recording format cannot be altered programmatically.  Recordings are encoded using Waveform Audio (WAV) format (audio/wav).</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=captureImage>captureImage</h1><h1>capture.captureImage</h1>
+<a class=top href=#top>Back to top.</a><h1 id=captureImage>CaptureImage</h1><h1>capture.captureImage</h1>
 <blockquote>
 <p>Start the camera application and return information about captured image file(s).
 
 </p>
 </blockquote>
-<pre><code>navigator.device.capture.captureImage( 
+<pre class=prettyprint><code>navigator.device.capture.captureImage( 
     CaptureCB captureSuccess, CaptureErrorCB captureError, [CaptureImageOptions options]
 );</code></pre>
 <h2>Description</h2>
@@ -1147,7 +1147,7 @@ via Zune will not work, and the error callback will be triggered.
 
 </p>
 <h2>Quick Example</h2>
-<pre><code>// capture callback
+<pre class=prettyprint><code>// capture callback
 var captureSuccess = function(mediaFiles) {
     var i, path, len;
     for (i = 0, len = mediaFiles.length; i &lt; len; i += 1) {
@@ -1164,7 +1164,7 @@ var captureError = function(error) {
 // start image capture
 navigator.device.capture.captureImage(captureSuccess, captureError, {limit:2});</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Capture Image&lt;/title&gt;
@@ -1227,21 +1227,21 @@ navigator.device.capture.captureImage(captureSuccess, captureError, {limit:2});<
 </p>
 <ol>
 <li><p>create a <em>&#60;div&#62;</em> element somewhere in your document and give it an id (such as &quot;preview&quot;). </p>
-<pre><code> &lt;div id=&quot;preview&quot;&gt;&lt;/div&gt;</code></pre>
+<pre class=prettyprint><code> &lt;div id=&quot;preview&quot;&gt;&lt;/div&gt;</code></pre>
 </li>
 <li><p>Initialize the camera preview with the following method</p>
-<pre><code> navigator.camera.showPreview(&quot;preview&quot;);</code></pre>
+<pre class=prettyprint><code> navigator.camera.showPreview(&quot;preview&quot;);</code></pre>
 </li>
 <li><p>Once you get the preview you can</p>
 <p> 3.1 Capture an image with</p>
-<pre><code> var options = { destinationFilename: &quot;images/cam01.jpg&quot;, highRes: false};
+<pre class=prettyprint><code> var options = { destinationFilename: &quot;images/cam01.jpg&quot;, highRes: false};
  navigator.capture.captureImage(success, fail, options);</code></pre>
 </li>
 <li><p>Hide the camera preview with the following method</p>
-<pre><code> navigator.camera.hidePreview(&quot;preview&quot;);</code></pre>
+<pre class=prettyprint><code> navigator.camera.hidePreview(&quot;preview&quot;);</code></pre>
 </li>
 </ol>
-<a class=top href=#top>Back to top.</a><h1 id=captureImageOptions>captureImageOptions</h1><h1>CaptureImageOptions</h1>
+<a class=top href=#top>Back to top.</a><h1 id=captureImageOptions>CaptureImageOptions</h1><h1>CaptureImageOptions</h1>
 <blockquote>
 <p>Encapsulates image capture configuration options.
 
@@ -1253,7 +1253,7 @@ navigator.device.capture.captureImage(captureSuccess, captureError, {limit:2});<
 <li><strong>mode:</strong> The selected image mode.  The value must match one of the elements in <code>capture.supportedImageModes</code>.</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// limit capture operation to 3 images
+<pre class=prettyprint><code>// limit capture operation to 3 images
 var options = { limit: 3 };
 
 navigator.device.capture.captureImage(captureSuccess, captureError, options);</code></pre>
@@ -1270,13 +1270,13 @@ navigator.device.capture.captureImage(captureSuccess, captureError, options);</c
 <li>The <strong>limit</strong> parameter is not supported. One image is taken per invocation.</li>
 <li>The <strong>mode</strong> parameter is not supported.  The image size and format cannot be altered programmatically.  Images are saved in JPEG format (image/jpeg).</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=captureVideo>captureVideo</h1><h1>capture.captureVideo</h1>
+<a class=top href=#top>Back to top.</a><h1 id=captureVideo>CaptureVideo</h1><h1>capture.captureVideo</h1>
 <blockquote>
 <p>Start the video recorder application and return information about captured video clip file(s).
 
 </p>
 </blockquote>
-<pre><code>navigator.device.capture.captureVideo( 
+<pre class=prettyprint><code>navigator.device.capture.captureVideo( 
     CaptureCB captureSuccess, CaptureErrorCB captureError, [CaptureVideoOptions options]
 );</code></pre>
 <h2>Description</h2>
@@ -1298,7 +1298,7 @@ navigator.device.capture.captureImage(captureSuccess, captureError, options);</c
 <li>Bada 2.x</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// capture callback
+<pre class=prettyprint><code>// capture callback
 var captureSuccess = function(mediaFiles) {
     var i, path, len;
     for (i = 0, len = mediaFiles.length; i &lt; len; i += 1) {
@@ -1315,7 +1315,7 @@ var captureError = function(error) {
 // start video capture
 navigator.device.capture.captureVideo(captureSuccess, captureError, {limit:2});</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Capture Video&lt;/title&gt;
@@ -1382,22 +1382,22 @@ navigator.device.capture.captureVideo(captureSuccess, captureError, {limit:2});<
 </p>
 <ol>
 <li><p>create a <em>&#60;div&#62;</em> element somewhere in your document and give it an id (such as &quot;preview&quot;). </p>
-<pre><code> &lt;div id=&quot;preview&quot;&gt;&lt;/div&gt;</code></pre>
+<pre class=prettyprint><code> &lt;div id=&quot;preview&quot;&gt;&lt;/div&gt;</code></pre>
 </li>
 <li><p>Initialize the camera preview with the following method</p>
-<pre><code> navigator.camera.showPreview(&quot;preview&quot;);</code></pre>
+<pre class=prettyprint><code> navigator.camera.showPreview(&quot;preview&quot;);</code></pre>
 </li>
 <li><p>Once you get the preview you can</p>
 <p> 3.1 Start capturing a video with</p>
-<pre><code> navigator.capture.startVideoCapture(success, fail, {duration: 5000, destinationFilename: &quot;videos/a.3gp&quot;});</code></pre>
+<pre class=prettyprint><code> navigator.capture.startVideoCapture(success, fail, {duration: 5000, destinationFilename: &quot;videos/a.3gp&quot;});</code></pre>
 <p> 3.2 Stop the video capture with</p>
-<pre><code> navigator.capture.stopVideoCapture();</code></pre>
+<pre class=prettyprint><code> navigator.capture.stopVideoCapture();</code></pre>
 </li>
 <li><p>Hide the camera preview with the following method</p>
-<pre><code> navigator.camera.hidePreview(&quot;preview&quot;);</code></pre>
+<pre class=prettyprint><code> navigator.camera.hidePreview(&quot;preview&quot;);</code></pre>
 </li>
 </ol>
-<a class=top href=#top>Back to top.</a><h1 id=captureVideoOptions>captureVideoOptions</h1><h1>CaptureVideoOptions</h1>
+<a class=top href=#top>Back to top.</a><h1 id=captureVideoOptions>CaptureVideoOptions</h1><h1>CaptureVideoOptions</h1>
 <blockquote>
 <p>Encapsulates video capture configuration options.
 
@@ -1410,7 +1410,7 @@ navigator.device.capture.captureVideo(captureSuccess, captureError, {limit:2});<
 <li><strong>mode:</strong> The selected video capture mode.  The value must match one of the elements in <code>capture.supportedVideoModes</code>.</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// limit capture operation to 3 video clips
+<pre class=prettyprint><code>// limit capture operation to 3 video clips
 var options = { limit: 3 };
 
 navigator.device.capture.captureVideo(captureSuccess, captureError, options);</code></pre>
@@ -1454,7 +1454,7 @@ navigator.device.capture.captureVideo(captureSuccess, captureError, options);</c
 
 </p>
 </blockquote>
-<pre><code>function captureSuccess( MediaFile[] mediaFiles ) { ... };</code></pre>
+<pre class=prettyprint><code>function captureSuccess( MediaFile[] mediaFiles ) { ... };</code></pre>
 <h2>Description</h2>
 <p>This function is invoked after a successful capture operation has completed.  This means a media file has been captured, and either the user has exited the media capture application, or the capture limit has been reached.
 
@@ -1463,7 +1463,7 @@ navigator.device.capture.captureVideo(captureSuccess, captureError, options);</c
 
 </p>
 <h2>Quick Example</h2>
-<pre><code>// capture callback
+<pre class=prettyprint><code>// capture callback
 function captureSuccess(mediaFiles) {
     var i, path, len;
     for (i = 0, len = mediaFiles.length; i &lt; len; i += 1) {
@@ -1477,7 +1477,7 @@ function captureSuccess(mediaFiles) {
 
 </p>
 </blockquote>
-<pre><code>function captureError( CaptureError error ) { ... };</code></pre>
+<pre class=prettyprint><code>function captureError( CaptureError error ) { ... };</code></pre>
 <h2>Description</h2>
 <p>This function is invoked if an error occurs when trying to launch a media capture operation and the capture application is busy, if an error occurs while the capture operation is taking place, or if the capture operation has been canceled by the user before any media files have been captured.
 
@@ -1486,7 +1486,7 @@ function captureSuccess(mediaFiles) {
 
 </p>
 <h2>Quick Example</h2>
-<pre><code>// capture error callback
+<pre class=prettyprint><code>// capture error callback
 var captureError = function(error) {
     navigator.notification.alert(&#39;Error code: &#39; + error.code, null, &#39;Capture Error&#39;);
 };</code></pre>
@@ -1517,7 +1517,7 @@ var captureError = function(error) {
 <li><strong>width:</strong> The width of the image or video in pixels.  In the case of a sound clip, this attribute has value 0. (Number)</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// retrieve supported image modes
+<pre class=prettyprint><code>// retrieve supported image modes
 var imageModes = navigator.device.capture.supportedImageModes;
 
 // Select mode that has the highest horizontal resolution
@@ -1554,7 +1554,7 @@ for each (var mode in imageModes) {
 
 </p>
 </blockquote>
-<pre><code>mediaFile.getFormatData( 
+<pre class=prettyprint><code>mediaFile.getFormatData( 
     MediaFileDataSuccessCB successCallback, 
     [MediaFileDataErrorCB errorCallback]
 );</code></pre>
@@ -1626,7 +1626,7 @@ for each (var mode in imageModes) {
 <li><strong>width:</strong> Supported.  (Image and video files only). </li>
 <li><strong>duration:</strong> Supported.  (Audio and video files only).</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=compass>compass</h1><ul><li><a href=#compass>compass</a></li><li><a href=#compass.getCurrentHeading>compass.getCurrentHeading</a></li><li><a href=#compass.watchHeading>compass.watchHeading</a></li><li><a href=#compass.clearWatch>compass.clearWatch</a></li><li><a href=#compass.watchHeadingFilter>compass.watchHeadingFilter</a></li><li><a href=#compass.clearWatchFilter>compass.clearWatchFilter</a></li><li><a href=#compassSuccess>compassSuccess</a></li><li><a href=#compassError>compassError</a></li><li><a href=#compassOptions>compassOptions</a></li><li><a href=#compassHeading>compassHeading</a></li><li><a href=#compassError>compassError</a></li></ul><h1 id=compass>compass</h1><h1>Compass</h1>
+<a class=top href=#top>Back to top.</a><h1 id=compass>Compass</h1><ul><li><a href=#compass>compass</a></li><li><a href=#compass.getCurrentHeading>compass.getCurrentHeading</a></li><li><a href=#compass.watchHeading>compass.watchHeading</a></li><li><a href=#compass.clearWatch>compass.clearWatch</a></li><li><a href=#compass.watchHeadingFilter>compass.watchHeadingFilter</a></li><li><a href=#compass.clearWatchFilter>compass.clearWatchFilter</a></li><li><a href=#compassSuccess>compassSuccess</a></li><li><a href=#compassError>compassError</a></li><li><a href=#compassOptions>compassOptions</a></li><li><a href=#compassHeading>compassHeading</a></li><li><a href=#compassError>compassError</a></li></ul><h1 id=compass>Compass</h1><h1>Compass</h1>
 <blockquote>
 <p>Obtains the direction that the device is pointing.
 
@@ -1650,32 +1650,32 @@ for each (var mode in imageModes) {
 <h2>Permissions</h2>
 <h3>Android</h3>
 <h4>app/res/xml/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;Compass&quot; value=&quot;org.apache.cordova.CompassListener&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;plugin name=&quot;Compass&quot; value=&quot;org.apache.cordova.CompassListener&quot; /&gt;</code></pre>
 <h3>Bada</h3>
-<pre><code>No permissions are required.</code></pre>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
 <h3>BlackBerry WebWorks</h3>
-<pre><code>No permissions are required.</code></pre>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
 <h3>iOS</h3>
 <h4>App/Supporting Files/Cordova.plist</h4>
-<pre><code>&lt;key&gt;Plugins&lt;/key&gt;
+<pre class=prettyprint><code>&lt;key&gt;Plugins&lt;/key&gt;
 &lt;dict&gt;
     &lt;key&gt;Compass&lt;/key&gt;
     &lt;string&gt;CDVLocation&lt;/string&gt;
 &lt;/dict&gt;</code></pre>
 <h3>webOS</h3>
-<pre><code>No permissions are required.</code></pre>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
 <h3>Windows Phone</h3>
 <h4>Properties/WPAppManifest.xml</h4>
-<pre><code>&lt;Capabilities&gt;
+<pre class=prettyprint><code>&lt;Capabilities&gt;
     &lt;Capability Name=&quot;ID_CAP_SENSORS&quot; /&gt;
 &lt;/Capabilities&gt;</code></pre>
 <p>Reference: <a href="http://msdn.microsoft.com/en-us/library/ff769509%28v=vs.92%29.aspx">Application Manifest for Windows Phone</a>
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=compass.getCurrentHeading>compass.getCurrentHeading</h1><h1>compass.getCurrentHeading</h1>
+<a class=top href=#top>Back to top.</a><h1 id=compass.getCurrentHeading>Compass.getCurrentHeading</h1><h1>compass.getCurrentHeading</h1>
 <p>Get the current compass heading.
 
 </p>
-<pre><code>navigator.compass.getCurrentHeading(compassSuccess, compassError, compassOptions);</code></pre>
+<pre class=prettyprint><code>navigator.compass.getCurrentHeading(compassSuccess, compassError, compassOptions);</code></pre>
 <h2>Description</h2>
 <p>The compass is a sensor that detects the direction or heading that the device is pointed.  It measures the heading in degrees from 0 to 359.99.
 
@@ -1692,7 +1692,7 @@ for each (var mode in imageModes) {
 <li>webOS</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>function onSuccess(heading) {
+<pre class=prettyprint><code>function onSuccess(heading) {
     alert(&#39;Heading: &#39; + heading.magneticHeading);
 };
 
@@ -1702,7 +1702,7 @@ function onError(error) {
 
 navigator.compass.getCurrentHeading(onSuccess, onError);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Compass Example&lt;/title&gt;
@@ -1739,11 +1739,11 @@ navigator.compass.getCurrentHeading(onSuccess, onError);</code></pre>
     &lt;p&gt;getCurrentHeading&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=compass.watchHeading>compass.watchHeading</h1><h1>compass.watchHeading</h1>
+<a class=top href=#top>Back to top.</a><h1 id=compass.watchHeading>Compass.watchHeading</h1><h1>compass.watchHeading</h1>
 <p>At a regular interval, get the compass heading in degrees.
 
 </p>
-<pre><code>var watchID = navigator.compass.watchHeading(compassSuccess, compassError, [compassOptions]);</code></pre>
+<pre class=prettyprint><code>var watchID = navigator.compass.watchHeading(compassSuccess, compassError, [compassOptions]);</code></pre>
 <h2>Description</h2>
 <p>The compass is a sensor that detects the direction or heading that the device is pointed.  It measures the heading in degrees from 0 to 359.99.
 
@@ -1763,7 +1763,7 @@ navigator.compass.getCurrentHeading(onSuccess, onError);</code></pre>
 <li>webOS</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>function onSuccess(heading) {
+<pre class=prettyprint><code>function onSuccess(heading) {
     var element = document.getElementById(&#39;heading&#39;);
     element.innerHTML = &#39;Heading: &#39; + heading.magneticHeading;
 };
@@ -1776,7 +1776,7 @@ var options = { frequency: 3000 };  // Update every 3 seconds
 
 var watchID = navigator.compass.watchHeading(onSuccess, onError, options);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Compass Example&lt;/title&gt;
@@ -1843,11 +1843,11 @@ var watchID = navigator.compass.watchHeading(onSuccess, onError, options);</code
 </p>
 <p>In iOS only one watchHeading can be in effect at one time.  If a watchHeading via filter is in effect, calling getCurrentHeading or watchHeading will use the existing filter value for specifying heading changes. On iOS watching heading changes via a filter is more efficient than via time.
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=compass.clearWatch>compass.clearWatch</h1><h1>compass.clearWatch</h1>
+<a class=top href=#top>Back to top.</a><h1 id=compass.clearWatch>Compass.clearWatch</h1><h1>compass.clearWatch</h1>
 <p>Stop watching the compass referenced by the watch ID parameter.
 
 </p>
-<pre><code>navigator.compass.clearWatch(watchID);</code></pre>
+<pre class=prettyprint><code>navigator.compass.clearWatch(watchID);</code></pre>
 <ul>
 <li><strong>watchID</strong>: The ID returned by <code>compass.watchHeading</code>.</li>
 </ul>
@@ -1860,13 +1860,13 @@ var watchID = navigator.compass.watchHeading(onSuccess, onError, options);</code
 <li>webOS</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>var watchID = navigator.compass.watchHeading(onSuccess, onError, options);
+<pre class=prettyprint><code>var watchID = navigator.compass.watchHeading(onSuccess, onError, options);
 
 // ... later on ...
 
 navigator.compass.clearWatch(watchID);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Compass Example&lt;/title&gt;
@@ -1928,16 +1928,16 @@ navigator.compass.clearWatch(watchID);</code></pre>
     &lt;button onclick=&quot;stopWatch();&quot;&gt;Stop Watching&lt;/button&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=compass.watchHeadingFilter>compass.watchHeadingFilter</h1><h1>compass.watchHeadingFilter</h1>
+<a class=top href=#top>Back to top.</a><h1 id=compass.watchHeadingFilter>Compass.watchHeadingFilter</h1><h1>compass.watchHeadingFilter</h1>
 <p>No longer supported as of 1.6, see <code>compass.watchHeading</code> for equivalent functionality.
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=compass.clearWatchFilter>compass.clearWatchFilter</h1><h1>compass.clearWatchFilter</h1>
+<a class=top href=#top>Back to top.</a><h1 id=compass.clearWatchFilter>Compass.clearWatchFilter</h1><h1>compass.clearWatchFilter</h1>
 <p>No longer supported as of 1.6.  See <code>compass.clearWatch</code>.</p>
-<a class=top href=#top>Back to top.</a><h1 id=compassSuccess>compassSuccess</h1><h1>compassSuccess</h1>
+<a class=top href=#top>Back to top.</a><h1 id=compassSuccess>CompassSuccess</h1><h1>compassSuccess</h1>
 <p>onSuccess callback function that provides the compass heading information via a compassHeading object.
 
 </p>
-<pre><code>function(heading) {
+<pre class=prettyprint><code>function(heading) {
     // Do something
 }</code></pre>
 <h2>Parameters</h2>
@@ -1945,10 +1945,10 @@ navigator.compass.clearWatch(watchID);</code></pre>
 <li><strong>heading:</strong> The heading information. <em>(compassHeading)</em></li>
 </ul>
 <h2>Example</h2>
-<pre><code>function onSuccess(heading) {
+<pre class=prettyprint><code>function onSuccess(heading) {
     alert(&#39;Heading: &#39; + heading.magneticHeading);
 };</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=compassError>compassError</h1><h1>compassError</h1>
+<a class=top href=#top>Back to top.</a><h1 id=compassError>CompassError</h1><h1>compassError</h1>
 <p>onError callback function for compass functions. 
 
 </p>
@@ -1957,7 +1957,7 @@ navigator.compass.clearWatch(watchID);</code></pre>
     // Handle the error
 }
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=compassOptions>compassOptions</h1><h1>compassOptions</h1>
+<a class=top href=#top>Back to top.</a><h1 id=compassOptions>CompassOptions</h1><h1>compassOptions</h1>
 <p>An optional parameter to customize the retrieval of the compass.
 
 </p>
@@ -1980,7 +1980,7 @@ navigator.compass.clearWatch(watchID);</code></pre>
 <ul>
 <li>filter is not supported.</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=compassHeading>compassHeading</h1><h1>compassHeading</h1>
+<a class=top href=#top>Back to top.</a><h1 id=compassHeading>CompassHeading</h1><h1>compassHeading</h1>
 <p>A <code>CompassHeading</code> object is returned to the <code>compassSuccess</code> callback function when an error occurs.
 
 </p>
@@ -2006,7 +2006,7 @@ navigator.compass.clearWatch(watchID);</code></pre>
 <li>For iOS &gt; 4 devices, if the device is rotated and the app supports that orientation, the heading values will be reported 
 back with respect to the current orientation. </li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=compassError>compassError</h1><h1>CompassError</h1>
+<a class=top href=#top>Back to top.</a><h1 id=compassError>CompassError</h1><h1>CompassError</h1>
 <p>A <code>CompassError</code> object is returned to the <code>compassError</code> callback function when an error occurs.
 
 </p>
@@ -2024,7 +2024,7 @@ back with respect to the current orientation. </li>
 
 
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=contacts>contacts</h1><ul><li><a href=#contacts>contacts</a></li><li><a href=#contacts.create>contacts.create</a></li><li><a href=#contacts.find>contacts.find</a></li><li><a href=#contact>contact</a></li><li><a href=#contactaddress>contactaddress</a></li><li><a href=#contactfield>contactfield</a></li><li><a href=#contactfindoptions>contactfindoptions</a></li><li><a href=#contactname>contactname</a></li><li><a href=#contactorganization>contactorganization</a></li><li><a href=#contactError>contactError</a></li><li><a href=#contactSuccess>contactSuccess</a></li><li><a href=#contactError>contactError</a></li><li><a href=#contactFields>contactFields</a></li><li><a href=#contactFindOptions>contactFindOptions</a></li></ul><h1 id=contacts>contacts</h1><h1>Contacts</h1>
+<a class=top href=#top>Back to top.</a><h1 id=contacts>Contacts</h1><ul><li><a href=#contacts>contacts</a></li><li><a href=#contacts.create>contacts.create</a></li><li><a href=#contacts.find>contacts.find</a></li><li><a href=#contact>contact</a></li><li><a href=#contactaddress>contactaddress</a></li><li><a href=#contactfield>contactfield</a></li><li><a href=#contactfindoptions>contactfindoptions</a></li><li><a href=#contactname>contactname</a></li><li><a href=#contactorganization>contactorganization</a></li><li><a href=#contactError>contactError</a></li><li><a href=#contactSuccess>contactSuccess</a></li><li><a href=#contactError>contactError</a></li><li><a href=#contactFields>contactFields</a></li><li><a href=#contactFindOptions>contactFindOptions</a></li></ul><h1 id=contacts>Contacts</h1><h1>Contacts</h1>
 <blockquote>
 <p>The <code>contacts</code> object provides access to the device contacts database.
 
@@ -2055,45 +2055,45 @@ back with respect to the current orientation. </li>
 <h2>Permissions</h2>
 <h3>Android</h3>
 <h4>app/res/xml/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;Contacts&quot; value=&quot;org.apache.cordova.ContactManager&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;plugin name=&quot;Contacts&quot; value=&quot;org.apache.cordova.ContactManager&quot; /&gt;</code></pre>
 <h4>app/AndroidManifest.xml</h4>
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.GET_ACCOUNTS&quot; /&gt;
+<pre class=prettyprint><code>&lt;uses-permission android:name=&quot;android.permission.GET_ACCOUNTS&quot; /&gt;
 &lt;uses-permission android:name=&quot;android.permission.READ_CONTACTS&quot; /&gt;
 &lt;uses-permission android:name=&quot;android.permission.WRITE_CONTACTS&quot; /&gt;</code></pre>
 <h3>Bada</h3>
 <h4>manifest.xml</h4>
-<pre><code>&lt;Privilege&gt;
+<pre class=prettyprint><code>&lt;Privilege&gt;
     &lt;Name&gt;ADDRESSBOOK&lt;/Name&gt;
 &lt;/Privilege&gt;</code></pre>
 <h3>BlackBerry WebWorks</h3>
 <h4>www/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;Contact&quot; value=&quot;org.apache.cordova.pim.Contact&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;plugin name=&quot;Contact&quot; value=&quot;org.apache.cordova.pim.Contact&quot; /&gt;</code></pre>
 <h4>www/config.xml</h4>
-<pre><code>&lt;feature id=&quot;blackberry.find&quot;        required=&quot;true&quot; version=&quot;1.0.0.0&quot; /&gt;
+<pre class=prettyprint><code>&lt;feature id=&quot;blackberry.find&quot;        required=&quot;true&quot; version=&quot;1.0.0.0&quot; /&gt;
 &lt;feature id=&quot;blackberry.identity&quot;    required=&quot;true&quot; version=&quot;1.0.0.0&quot; /&gt;
 &lt;feature id=&quot;blackberry.pim.Address&quot; required=&quot;true&quot; version=&quot;1.0.0.0&quot; /&gt;
 &lt;feature id=&quot;blackberry.pim.Contact&quot; required=&quot;true&quot; version=&quot;1.0.0.0&quot; /&gt;</code></pre>
 <h3>iOS</h3>
 <h4>App/Supporting Files/Cordova.plist</h4>
-<pre><code>&lt;key&gt;Plugins&lt;/key&gt;
+<pre class=prettyprint><code>&lt;key&gt;Plugins&lt;/key&gt;
 &lt;dict&gt;
     &lt;key&gt;Contacts&lt;/key&gt;
     &lt;string&gt;CDVContacts&lt;/string&gt;
 &lt;/dict&gt;</code></pre>
 <h3>webOS</h3>
-<pre><code>No permissions are required.</code></pre>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
 <h3>Windows Phone</h3>
 <h4>Properties/WPAppManifest.xml</h4>
-<pre><code>&lt;Capabilities&gt;
+<pre class=prettyprint><code>&lt;Capabilities&gt;
     &lt;Capability Name=&quot;ID_CAP_CONTACTS&quot; /&gt;
 &lt;/Capabilities&gt;</code></pre>
 <p>Reference: <a href="http://msdn.microsoft.com/en-us/library/ff769509%28v=vs.92%29.aspx">Application Manifest for Windows Phone</a>
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=contacts.create>contacts.create</h1><h1>contacts.create</h1>
+<a class=top href=#top>Back to top.</a><h1 id=contacts.create>Contacts.create</h1><h1>contacts.create</h1>
 <p>Returns a new Contact object.
 
 </p>
-<pre><code>var contact = navigator.contacts.create(properties);</code></pre>
+<pre class=prettyprint><code>var contact = navigator.contacts.create(properties);</code></pre>
 <h2>Description</h2>
 <p>contacts.create is a synchronous function that returns a new <code>Contact</code> object.
 
@@ -2109,9 +2109,9 @@ back with respect to the current orientation. </li>
 <li>Bada 1.2 &amp; 2.0</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>var myContact = navigator.contacts.create({&quot;displayName&quot;: &quot;Test User&quot;});</code></pre>
+<pre class=prettyprint><code>var myContact = navigator.contacts.create({&quot;displayName&quot;: &quot;Test User&quot;});</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Contact Example&lt;/title&gt;
@@ -2139,11 +2139,11 @@ back with respect to the current orientation. </li>
     &lt;p&gt;Create Contact&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=contacts.find>contacts.find</h1><h1>contacts.find</h1>
+<a class=top href=#top>Back to top.</a><h1 id=contacts.find>Contacts.find</h1><h1>contacts.find</h1>
 <p>Queries the device contacts database and returns one or more <code>Contact</code> objects, each containing the fields specified.
 
 </p>
-<pre><code>navigator.contacts.find(contactFields, contactSuccess, contactError, contactFindOptions);</code></pre>
+<pre class=prettyprint><code>navigator.contacts.find(contactFields, contactSuccess, contactError, contactFindOptions);</code></pre>
 <h2>Description</h2>
 <p>contacts.find is an asynchronous function that queries the device contacts database and returns an array of <code>Contact</code> objects.  The resulting objects are passed to the <code>contactSuccess</code> callback function specified by the <strong>contactSuccess</strong> parameter.  
 
@@ -2169,7 +2169,7 @@ back with respect to the current orientation. </li>
 <li>Bada 1.2 &amp; 2.0</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>function onSuccess(contacts) {
+<pre class=prettyprint><code>function onSuccess(contacts) {
     alert(&#39;Found &#39; + contacts.length + &#39; contacts.&#39;);
 };
 
@@ -2183,7 +2183,7 @@ options.filter=&quot;Bob&quot;;
 var fields = [&quot;displayName&quot;, &quot;name&quot;];
 navigator.contacts.find(fields, onSuccess, onError, options);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Contact Example&lt;/title&gt;
@@ -2226,7 +2226,7 @@ navigator.contacts.find(fields, onSuccess, onError, options);</code></pre>
     &lt;p&gt;Find Contacts&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=contact>contact</h1><h1>Contact</h1>
+<a class=top href=#top>Back to top.</a><h1 id=contact>Contact</h1><h1>Contact</h1>
 <p>Contains properties that describe a contact, such as a user&#39;s personal or business contact.
 
 </p>
@@ -2268,7 +2268,7 @@ navigator.contacts.find(fields, onSuccess, onError, options);</code></pre>
 <li>Bada 1.2 &amp; 2.0</li>
 </ul>
 <h2>Save Quick Example</h2>
-<pre><code>function onSuccess(contact) {
+<pre class=prettyprint><code>function onSuccess(contact) {
     alert(&quot;Save Success&quot;);
 };
 
@@ -2290,13 +2290,13 @@ contact.name = name;
 // save to device
 contact.save(onSuccess,onError);</code></pre>
 <h2>Clone Quick Example</h2>
-<pre><code>// clone the contact object
+<pre class=prettyprint><code>// clone the contact object
 var clone = contact.clone();
 clone.name.givenName = &quot;John&quot;;
 console.log(&quot;Original contact name = &quot; + contact.name.givenName);
 console.log(&quot;Cloned contact name = &quot; + clone.name.givenName); </code></pre>
 <h2>Remove Quick Example</h2>
-<pre><code>function onSuccess() {
+<pre class=prettyprint><code>function onSuccess() {
     alert(&quot;Removal Success&quot;);
 };
 
@@ -2307,7 +2307,7 @@ function onError(contactError) {
 // remove the contact from the device
 contact.remove(onSuccess,onError);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Contact Example&lt;/title&gt;
@@ -2417,7 +2417,7 @@ contact.remove(onSuccess,onError);</code></pre>
 <li><strong>categories:</strong> This property is not supported</li>
 <li><strong>ims:</strong> This property is not supported</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=contactaddress>contactaddress</h1><h1>ContactAddress</h1>
+<a class=top href=#top>Back to top.</a><h1 id=contactaddress>Contactaddress</h1><h1>ContactAddress</h1>
 <p>Contains address properties for a <code>Contact</code> object.
 
 </p>
@@ -2444,7 +2444,7 @@ contact.remove(onSuccess,onError);</code></pre>
 <li>Bada 1.2 &amp; 2.0</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// display the address information for all contacts
+<pre class=prettyprint><code>// display the address information for all contacts
 function onSuccess(contacts) {
     for (var i=0; i&lt;contacts.length; i++) {
         for (var j=0; j&lt;contacts[i].addresses.length; j++) {
@@ -2470,7 +2470,7 @@ options.filter=&quot;&quot;;
 var filter = [&quot;displayName&quot;,&quot;addresses&quot;];
 navigator.contacts.find(filter, onSuccess, onError, options);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Contact Example&lt;/title&gt;
@@ -2558,7 +2558,7 @@ navigator.contacts.find(filter, onSuccess, onError, options);</code></pre>
 <li><strong>formatted:</strong> This property is not supported</li>
 <li><strong>type:</strong> Has to be one of the following: WORK, HOME</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=contactfield>contactfield</h1><h1>ContactField</h1>
+<a class=top href=#top>Back to top.</a><h1 id=contactfield>Contactfield</h1><h1>ContactField</h1>
 <p>Supports generic fields in a <code>Contact</code> object.  Some properties that are stored as <code>ContactField</code> objects include email addresses, phone numbers, and urls.
 
 </p>
@@ -2583,7 +2583,7 @@ navigator.contacts.find(filter, onSuccess, onError, options);</code></pre>
 <li>Bada 1.2 &amp; 2.0</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// create a new contact
+<pre class=prettyprint><code>// create a new contact
 var contact = navigator.contacts.create();
 
 // store contact phone numbers in ContactField[]
@@ -2596,7 +2596,7 @@ contact.phoneNumbers = phoneNumbers;
 // save the contact
 contact.save();</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Contact Example&lt;/title&gt;
@@ -2675,7 +2675,7 @@ contact.save();</code></pre>
 <ul>
 <li><strong>type:</strong> Property has to be one of the following for Email or Address fields: &quot;WORK&quot;, &quot;HOME&quot;. Property has to be one of the following for Phone fields: &quot;WORK&quot;, &quot;HOME&quot;, &quot;VOICE&quot;, &quot;FAX&quot;, &quot;MSG&quot;, &quot;CELL&quot;, &quot;PAGER&quot;,&quot;BBS&quot;, &quot;MODEM&quot;, &quot;CAR&quot;, &quot;ISDN&quot;,&quot;VIDEO&quot;, &quot;PCS&quot;</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=contactfindoptions>contactfindoptions</h1><h1>ContactFindOptions</h1>
+<a class=top href=#top>Back to top.</a><h1 id=contactfindoptions>Contactfindoptions</h1><h1>ContactFindOptions</h1>
 <p>Contains properties that can be used to filter the results of a <code>contacts.find</code> operation.
 
 </p>
@@ -2692,7 +2692,7 @@ contact.save();</code></pre>
 <li>Bada 1.2 &amp; 2.0</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// success callback
+<pre class=prettyprint><code>// success callback
 function onSuccess(contacts) {
     for (var i=0; i&lt;contacts.length; i++) {
         alert(contacts[i].displayName);
@@ -2713,7 +2713,7 @@ filter = [&quot;displayName&quot;];    // return contact.displayName field
 // find contacts
 navigator.contacts.find(filter, onSuccess, onError, options);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Contact Example&lt;/title&gt;
@@ -2762,7 +2762,7 @@ navigator.contacts.find(filter, onSuccess, onError, options);</code></pre>
 <h2>Bada Quirks</h2>
 <p><strong>filter:</strong> Property can only apply to the following: &quot;firstName&quot;, &quot;lastName&quot;, &quot;nickname&quot;, &quot;phoneNumber&quot;, &quot;email&quot;, &quot;address&quot;
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=contactname>contactname</h1><h1>ContactName</h1>
+<a class=top href=#top>Back to top.</a><h1 id=contactname>Contactname</h1><h1>ContactName</h1>
 <p>Contains name properties of a <code>Contact</code> object.
 
 </p>
@@ -2787,7 +2787,7 @@ navigator.contacts.find(filter, onSuccess, onError, options);</code></pre>
 <li>Bada 1.2 &amp; 2.0</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>function onSuccess(contacts) {
+<pre class=prettyprint><code>function onSuccess(contacts) {
     for (var i=0; i&lt;contacts.length; i++) {
         alert(&quot;Formatted: &quot; + contacts[i].name.formatted + &quot;\n&quot; + 
                 &quot;Family Name: &quot;  + contacts[i].name.familyName + &quot;\n&quot; + 
@@ -2807,7 +2807,7 @@ options.filter=&quot;&quot;;
 filter = [&quot;displayName&quot;,&quot;name&quot;];
 navigator.contacts.find(filter, onSuccess, onError, options);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Contact Example&lt;/title&gt;
@@ -2878,7 +2878,7 @@ navigator.contacts.find(filter, onSuccess, onError, options);</code></pre>
 <em> <em>_honorificPrefix:</em></em> Property not supported</li>
 <li><strong>honorificSuffix:</strong> Property not supported</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=contactorganization>contactorganization</h1><h1>ContactOrganization</h1>
+<a class=top href=#top>Back to top.</a><h1 id=contactorganization>Contactorganization</h1><h1>ContactOrganization</h1>
 <p>Contains organization properties of a <code>Contact</code> object.
 
 </p>
@@ -2902,7 +2902,7 @@ navigator.contacts.find(filter, onSuccess, onError, options);</code></pre>
 <li>Bada 1.2</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>function onSuccess(contacts) {
+<pre class=prettyprint><code>function onSuccess(contacts) {
     for (var i=0; i&lt;contacts.length; i++) {
         for (var j=0; j&lt;contacts[i].organizations.length; j++) {
             alert(&quot;Pref: &quot; + contacts[i].organizations[j].pref + &quot;\n&quot; +
@@ -2923,7 +2923,7 @@ options.filter=&quot;&quot;;
 filter = [&quot;displayName&quot;,&quot;organizations&quot;];
 navigator.contacts.find(filter, onSuccess, onError, options);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Contact Example&lt;/title&gt;
@@ -3001,7 +3001,7 @@ navigator.contacts.find(filter, onSuccess, onError, options);</code></pre>
 <ul>
 <li>ContactOrganization not supported</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=contactError>contactError</h1><h1>ContactError</h1>
+<a class=top href=#top>Back to top.</a><h1 id=contactError>ContactError</h1><h1>ContactError</h1>
 <p>A <code>ContactError</code> object is returned to the <code>contactError</code> callback when an error occurs.
 
 </p>
@@ -3023,11 +3023,11 @@ navigator.contacts.find(filter, onSuccess, onError, options);</code></pre>
 <p>The <code>ContactError</code> object is returned to the user through the <code>contactError</code> callback function when an error occurs.
 
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=contactSuccess>contactSuccess</h1><h1>contactSuccess</h1>
+<a class=top href=#top>Back to top.</a><h1 id=contactSuccess>ContactSuccess</h1><h1>contactSuccess</h1>
 <p>Success callback function that provides the <code>Contact</code> array resulting from a <code>contacts.find</code> operation.
 
 </p>
-<pre><code>function(contacts) {
+<pre class=prettyprint><code>function(contacts) {
     // Do something
 }</code></pre>
 <h2>Parameters</h2>
@@ -3035,27 +3035,27 @@ navigator.contacts.find(filter, onSuccess, onError, options);</code></pre>
 <li><strong>contacts:</strong> The contact array resulting from a find operation. (<code>Contact</code>)</li>
 </ul>
 <h2>Example</h2>
-<pre><code>function contactSuccess(contacts) {
+<pre class=prettyprint><code>function contactSuccess(contacts) {
     for (var i=0; i&lt;contacts.length; i++) {
         console.log(&quot;Display Name = &quot; + contacts[i].displayName;
 }</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=contactError>contactError</h1><h1>contactError</h1>
+<a class=top href=#top>Back to top.</a><h1 id=contactError>ContactError</h1><h1>contactError</h1>
 <p>Error callback function for contact functions.
 
 </p>
-<pre><code>function(error) {
+<pre class=prettyprint><code>function(error) {
     // Handle the error
 }</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=contactFields>contactFields</h1><h1>contactFields</h1>
+<a class=top href=#top>Back to top.</a><h1 id=contactFields>ContactFields</h1><h1>contactFields</h1>
 <p>Required parameter of the <code>contacts.find</code> method.  Use this parameter to specify which fields should be included in the <code>Contact</code> objects resulting from a find operation.
 
 </p>
-<pre><code>[&quot;name&quot;, &quot;phoneNumbers&quot;, &quot;emails&quot;]</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=contactFindOptions>contactFindOptions</h1><h1>contactFindOptions</h1>
+<pre class=prettyprint><code>[&quot;name&quot;, &quot;phoneNumbers&quot;, &quot;emails&quot;]</code></pre>
+<a class=top href=#top>Back to top.</a><h1 id=contactFindOptions>ContactFindOptions</h1><h1>contactFindOptions</h1>
 <p>Optional parameter of the <code>contacts.find</code> method.  Use this parameter to filter the contacts returned from the contacts database.
 
 </p>
-<pre><code>{ 
+<pre class=prettyprint><code>{ 
     filter: &quot;&quot;,
     multiple: true,
 };</code></pre>
@@ -3064,7 +3064,7 @@ navigator.contacts.find(filter, onSuccess, onError, options);</code></pre>
 <li><strong>filter:</strong> The search string used to filter contacts. <em>(DOMString)</em> (Default: &quot;&quot;)</li>
 <li><strong>multiple:</strong> Determines if the find operation should return multiple contacts. <em>(Boolean)</em> (Default: false)</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=device>device</h1><ul><li><a href=#device>device</a></li><li><a href=#device.name>device.name</a></li><li><a href=#device.cordova>device.cordova</a></li><li><a href=#device.platform>device.platform</a></li><li><a href=#device.uuid>device.uuid</a></li><li><a href=#device.version>device.version</a></li></ul><h1 id=device>device</h1><h1>Device</h1>
+<a class=top href=#top>Back to top.</a><h1 id=device>Device</h1><ul><li><a href=#device>device</a></li><li><a href=#device.name>device.name</a></li><li><a href=#device.cordova>device.cordova</a></li><li><a href=#device.platform>device.platform</a></li><li><a href=#device.uuid>device.uuid</a></li><li><a href=#device.version>device.version</a></li></ul><h1 id=device>Device</h1><h1>Device</h1>
 <blockquote>
 <p>The <code>device</code> object describes the device&#39;s hardware and software.
 
@@ -3082,46 +3082,46 @@ navigator.contacts.find(filter, onSuccess, onError, options);</code></pre>
 <p>Since <code>device</code> is assigned to the <code>window</code> object, it is implicitly in the global scope.
 
 </p>
-<pre><code>// These reference the same `device`
+<pre class=prettyprint><code>// These reference the same `device`
 var phoneName = window.device.name;
 var phoneName = device.name;</code></pre>
 <h2>Permissions</h2>
 <h3>Android</h3>
 <h4>app/res/xml/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;Device&quot; value=&quot;org.apache.cordova.Device&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;plugin name=&quot;Device&quot; value=&quot;org.apache.cordova.Device&quot; /&gt;</code></pre>
 <h4>app/AndroidManifest.xml</h4>
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.READ_PHONE_STATE&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;uses-permission android:name=&quot;android.permission.READ_PHONE_STATE&quot; /&gt;</code></pre>
 <h3>Bada</h3>
 <h4>manifest.xml</h4>
-<pre><code>&lt;Privilege&gt;
+<pre class=prettyprint><code>&lt;Privilege&gt;
     &lt;Name&gt;SYSTEM_SERVICE&lt;/Name&gt;
 &lt;/Privilege&gt;</code></pre>
 <h3>BlackBerry WebWorks</h3>
 <h4>www/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;Device&quot; value=&quot;org.apache.cordova.device.Device&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;plugin name=&quot;Device&quot; value=&quot;org.apache.cordova.device.Device&quot; /&gt;</code></pre>
 <h4>www/config.xml</h4>
-<pre><code>&lt;feature id=&quot;blackberry.app&quot; required=&quot;true&quot; version=&quot;1.0.0.0&quot; /&gt;
+<pre class=prettyprint><code>&lt;feature id=&quot;blackberry.app&quot; required=&quot;true&quot; version=&quot;1.0.0.0&quot; /&gt;
 &lt;rim:permissions&gt;
     &lt;rim:permit&gt;read_device_identifying_information&lt;/rim:permit&gt;
 &lt;/rim:permissions&gt;</code></pre>
 <h3>iOS</h3>
-<pre><code>No permissions are required.</code></pre>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
 <h3>webOS</h3>
-<pre><code>No permissions are required.</code></pre>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
 <h3>Windows Phone</h3>
 <h4>Properties/WPAppManifest.xml</h4>
-<pre><code>&lt;Capabilities&gt;
+<pre class=prettyprint><code>&lt;Capabilities&gt;
     &lt;Capability Name=&quot;ID_CAP_WEBBROWSERCOMPONENT&quot; /&gt;
     &lt;Capability Name=&quot;ID_CAP_IDENTITY_DEVICE&quot; /&gt;
     &lt;Capability Name=&quot;ID_CAP_IDENTITY_USER&quot; /&gt;
 &lt;/Capabilities&gt;</code></pre>
 <p>Reference: <a href="http://msdn.microsoft.com/en-us/library/ff769509%28v=vs.92%29.aspx">Application Manifest for Windows Phone</a>
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=device.name>device.name</h1><h1>device.name</h1>
+<a class=top href=#top>Back to top.</a><h1 id=device.name>Device.name</h1><h1>device.name</h1>
 <p>Get the device&#39;s model name.
 
 </p>
-<pre><code>var string = device.name;</code></pre>
+<pre class=prettyprint><code>var string = device.name;</code></pre>
 <h2>Description</h2>
 <p><code>device.name</code> returns the name of the device&#39;s model or product. This value is set by the device manufacturer and may be different across versions of the same product.
 
@@ -3136,14 +3136,14 @@ var phoneName = device.name;</code></pre>
 <li>webOS</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// Android:    Nexus One       returns &quot;Passion&quot; (Nexus One code name)
+<pre class=prettyprint><code>// Android:    Nexus One       returns &quot;Passion&quot; (Nexus One code name)
 //             Motorola Droid  returns &quot;voles&quot;
 // BlackBerry: Torch 9800      returns &quot;9800&quot;
 // iPhone:     All devices     returns a name set by iTunes e.g. &quot;Joe&#39;s iPhone&quot;
 //
 var name = device.name;</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Device Properties Example&lt;/title&gt;
@@ -3197,11 +3197,11 @@ var name = device.name;</code></pre>
 <ul>
 <li>returns the manufacturer model name. For example &#39;Samsung Wave S8500&#39;</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=device.cordova>device.cordova</h1><h1>device.cordova</h1>
+<a class=top href=#top>Back to top.</a><h1 id=device.cordova>Device.cordova</h1><h1>device.cordova</h1>
 <p>Get the version of Cordova running on the device.
 
 </p>
-<pre><code>var string = device.cordova;</code></pre>
+<pre class=prettyprint><code>var string = device.cordova;</code></pre>
 <h2>Description</h2>
 <p><code>device.cordova</code> returns the version of Cordova running on the device.
 
@@ -3215,9 +3215,9 @@ var name = device.name;</code></pre>
 <li>Bada 1.2 &amp; 2.x</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>var name = device.cordova;</code></pre>
+<pre class=prettyprint><code>var name = device.cordova;</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Device Properties Example&lt;/title&gt;
@@ -3247,11 +3247,11 @@ var name = device.name;</code></pre>
     &lt;p id=&quot;deviceProperties&quot;&gt;Loading device properties...&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=device.platform>device.platform</h1><h1>device.platform</h1>
+<a class=top href=#top>Back to top.</a><h1 id=device.platform>Device.platform</h1><h1>device.platform</h1>
 <p>Get the device&#39;s operating system name.
 
 </p>
-<pre><code>var string = device.platform;</code></pre>
+<pre class=prettyprint><code>var string = device.platform;</code></pre>
 <h2>Supported Platforms</h2>
 <ul>
 <li>Android</li>
@@ -3262,7 +3262,7 @@ var name = device.name;</code></pre>
 <li>webOS</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// Depending on the device, a few examples are:
+<pre class=prettyprint><code>// Depending on the device, a few examples are:
 //   - &quot;Android&quot;
 //   - &quot;BlackBerry&quot;
 //   - &quot;iPhone&quot;
@@ -3270,7 +3270,7 @@ var name = device.name;</code></pre>
 //   - &quot;WinCE&quot;
 var devicePlatform = device.platform;</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Device Properties Example&lt;/title&gt;
@@ -3311,11 +3311,11 @@ var devicePlatform = device.platform;</code></pre>
 <h2>Windows Phone 7 Quirks</h2>
 <p>Windows Phone 7 devices report platform as &#39;WinCE&#39;
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=device.uuid>device.uuid</h1><h1>device.uuid</h1>
+<a class=top href=#top>Back to top.</a><h1 id=device.uuid>Device.uuid</h1><h1>device.uuid</h1>
 <p>Get the device&#39;s Universally Unique Identifier (<a href="http://en.wikipedia.org/wiki/Universally_Unique_Identifier">UUID</a>).
 
 </p>
-<pre><code>var string = device.uuid;</code></pre>
+<pre class=prettyprint><code>var string = device.uuid;</code></pre>
 <h2>Description</h2>
 <p>The details of how a UUID is generated are determined by the device manufacturer and specific to the device&#39;s platform or model.
 
@@ -3330,7 +3330,7 @@ var devicePlatform = device.platform;</code></pre>
 <li>webOS</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// Android: Returns a random 64-bit integer (as a string, again!)
+<pre class=prettyprint><code>// Android: Returns a random 64-bit integer (as a string, again!)
 //          The integer is generated on the device&#39;s first boot
 //
 // BlackBerry: Returns the PIN number of the device
@@ -3346,7 +3346,7 @@ var devicePlatform = device.platform;</code></pre>
 // webOS: returns the device NDUID
 var deviceID = device.uuid;</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Device Properties Example&lt;/title&gt;
@@ -3383,11 +3383,11 @@ var deviceID = device.uuid;</code></pre>
 <h2>Windows Phone 7 Quirks</h2>
 <p>The uuid for Windows Phone 7 requires the permission ID_CAP_IDENTITY_DEVICE.  Microsoft will likely be deprecating this property in the near future.  If the capablility is not available, the application generates a persistent guid, that will be maintained for the install-lifetime of the application on the device.
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=device.version>device.version</h1><h1>device.version</h1>
+<a class=top href=#top>Back to top.</a><h1 id=device.version>Device.version</h1><h1>device.version</h1>
 <p>Get the operating system version.
 
 </p>
-<pre><code>var string = device.version;</code></pre>
+<pre class=prettyprint><code>var string = device.version;</code></pre>
 <h2>Supported Platforms</h2>
 <ul>
 <li>Android 2.1+</li>
@@ -3398,7 +3398,7 @@ var deviceID = device.uuid;</code></pre>
 <li>webOS</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// Android:    Froyo OS would return &quot;2.2&quot;
+<pre class=prettyprint><code>// Android:    Froyo OS would return &quot;2.2&quot;
 //             Eclair OS would return &quot;2.1&quot;, &quot;2.0.1&quot;, or &quot;2.0&quot;
 //             Version can also return update level &quot;2.1-update1&quot; 
 //
@@ -3410,7 +3410,7 @@ var deviceID = device.uuid;</code></pre>
 // webOS: webOS 2.2.4 return 2.2.4
 var deviceVersion = device.version;</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Device Properties Example&lt;/title&gt;
@@ -3440,7 +3440,7 @@ var deviceVersion = device.version;</code></pre>
     &lt;p id=&quot;deviceProperties&quot;&gt;Loading device properties...&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=events>events</h1><ul><li><a href=#events>events</a></li><li><a href=#events.deviceready>events.deviceready</a></li><li><a href=#events.pause>events.pause</a></li><li><a href=#events.resume>events.resume</a></li><li><a href=#events.online>events.online</a></li><li><a href=#events.offline>events.offline</a></li><li><a href=#events.backbutton>events.backbutton</a></li><li><a href=#events.batterycritical>events.batterycritical</a></li><li><a href=#events.batterylow>events.batterylow</a></li><li><a href=#events.batterystatus>events.batterystatus</a></li><li><a href=#events.menubutton>events.menubutton</a></li><li><a href=#events.searchbutton>events.searchbutton</a></li><li><a href=#events.startcallbutton>events.startcallbutton</a></li><li><a href=#events.endcallbutton>events.endcallbutton</a></li><li><a href=#events.volumedownbutton>events.volumedownbutton</a></li><li><a href=#events.volumeupbutton>events.volumeupbutton</a></li></ul><h1 id=events>events</h1><h1>Events</h1>
+<a class=top href=#top>Back to top.</a><h1 id=events>Events</h1><ul><li><a href=#events>events</a></li><li><a href=#events.deviceready>events.deviceready</a></li><li><a href=#events.pause>events.pause</a></li><li><a href=#events.resume>events.resume</a></li><li><a href=#events.online>events.online</a></li><li><a href=#events.offline>events.offline</a></li><li><a href=#events.backbutton>events.backbutton</a></li><li><a href=#events.batterycritical>events.batterycritical</a></li><li><a href=#events.batterylow>events.batterylow</a></li><li><a href=#events.batterystatus>events.batterystatus</a></li><li><a href=#events.menubutton>events.menubutton</a></li><li><a href=#events.searchbutton>events.searchbutton</a></li><li><a href=#events.startcallbutton>events.startcallbutton</a></li><li><a href=#events.endcallbutton>events.endcallbutton</a></li><li><a href=#events.volumedownbutton>events.volumedownbutton</a></li><li><a href=#events.volumeupbutton>events.volumeupbutton</a></li></ul><h1 id=events>Events</h1><h1>Events</h1>
 <blockquote>
 <p>Cordova lifecycle events.
 
@@ -3467,37 +3467,37 @@ var deviceVersion = device.version;</code></pre>
 <h2>Permissions</h2>
 <h3>Android</h3>
 <h4>app/res/xml/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;Battery&quot; value=&quot;org.apache.cordova.BatteryListener&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;plugin name=&quot;Battery&quot; value=&quot;org.apache.cordova.BatteryListener&quot; /&gt;</code></pre>
 <h4>app/AndroidManifest.xml</h4>
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.BROADCAST_STICKY&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;uses-permission android:name=&quot;android.permission.BROADCAST_STICKY&quot; /&gt;</code></pre>
 <h3>Bada</h3>
 <h4>manifest.xml</h4>
-<pre><code>&lt;Privilege&gt;
+<pre class=prettyprint><code>&lt;Privilege&gt;
     &lt;Name&gt;SYSTEM_SERVICE&lt;/Name&gt;
 &lt;/Privilege&gt;</code></pre>
 <h3>BlackBerry WebWorks</h3>
 <h4>www/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;Battery&quot; value=&quot;org.apache.cordova.battery.Battery&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;plugin name=&quot;Battery&quot; value=&quot;org.apache.cordova.battery.Battery&quot; /&gt;</code></pre>
 <h4>www/config.xml</h4>
-<pre><code>&lt;feature id=&quot;blackberry.app&quot;          required=&quot;true&quot; version=&quot;1.0.0.0&quot; /&gt;
+<pre class=prettyprint><code>&lt;feature id=&quot;blackberry.app&quot;          required=&quot;true&quot; version=&quot;1.0.0.0&quot; /&gt;
 &lt;feature id=&quot;blackberry.app.event&quot;    required=&quot;true&quot; version=&quot;1.0.0.0&quot; /&gt;
 &lt;feature id=&quot;blackberry.system.event&quot; required=&quot;true&quot; version=&quot;1.0.0.0&quot; /&gt;</code></pre>
 <h3>iOS</h3>
 <h4>App/Supporting Files/Cordova.plist</h4>
-<pre><code>&lt;key&gt;Plugins&lt;/key&gt;
+<pre class=prettyprint><code>&lt;key&gt;Plugins&lt;/key&gt;
 &lt;dict&gt;
     &lt;key&gt;Battery&lt;/key&gt;
     &lt;string&gt;CDVBattery&lt;/string&gt;
 &lt;/dict&gt;</code></pre>
 <h3>webOS</h3>
-<pre><code>No permissions are required.</code></pre>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
 <h3>Windows Phone</h3>
-<pre><code>No permissions are required.</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=events.deviceready>events.deviceready</h1><h1>deviceready</h1>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
+<a class=top href=#top>Back to top.</a><h1 id=events.deviceready>Events.deviceready</h1><h1>deviceready</h1>
 <p>This is an event that fires when Cordova is fully loaded.
 
 </p>
-<pre><code>document.addEventListener(&quot;deviceready&quot;, yourCallbackFunction, false);</code></pre>
+<pre class=prettyprint><code>document.addEventListener(&quot;deviceready&quot;, yourCallbackFunction, false);</code></pre>
 <h2>Details</h2>
 <p>This is a very important event that every Cordova application should use.
 
@@ -3520,13 +3520,13 @@ var deviceVersion = device.version;</code></pre>
 <li>Bada 1.2 &amp; 2.x</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>document.addEventListener(&quot;deviceready&quot;, onDeviceReady, false);
+<pre class=prettyprint><code>document.addEventListener(&quot;deviceready&quot;, onDeviceReady, false);
 
 function onDeviceReady() {
     // Now safe to use the Cordova API
 }</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Cordova Device Ready Example&lt;/title&gt;
@@ -3555,11 +3555,11 @@ function onDeviceReady() {
   &lt;body onload=&quot;onLoad()&quot;&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=events.pause>events.pause</h1><h1>pause</h1>
+<a class=top href=#top>Back to top.</a><h1 id=events.pause>Events.pause</h1><h1>pause</h1>
 <p>This is an event that fires when a Cordova application is put into the background.
 
 </p>
-<pre><code>document.addEventListener(&quot;pause&quot;, yourCallbackFunction, false);</code></pre>
+<pre class=prettyprint><code>document.addEventListener(&quot;pause&quot;, yourCallbackFunction, false);</code></pre>
 <h2>Details</h2>
 <p>Cordova consists of two code bases: native and JavaScript. While the native code puts the application into the background the pause event is fired.  
 
@@ -3575,13 +3575,13 @@ function onDeviceReady() {
 <li>Windows Phone 7</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>document.addEventListener(&quot;pause&quot;, onPause, false);
+<pre class=prettyprint><code>document.addEventListener(&quot;pause&quot;, onPause, false);
 
 function onPause() {
     // Handle the pause event
 }</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Cordova Pause Example&lt;/title&gt;
@@ -3625,11 +3625,11 @@ function onPause() {
 <p>  Under iOS 5, if you want your app to still run when the device is locked, you will have to disable multi-tasking (UIApplicationExitsOnSuspend - YES) for your app. This is different when you are on iOS 4 - to have your app run when the device is locked, the multi-tasking setting for your app does not matter.</p>
 </li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=events.resume>events.resume</h1><h1>resume</h1>
+<a class=top href=#top>Back to top.</a><h1 id=events.resume>Events.resume</h1><h1>resume</h1>
 <p>This is an event that fires when a Cordova application is retrieved from the background.
 
 </p>
-<pre><code>document.addEventListener(&quot;resume&quot;, yourCallbackFunction, false);</code></pre>
+<pre class=prettyprint><code>document.addEventListener(&quot;resume&quot;, yourCallbackFunction, false);</code></pre>
 <h2>Details</h2>
 <p>Cordova consists of two code bases: native and JavaScript. While the native code pulls the application from the background the resume event is fired.  
 
@@ -3645,13 +3645,13 @@ function onPause() {
 <li>Windows Phone 7</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>document.addEventListener(&quot;resume&quot;, onResume, false);
+<pre class=prettyprint><code>document.addEventListener(&quot;resume&quot;, onResume, false);
 
 function onResume() {
     // Handle the resume event
 }</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Cordova Resume Example&lt;/title&gt;
@@ -3695,11 +3695,11 @@ function onResume() {
 <p>  Under iOS 5,  if you want your app to still run when the device is locked, you will have to disable multi-tasking (UIApplicationExitsOnSuspend - YES) for your app. This is different when you are on iOS 4 - to have your app run when the device is locked, the multi-tasking setting for your app does not matter.</p>
 </li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=events.online>events.online</h1><h1>online</h1>
+<a class=top href=#top>Back to top.</a><h1 id=events.online>Events.online</h1><h1>online</h1>
 <p>This is an event that fires when a Cordova application is online (connected to the Internet).
 
 </p>
-<pre><code>document.addEventListener(&quot;online&quot;, yourCallbackFunction, false);</code></pre>
+<pre class=prettyprint><code>document.addEventListener(&quot;online&quot;, yourCallbackFunction, false);</code></pre>
 <h2>Details</h2>
 <p>When the application&#39;s network connection changes to being online, the online event is fired.  
 
@@ -3715,13 +3715,13 @@ function onResume() {
 <li>Windows Phone 7</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>document.addEventListener(&quot;online&quot;, onOnline, false);
+<pre class=prettyprint><code>document.addEventListener(&quot;online&quot;, onOnline, false);
 
 function onOnline() {
     // Handle the online event
 }</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Cordova Online Example&lt;/title&gt;
@@ -3762,11 +3762,11 @@ function onOnline() {
 <h2>Windows Phone 7 Quirks</h2>
 <p>When running in the Emulator, the connection.status of the device is always unknown, and this event will NOT fire.
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=events.offline>events.offline</h1><h1>offline</h1>
+<a class=top href=#top>Back to top.</a><h1 id=events.offline>Events.offline</h1><h1>offline</h1>
 <p>This is an event that fires when a Cordova application is offline (not connected to the Internet).
 
 </p>
-<pre><code>document.addEventListener(&quot;offline&quot;, yourCallbackFunction, false);</code></pre>
+<pre class=prettyprint><code>document.addEventListener(&quot;offline&quot;, yourCallbackFunction, false);</code></pre>
 <h2>Details</h2>
 <p>When the application&#39;s network connection changes to being offline, the offline event is fired.  
 
@@ -3782,13 +3782,13 @@ function onOnline() {
 <li>Windows Phone 7</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>document.addEventListener(&quot;offline&quot;, onOffline, false);
+<pre class=prettyprint><code>document.addEventListener(&quot;offline&quot;, onOffline, false);
 
 function onOffline() {
     // Handle the offline event
 }</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Cordova Offline Example&lt;/title&gt;
@@ -3829,11 +3829,11 @@ function onOffline() {
 <h2>Windows Phone 7 Quirks</h2>
 <p>When running in the Emulator, the connection.status of the device is always unknown, and this event will NOT fire.
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=events.backbutton>events.backbutton</h1><h1>backbutton</h1>
+<a class=top href=#top>Back to top.</a><h1 id=events.backbutton>Events.backbutton</h1><h1>backbutton</h1>
 <p>This is an event that fires when the user presses the back button.
 
 </p>
-<pre><code>document.addEventListener(&quot;backbutton&quot;, yourCallbackFunction, false);</code></pre>
+<pre class=prettyprint><code>document.addEventListener(&quot;backbutton&quot;, yourCallbackFunction, false);</code></pre>
 <h2>Details</h2>
 <p>If you need to override the default back button behaviour you can register an event listener for the &#39;backbutton&#39; event.  It is no longer necessary to call any other method to over ride the back button behaviour.  Now, you only need to register an event listener for &#39;backbutton&#39;.
 
@@ -3848,13 +3848,13 @@ function onOffline() {
 <li>Windows Phone 7 ( Mango )</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>document.addEventListener(&quot;backbutton&quot;, onBackKeyDown, false);
+<pre class=prettyprint><code>document.addEventListener(&quot;backbutton&quot;, onBackKeyDown, false);
 
 function onBackKeyDown() {
     // Handle the back button
 }</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Cordova Back Button Example&lt;/title&gt;
@@ -3889,11 +3889,11 @@ function onBackKeyDown() {
   &lt;body onload=&quot;onLoad()&quot;&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=events.batterycritical>events.batterycritical</h1><h1>batterycritical</h1>
+<a class=top href=#top>Back to top.</a><h1 id=events.batterycritical>Events.batterycritical</h1><h1>batterycritical</h1>
 <p>This is an event that fires when a Cordova application detects the battery has reached the critical level threshold.
 
 </p>
-<pre><code>window.addEventListener(&quot;batterycritical&quot;, yourCallbackFunction, false);</code></pre>
+<pre class=prettyprint><code>window.addEventListener(&quot;batterycritical&quot;, yourCallbackFunction, false);</code></pre>
 <h2>Details</h2>
 <p>This event that fires when a Cordova application detects the percentage of battery has reached the critical battery threshold. This value is device specific.
 
@@ -3915,14 +3915,14 @@ function onBackKeyDown() {
 <li>BlackBerry WebWorks (OS 5.0 and higher)</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>window.addEventListener(&quot;batterycritical&quot;, onBatteryCritical, false);
+<pre class=prettyprint><code>window.addEventListener(&quot;batterycritical&quot;, onBatteryCritical, false);
 
 function onBatteryCritical(info) {
     // Handle the battery critical event
        alert(&quot;Battery Level Critical &quot; + info.level + &quot;%\nRecharge Soon!&quot;); 
 }</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Cordova Device Ready Example&lt;/title&gt;
@@ -3957,11 +3957,11 @@ function onBatteryCritical(info) {
   &lt;body onload=&quot;onLoad()&quot;&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=events.batterylow>events.batterylow</h1><h1>batterylow</h1>
+<a class=top href=#top>Back to top.</a><h1 id=events.batterylow>Events.batterylow</h1><h1>batterylow</h1>
 <p>This is an event that fires when a Cordova application detects the battery has reached the low level threshold.
 
 </p>
-<pre><code>window.addEventListener(&quot;batterylow&quot;, yourCallbackFunction, false);</code></pre>
+<pre class=prettyprint><code>window.addEventListener(&quot;batterylow&quot;, yourCallbackFunction, false);</code></pre>
 <h2>Details</h2>
 <p>This event that fires when a Cordova application detects the percentage of battery has reached the low battery threshold. This value is device specific.
 
@@ -3983,14 +3983,14 @@ function onBatteryCritical(info) {
 <li>BlackBerry WebWorks (OS 5.0 and higher)</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>window.addEventListener(&quot;batterylow&quot;, onBatteryLow, false);
+<pre class=prettyprint><code>window.addEventListener(&quot;batterylow&quot;, onBatteryLow, false);
 
 function onBatteryLow(info) {
     // Handle the battery low event
        alert(&quot;Battery Level Low &quot; + info.level + &quot;%&quot;); 
 }</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Cordova Device Ready Example&lt;/title&gt;
@@ -4025,11 +4025,11 @@ function onBatteryLow(info) {
   &lt;body onload=&quot;onLoad()&quot;&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=events.batterystatus>events.batterystatus</h1><h1>batterystatus</h1>
+<a class=top href=#top>Back to top.</a><h1 id=events.batterystatus>Events.batterystatus</h1><h1>batterystatus</h1>
 <p>This is an event that fires when a Cordova application detects a change in the battery status.
 
 </p>
-<pre><code>window.addEventListener(&quot;batterystatus&quot;, yourCallbackFunction, false);</code></pre>
+<pre class=prettyprint><code>window.addEventListener(&quot;batterystatus&quot;, yourCallbackFunction, false);</code></pre>
 <h2>Details</h2>
 <p>This event that fires when a Cordova application detects the percentage of battery has changed by at least 1 percent. It is also fired if the device has been plugged in or un-plugged.
 
@@ -4058,14 +4058,14 @@ native APIs for determining battery level. The <code>isPlugged</code> parameter
 
 </p>
 <h2>Quick Example</h2>
-<pre><code>window.addEventListener(&quot;batterystatus&quot;, onBatteryStatus, false);
+<pre class=prettyprint><code>window.addEventListener(&quot;batterystatus&quot;, onBatteryStatus, false);
 
 function onBatteryStatus(info) {
     // Handle the online event
        console.log(&quot;Level: &quot; + info.level + &quot; isPlugged: &quot; + info.isPlugged); 
 }</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Cordova Device Ready Example&lt;/title&gt;
@@ -4100,11 +4100,11 @@ function onBatteryStatus(info) {
   &lt;body onload=&quot;onLoad()&quot;&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=events.menubutton>events.menubutton</h1><h1>menubutton</h1>
+<a class=top href=#top>Back to top.</a><h1 id=events.menubutton>Events.menubutton</h1><h1>menubutton</h1>
 <p>This is an event that fires when the user presses the menu button.
 
 </p>
-<pre><code>document.addEventListener(&quot;menubutton&quot;, yourCallbackFunction, false);</code></pre>
+<pre class=prettyprint><code>document.addEventListener(&quot;menubutton&quot;, yourCallbackFunction, false);</code></pre>
 <h2>Details</h2>
 <p>If you need to override the default menu button behaviour you can register an event listenter for the &#39;menubutton&#39; event.
 
@@ -4118,13 +4118,13 @@ function onBatteryStatus(info) {
 <li>BlackBerry WebWorks (OS 5.0 and higher)</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>document.addEventListener(&quot;menubutton&quot;, onMenuKeyDown, false);
+<pre class=prettyprint><code>document.addEventListener(&quot;menubutton&quot;, onMenuKeyDown, false);
 
 function onMenuKeyDown() {
     // Handle the back button
 }</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
+<pre class=prettyprint><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
                       &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -4160,11 +4160,11 @@ function onMenuKeyDown() {
   &lt;body onload=&quot;onLoad()&quot;&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=events.searchbutton>events.searchbutton</h1><h1>searchbutton</h1>
+<a class=top href=#top>Back to top.</a><h1 id=events.searchbutton>Events.searchbutton</h1><h1>searchbutton</h1>
 <p>This is an event that fires when the user presses the search button on Android.
 
 </p>
-<pre><code>document.addEventListener(&quot;searchbutton&quot;, yourCallbackFunction, false);</code></pre>
+<pre class=prettyprint><code>document.addEventListener(&quot;searchbutton&quot;, yourCallbackFunction, false);</code></pre>
 <h2>Details</h2>
 <p>If you need to override the default search button behaviour on Android you can register an event listener for the &#39;searchbutton&#39; event.
 
@@ -4177,13 +4177,13 @@ function onMenuKeyDown() {
 <li>Android</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>document.addEventListener(&quot;searchbutton&quot;, onSearchKeyDown, false);
+<pre class=prettyprint><code>document.addEventListener(&quot;searchbutton&quot;, onSearchKeyDown, false);
 
 function onSearchKeyDown() {
     // Handle the search button
 }</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
+<pre class=prettyprint><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
                       &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -4219,11 +4219,11 @@ function onSearchKeyDown() {
   &lt;body onload=&quot;onLoad()&quot;&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=events.startcallbutton>events.startcallbutton</h1><h1>startcallbutton</h1>
+<a class=top href=#top>Back to top.</a><h1 id=events.startcallbutton>Events.startcallbutton</h1><h1>startcallbutton</h1>
 <p>This is an event that fires when the user presses the start call button.
 
 </p>
-<pre><code>document.addEventListener(&quot;startcallbutton&quot;, yourCallbackFunction, false);</code></pre>
+<pre class=prettyprint><code>document.addEventListener(&quot;startcallbutton&quot;, yourCallbackFunction, false);</code></pre>
 <h2>Details</h2>
 <p>If you need to override the default start call behaviour you can register an event listener for the &#39;startcallbutton&#39; event.
 
@@ -4236,13 +4236,13 @@ function onSearchKeyDown() {
 <li>BlackBerry WebWorks (OS 5.0 and higher)</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>document.addEventListener(&quot;startcallbutton&quot;, onStartCallKeyDown, false);
+<pre class=prettyprint><code>document.addEventListener(&quot;startcallbutton&quot;, onStartCallKeyDown, false);
 
 function onStartCallKeyDown() {
     // Handle the start call button
 }</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
+<pre class=prettyprint><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
                       &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -4278,11 +4278,11 @@ function onStartCallKeyDown() {
   &lt;body onload=&quot;onLoad()&quot;&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=events.endcallbutton>events.endcallbutton</h1><h1>endcallbutton</h1>
+<a class=top href=#top>Back to top.</a><h1 id=events.endcallbutton>Events.endcallbutton</h1><h1>endcallbutton</h1>
 <p>This is an event that fires when the user presses the end call button.
 
 </p>
-<pre><code>document.addEventListener(&quot;endcallbutton&quot;, yourCallbackFunction, false);</code></pre>
+<pre class=prettyprint><code>document.addEventListener(&quot;endcallbutton&quot;, yourCallbackFunction, false);</code></pre>
 <h2>Details</h2>
 <p>If you need to override the default end call behaviour you can register an event listener for the &#39;endcallbutton&#39; event.
 
@@ -4295,13 +4295,13 @@ function onStartCallKeyDown() {
 <li>BlackBerry WebWorks (OS 5.0 and higher)</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>document.addEventListener(&quot;endcallbutton&quot;, onEndCallKeyDown, false);
+<pre class=prettyprint><code>document.addEventListener(&quot;endcallbutton&quot;, onEndCallKeyDown, false);
 
 function onEndCallKeyDown() {
     // Handle the end call button
 }</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
+<pre class=prettyprint><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
                       &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -4337,11 +4337,11 @@ function onEndCallKeyDown() {
   &lt;body onload=&quot;onLoad()&quot;&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=events.volumedownbutton>events.volumedownbutton</h1><h1>volumedownbutton</h1>
+<a class=top href=#top>Back to top.</a><h1 id=events.volumedownbutton>Events.volumedownbutton</h1><h1>volumedownbutton</h1>
 <p>This is an event that fires when the user presses the volume down button.
 
 </p>
-<pre><code>document.addEventListener(&quot;volumedownbutton&quot;, yourCallbackFunction, false);</code></pre>
+<pre class=prettyprint><code>document.addEventListener(&quot;volumedownbutton&quot;, yourCallbackFunction, false);</code></pre>
 <h2>Details</h2>
 <p>If you need to override the default volume down behaviour you can register an event listener for the &#39;volumedownbutton&#39; event.
 
@@ -4354,13 +4354,13 @@ function onEndCallKeyDown() {
 <li>BlackBerry WebWorks (OS 5.0 and higher)</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>document.addEventListener(&quot;volumedownbutton&quot;, onVolumeDownKeyDown, false);
+<pre class=prettyprint><code>document.addEventListener(&quot;volumedownbutton&quot;, onVolumeDownKeyDown, false);
 
 function onVolumeDownKeyDown() {
     // Handle the volume down button
 }</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
+<pre class=prettyprint><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
                       &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -4396,11 +4396,11 @@ function onVolumeDownKeyDown() {
   &lt;body onload=&quot;onLoad()&quot;&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=events.volumeupbutton>events.volumeupbutton</h1><h1>volumeupbutton</h1>
+<a class=top href=#top>Back to top.</a><h1 id=events.volumeupbutton>Events.volumeupbutton</h1><h1>volumeupbutton</h1>
 <p>This is an event that fires when the user presses the volume up button.
 
 </p>
-<pre><code>document.addEventListener(&quot;volumeupbutton&quot;, yourCallbackFunction, false);</code></pre>
+<pre class=prettyprint><code>document.addEventListener(&quot;volumeupbutton&quot;, yourCallbackFunction, false);</code></pre>
 <h2>Details</h2>
 <p>If you need to override the default volume up behaviour you can register an event listener for the &#39;volumeupbutton&#39; event.
 
@@ -4413,13 +4413,13 @@ function onVolumeDownKeyDown() {
 <li>BlackBerry WebWorks (OS 5.0 and higher)</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>document.addEventListener(&quot;volumeupbutton&quot;, onVolumeUpKeyDown, false);
+<pre class=prettyprint><code>document.addEventListener(&quot;volumeupbutton&quot;, onVolumeUpKeyDown, false);
 
 function onVolumeUpKeyDown() {
     // Handle the volume up button
 }</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
+<pre class=prettyprint><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
                       &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -4455,7 +4455,7 @@ function onVolumeUpKeyDown() {
   &lt;body onload=&quot;onLoad()&quot;&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=file>file</h1><ul><li><a href=#file>file</a></li><li><a href=#fileobj>fileobj</a></li><li><a href=#filereader>filereader</a></li><li><a href=#filewriter>filewriter</a></li><li><a href=#filesystem>filesystem</a></li><li><a href=#fileentry>fileentry</a></li><li><a href=#directoryentry>directoryentry</a></li><li><a href=#directoryreader>directoryreader</a></li><li><a href=#filetransfer>filetransfer</a></li><li><a href=#fileuploadoptions>fileuploadoptions</a></li><li><a href=#fileuploadresult>fileuploadresult</a></li><li><a href=#flags>flags</a></li><li><a href=#localfilesystem>localfilesystem</a></li><li><a href=#metadata>metadata</a></li><li><a href=#fileerror>fileerror</a></li><li><a href=#filetransfererror>filetransfererror</a></li></ul><h1 id=file>file</h1><h1>File</h1>
+<a class=top href=#top>Back to top.</a><h1 id=file>File</h1><ul><li><a href=#file>file</a></li><li><a href=#fileobj>fileobj</a></li><li><a href=#filereader>filereader</a></li><li><a href=#filewriter>filewriter</a></li><li><a href=#filesystem>filesystem</a></li><li><a href=#fileentry>fileentry</a></li><li><a href=#directoryentry>directoryentry</a></li><li><a href=#directoryreader>directoryreader</a></li><li><a href=#filetransfer>filetransfer</a></li><li><a href=#fileuploadoptions>fileuploadoptions</a></li><li><a href=#fileuploadresult>fileuploadresult</a></li><li><a href=#flags>flags</a></li><li><a href=#localfilesystem>localfilesystem</a></li><li><a href=#metadata>metadata</a></li><li><a href=#fileerror>fileerror</a></li><li><a href=#filetransfererror>filetransfererror</a></li></ul><h1 id=file>File</h1><h1>File</h1>
 <blockquote>
 <p> This API is based on the W3C <a href="http://www.w3.org/TR/FileAPI">File API</a>. An API to read, write and navigate file system hierarchies.
 
@@ -4482,18 +4482,18 @@ function onVolumeUpKeyDown() {
 <h2>Permissions</h2>
 <h3>Android</h3>
 <h4>app/res/xml/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;File&quot; value=&quot;org.apache.cordova.FileUtils&quot; /&gt;
+<pre class=prettyprint><code>&lt;plugin name=&quot;File&quot; value=&quot;org.apache.cordova.FileUtils&quot; /&gt;
 &lt;plugin name=&quot;FileTransfer&quot; value=&quot;org.apache.cordova.FileTransfer&quot; /&gt;</code></pre>
 <h4>app/AndroidManifest.xml</h4>
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot; /&gt;</code></pre>
 <h3>Bada</h3>
-<pre><code>No permissions are required.</code></pre>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
 <h3>BlackBerry WebWorks</h3>
 <h4>www/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;File&quot; value=&quot;org.apache.cordova.file.FileManager&quot; /&gt;
+<pre class=prettyprint><code>&lt;plugin name=&quot;File&quot; value=&quot;org.apache.cordova.file.FileManager&quot; /&gt;
 &lt;plugin name=&quot;FileTransfer&quot; value=&quot;org.apache.cordova.http.FileTransfer&quot; /&gt;</code></pre>
 <h4>www/config.xml</h4>
-<pre><code>&lt;feature id=&quot;blackberry.io.file&quot; required=&quot;true&quot; version=&quot;1.0.0.0&quot; /&gt;
+<pre class=prettyprint><code>&lt;feature id=&quot;blackberry.io.file&quot; required=&quot;true&quot; version=&quot;1.0.0.0&quot; /&gt;
 &lt;feature id=&quot;blackberry.utils&quot;   required=&quot;true&quot; version=&quot;1.0.0.0&quot; /&gt;
 &lt;feature id=&quot;blackberry.io.dir&quot;  required=&quot;true&quot; version=&quot;1.0.0.0&quot; /&gt;
 &lt;rim:permissions&gt;
@@ -4501,7 +4501,7 @@ function onVolumeUpKeyDown() {
 &lt;/rim:permissions&gt;</code></pre>
 <h3>iOS</h3>
 <h4>App/Supporting Files/Cordova.plist</h4>
-<pre><code>&lt;key&gt;Plugins&lt;/key&gt;
+<pre class=prettyprint><code>&lt;key&gt;Plugins&lt;/key&gt;
 &lt;dict&gt;
     &lt;key&gt;File&lt;/key&gt;
     &lt;string&gt;CDVFile&lt;/string&gt;
@@ -4513,10 +4513,10 @@ function onVolumeUpKeyDown() {
     &lt;string&gt;CDVFileTransfer&lt;/string&gt;
 &lt;/dict&gt;</code></pre>
 <h3>webOS</h3>
-<pre><code>No permissions are required.</code></pre>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
 <h3>Windows Phone</h3>
-<pre><code>No permissions are required.</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=fileobj>fileobj</h1><h1>File</h1>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
+<a class=top href=#top>Back to top.</a><h1 id=fileobj>Fileobj</h1><h1>File</h1>
 <p>This object contains attributes of a single file.
 
 </p>
@@ -4539,7 +4539,7 @@ function onVolumeUpKeyDown() {
 <li>iOS</li>
 <li>Windows Phone 7 ( Mango )</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=filereader>filereader</h1><h1>FileReader</h1>
+<a class=top href=#top>Back to top.</a><h1 id=filereader>Filereader</h1><h1>FileReader</h1>
 <p>FileReader is an object that allows one to read a file.
 
 </p>
@@ -4579,7 +4579,7 @@ function onVolumeUpKeyDown() {
 
 </p>
 <h2>Quick Example</h2>
-<pre><code>function win(file) {
+<pre class=prettyprint><code>function win(file) {
     var reader = new FileReader();
     reader.onloadend = function(evt) {
         console.log(&quot;read success&quot;);
@@ -4602,7 +4602,7 @@ entry.file(win, fail);</code></pre>
 <li>encoding - the encoding to use to encode the file&#39;s content. Default is UTF8.</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>function win(file) {
+<pre class=prettyprint><code>function win(file) {
     var reader = new FileReader();
     reader.onloadend = function(evt) {
         console.log(&quot;read success&quot;);
@@ -4617,7 +4617,7 @@ var fail = function(evt) {
 
 entry.file(win, fail);</code></pre>
 <h2>Abort Quick Example</h2>
-<pre><code>function win(file) {
+<pre class=prettyprint><code>function win(file) {
     var reader = new FileReader();
     reader.onloadend = function(evt) {
         console.log(&quot;read success&quot;);
@@ -4633,7 +4633,7 @@ function fail(error) {
 
 entry.file(win, fail);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;FileReader Example&lt;/title&gt;
@@ -4699,7 +4699,7 @@ entry.file(win, fail);</code></pre>
 <ul>
 <li><strong>encoding</strong> parameter is not supported, UTF8 encoding is always used.</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=filewriter>filewriter</h1><h1>FileWriter</h1>
+<a class=top href=#top>Back to top.</a><h1 id=filewriter>Filewriter</h1><h1>FileWriter</h1>
 <p>FileWriter is an object that allows one to write a file.
 
 </p>
@@ -4739,7 +4739,7 @@ entry.file(win, fail);</code></pre>
 <li>Windows Phone 7 ( Mango )</li>
 </ul>
 <h2>Seek Quick Example</h2>
-<pre><code>function win(writer) {
+<pre class=prettyprint><code>function win(writer) {
     // fast forwards file pointer to end of file
     writer.seek(writer.length);    
 };
@@ -4750,7 +4750,7 @@ var fail = function(evt) {
 
 entry.createWriter(win, fail);</code></pre>
 <h2>Truncate Quick Example</h2>
-<pre><code>function win(writer) {
+<pre class=prettyprint><code>function win(writer) {
     writer.truncate(10);    
 };
 
@@ -4760,7 +4760,7 @@ var fail = function(evt) {
 
 entry.createWriter(win, fail);</code></pre>
 <h2>Write Quick Example</h2>
-<pre><code>function win(writer) {
+<pre class=prettyprint><code>function win(writer) {
     writer.onwrite = function(evt) {
         console.log(&quot;write success&quot;);
     };
@@ -4773,7 +4773,7 @@ var fail = function(evt) {
 
 entry.createWriter(win, fail);</code></pre>
 <h2>Append Quick Example</h2>
-<pre><code>function win(writer) {
+<pre class=prettyprint><code>function win(writer) {
     writer.onwrite = function(evt) {
         console.log(&quot;write success&quot;);
     };
@@ -4787,7 +4787,7 @@ var fail = function(evt) {
 
 entry.createWriter(win, fail);</code></pre>
 <h2>Abort Quick Example</h2>
-<pre><code>function win(writer) {
+<pre class=prettyprint><code>function win(writer) {
     writer.onwrite = function(evt) {
         console.log(&quot;write success&quot;);
     };
@@ -4801,7 +4801,7 @@ var fail = function(evt) {
 
 entry.createWriter(win, fail);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;FileWriter Example&lt;/title&gt;
@@ -4854,7 +4854,7 @@ entry.createWriter(win, fail);</code></pre>
     &lt;p&gt;Write File&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=filesystem>filesystem</h1><h1>FileSystem</h1>
+<a class=top href=#top>Back to top.</a><h1 id=filesystem>Filesystem</h1><h1>FileSystem</h1>
 <p>This object represents a file system.
 
 </p>
@@ -4875,7 +4875,7 @@ entry.createWriter(win, fail);</code></pre>
 <li>Windows Phone 7 ( Mango )</li>
 </ul>
 <h2>File System Quick Example</h2>
-<pre><code>function onSuccess(fileSystem) {
+<pre class=prettyprint><code>function onSuccess(fileSystem) {
     console.log(fileSystem.name);
     console.log(fileSystem.root.name);
 }
@@ -4883,7 +4883,7 @@ entry.createWriter(win, fail);</code></pre>
 // request the persistent file system
 window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onSuccess, null);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;File System Example&lt;/title&gt;
@@ -4917,7 +4917,7 @@ window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onSuccess, null);</code>
     &lt;p&gt;File System&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=fileentry>fileentry</h1><h1>FileEntry</h1>
+<a class=top href=#top>Back to top.</a><h1 id=fileentry>Fileentry</h1><h1>FileEntry</h1>
 <p>This object represents a file on a file system.  It is defined in the <a href="http://www.w3.org/TR/file-system-api/">W3C Directories and Systems</a> specification.
 
 </p>
@@ -4967,7 +4967,7 @@ window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onSuccess, null);</code>
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>function success(metadata) {
+<pre class=prettyprint><code>function success(metadata) {
     console.log(&quot;Last Modified: &quot; + metadata.modificationTime);
 }
 
@@ -4993,7 +4993,7 @@ entry.getMetadata(success, fail);</code></pre>
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>function success() {
+<pre class=prettyprint><code>function success() {
     console.log(&quot;The metadata was successfully set.&quot;);
 }
 
@@ -5032,7 +5032,7 @@ entry.setMetadata(success, fail, { &quot;com.apple.MobileBackup&quot;: 1});</cod
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>function success(entry) {
+<pre class=prettyprint><code>function success(entry) {
     console.log(&quot;New Path: &quot; + entry.fullPath);
 }
 
@@ -5067,7 +5067,7 @@ function moveFile(entry) {
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>function win(entry) {
+<pre class=prettyprint><code>function win(entry) {
     console.log(&quot;New Path: &quot; + entry.fullPath);
 }
 
@@ -5090,7 +5090,7 @@ function copyFile(entry) {
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>// Request the URL for this entry
+<pre class=prettyprint><code>// Request the URL for this entry
 var fileURL = entry.toURL();
 console.log(fileURL);</code></pre>
 <h2>remove</h2>
@@ -5107,7 +5107,7 @@ console.log(fileURL);</code></pre>
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>function success(entry) {
+<pre class=prettyprint><code>function success(entry) {
     console.log(&quot;Removal succeeded&quot;);
 }
 
@@ -5131,7 +5131,7 @@ entry.remove(success, fail);</code></pre>
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>function success(parent) {
+<pre class=prettyprint><code>function success(parent) {
     console.log(&quot;Parent Name: &quot; + parent.name);
 }
 
@@ -5155,7 +5155,7 @@ entry.getParent(success, fail);</code></pre>
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>function success(writer) {
+<pre class=prettyprint><code>function success(writer) {
     writer.write(&quot;Some text to the file&quot;);
 }
 
@@ -5179,7 +5179,7 @@ entry.createWriter(success, fail);</code></pre>
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>function success(file) {
+<pre class=prettyprint><code>function success(file) {
     console.log(&quot;File size: &quot; + file.size);
 }
 
@@ -5189,7 +5189,7 @@ function fail(error) {
 
 // obtain properties of a file
 entry.file(success, fail);</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=directoryentry>directoryentry</h1><h1>DirectoryEntry</h1>
+<a class=top href=#top>Back to top.</a><h1 id=directoryentry>Directoryentry</h1><h1>DirectoryEntry</h1>
 <p>This object represents a directory on a file system.  It is defined in the <a href="http://www.w3.org/TR/file-system-api/">W3C Directories and Systems</a> specification.
 
 </p>
@@ -5244,7 +5244,7 @@ entry.file(success, fail);</code></pre>
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>function success(metadata) {
+<pre class=prettyprint><code>function success(metadata) {
     console.log(&quot;Last Modified: &quot; + metadata.modificationTime);
 }
 
@@ -5270,7 +5270,7 @@ entry.getMetadata(success, fail);</code></pre>
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>function success() {
+<pre class=prettyprint><code>function success() {
     console.log(&quot;The metadata was successfully set.&quot;);
 }
 
@@ -5311,7 +5311,7 @@ entry.setMetadata(success, fail, { &quot;com.apple.MobileBackup&quot;: 1});</cod
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>function success(entry) {
+<pre class=prettyprint><code>function success(entry) {
     console.log(&quot;New Path: &quot; + entry.fullPath);
 }
 
@@ -5351,7 +5351,7 @@ function moveDir(entry) {
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>function win(entry) {
+<pre class=prettyprint><code>function win(entry) {
     console.log(&quot;New Path: &quot; + entry.fullPath);
 }
 
@@ -5375,7 +5375,7 @@ function copyDir(entry) {
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>// Get the URL for this directory
+<pre class=prettyprint><code>// Get the URL for this directory
 var dirURL = entry.toURL();
 console.log(dirURL);</code></pre>
 <h2>remove</h2>
@@ -5396,7 +5396,7 @@ console.log(dirURL);</code></pre>
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>function success(entry) {
+<pre class=prettyprint><code>function success(entry) {
     console.log(&quot;Removal succeeded&quot;);
 }
 
@@ -5420,7 +5420,7 @@ entry.remove(success, fail);</code></pre>
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>function success(parent) {
+<pre class=prettyprint><code>function success(parent) {
     console.log(&quot;Parent Name: &quot; + parent.name);
 }
 
@@ -5437,7 +5437,7 @@ entry.getParent(success, fail);</code></pre>
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>// create a directory reader
+<pre class=prettyprint><code>// create a directory reader
 var directoryReader = entry.createReader();</code></pre>
 <h2>getDirectory</h2>
 <p>Creates or looks up an existing directory.  It is an error to attempt to:
@@ -5458,7 +5458,7 @@ var directoryReader = entry.createReader();</code></pre>
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>function success(parent) {
+<pre class=prettyprint><code>function success(parent) {
     console.log(&quot;Parent Name: &quot; + parent.name);
 }
 
@@ -5487,7 +5487,7 @@ entry.getDirectory(&quot;newDir&quot;, {create: true, exclusive: false}, success
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>function success(parent) {
+<pre class=prettyprint><code>function success(parent) {
     console.log(&quot;Parent Name: &quot; + parent.name);
 }
 
@@ -5516,7 +5516,7 @@ be deleted.   It is an error to attempt to:
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>function success(parent) {
+<pre class=prettyprint><code>function success(parent) {
     console.log(&quot;Remove Recursively Succeeded&quot;);
 }
 
@@ -5526,7 +5526,7 @@ function fail(error) {
 
 // remove the directory and all it&#39;s contents
 entry.removeRecursively(success, fail);</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=directoryreader>directoryreader</h1><h1>DirectoryReader</h1>
+<a class=top href=#top>Back to top.</a><h1 id=directoryreader>Directoryreader</h1><h1>DirectoryReader</h1>
 <p>An object that lists files and directories in a directory.  Defined in the <a href="http://www.w3.org/TR/file-system-api/">Directories and Systems</a> specification.
 
 </p>
@@ -5555,7 +5555,7 @@ entry.removeRecursively(success, fail);</code></pre>
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>function success(entries) {
+<pre class=prettyprint><code>function success(entries) {
     var i;
     for (i=0; i&lt;entries.length; i++) {
         console.log(entries[i].name);
@@ -5571,7 +5571,7 @@ var directoryReader = dirEntry.createReader();
 
 // Get a list of all the entries in the directory
 directoryReader.readEntries(success,fail);</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=filetransfer>filetransfer</h1><h1>FileTransfer</h1>
+<a class=top href=#top>Back to top.</a><h1 id=filetransfer>Filetransfer</h1><h1>FileTransfer</h1>
 <p>FileTransfer is an object that allows you to upload files to a server or download files from a server.
 
 </p>
@@ -5610,7 +5610,7 @@ It is also possible to download a file from remote and save it on the device (on
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>// !! Assumes variable fileURI contains a valid URI to a  text file on the device
+<pre class=prettyprint><code>// !! Assumes variable fileURI contains a valid URI to a  text file on the device
 
   var win = function(r) {
     console.log(&quot;Code = &quot; + r.responseCode);
@@ -5640,7 +5640,7 @@ ft.upload(fileURI, encodeURI(&quot;http://some.server.com/upload.php&quot;), win
 <p><strong>Full Example</strong>
 
 </p>
-<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
 &lt;html&gt;
 &lt;head&gt;
     &lt;title&gt;File Transfer Example&lt;/title&gt;
@@ -5708,7 +5708,7 @@ ft.upload(fileURI, encodeURI(&quot;http://some.server.com/upload.php&quot;), win
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code>function win(r) {
+<pre class=prettyprint><code>function win(r) {
     console.log(&quot;Code = &quot; + r.responseCode);
     console.log(&quot;Response = &quot; + r.response);
     console.log(&quot;Sent = &quot; + r.bytesSent);
@@ -5747,7 +5747,7 @@ ft.upload(fileURI, uri, win, fail, options);    </code></pre>
 <p><strong>Quick Example</strong>
 
 </p>
-<pre><code> // !! Assumes variable url contains a valid URI to a file on a server and filePath is a valid path on the device
+<pre class=prettyprint><code> // !! Assumes variable url contains a valid URI to a file on a server and filePath is a valid path on the device
 
 var fileTransfer = new FileTransfer();
 var uri = encodeURI(&quot;http://some.server.com/download.php&quot;);
@@ -5764,7 +5764,7 @@ fileTransfer.download(
         console.log(&quot;upload error code&quot; + error.code);
     }
 );</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=fileuploadoptions>fileuploadoptions</h1><h1>FileUploadOptions</h1>
+<a class=top href=#top>Back to top.</a><h1 id=fileuploadoptions>Fileuploadoptions</h1><h1>FileUploadOptions</h1>
 <p>A <code>FileUploadOptions</code> object can be passed to the FileTransfer objects upload method in order to specify additional parameters to the upload script.
 
 </p>
@@ -5785,7 +5785,7 @@ fileTransfer.download(
 <li><strong>chunkedMode:</strong>
   This parameter is ignored on WP7.    </li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=fileuploadresult>fileuploadresult</h1><h1>FileUploadResult</h1>
+<a class=top href=#top>Back to top.</a><h1 id=fileuploadresult>Fileuploadresult</h1><h1>FileUploadResult</h1>
 <p>A <code>FileUploadResult</code> object is returned via the success callback of the FileTransfer upload method.
 
 </p>
@@ -5803,7 +5803,7 @@ fileTransfer.download(
 <ul>
 <li>iOS does not include values for responseCode nor bytesSent in the success callback FileUploadResult object. </li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=flags>flags</h1><h1>Flags</h1>
+<a class=top href=#top>Back to top.</a><h1 id=flags>Flags</h1><h1>Flags</h1>
 <p>This object is used to supply arguments to the <code>DirectoryEntry</code> <strong>getFile</strong> and <strong>getDirectory</strong> methods, which look up or create files and directories, respectively.
 
 </p>
@@ -5820,12 +5820,12 @@ fileTransfer.download(
 <li>Windows Phone 7 ( Mango )</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// Get the data directory, creating it if it doesn&#39;t exist.
+<pre class=prettyprint><code>// Get the data directory, creating it if it doesn&#39;t exist.
 dataDir = fileSystem.root.getDirectory(&quot;data&quot;, {create: true});
 
 // Create the lock file, if and only if it doesn&#39;t exist.
 lockFile = dataDir.getFile(&quot;lockfile.txt&quot;, {create: true, exclusive: true});</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=localfilesystem>localfilesystem</h1><h1>LocalFileSystem</h1>
+<a class=top href=#top>Back to top.</a><h1 id=localfilesystem>Localfilesystem</h1><h1>LocalFileSystem</h1>
 <p>This object provides a way to obtain root file systems.
 
 </p>
@@ -5851,20 +5851,20 @@ lockFile = dataDir.getFile(&quot;lockfile.txt&quot;, {create: true, exclusive: t
 <li>Windows Phone 7 ( Mango )</li>
 </ul>
 <h2>Request File System Quick Example</h2>
-<pre><code>function onSuccess(fileSystem) {
+<pre class=prettyprint><code>function onSuccess(fileSystem) {
     console.log(fileSystem.name);
 }
 
 // request the persistent file system
 window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onSuccess, onError);</code></pre>
 <h2>Resolve Local File System URI Quick Example</h2>
-<pre><code>function onSuccess(fileEntry) {
+<pre class=prettyprint><code>function onSuccess(fileEntry) {
     console.log(fileEntry.name);
 }
 
 window.resolveLocalFileSystemURI(&quot;file:///example.txt&quot;, onSuccess, onError);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Local File System Example&lt;/title&gt;
@@ -5902,7 +5902,7 @@ window.resolveLocalFileSystemURI(&quot;file:///example.txt&quot;, onSuccess, onE
     &lt;p&gt;Local File System&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=metadata>metadata</h1><h1>Metadata</h1>
+<a class=top href=#top>Back to top.</a><h1 id=metadata>Metadata</h1><h1>Metadata</h1>
 <p>This interface supplies information about the state of a file or directory.
 
 </p>
@@ -5922,13 +5922,13 @@ window.resolveLocalFileSystemURI(&quot;file:///example.txt&quot;, onSuccess, onE
 <li>Windows Phone 7 ( Mango )</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>function win(metadata) {
+<pre class=prettyprint><code>function win(metadata) {
     console.log(&quot;Last Modified: &quot; + metadata.modificationTime);
 }
 
 // Request the metadata object for this entry
 entry.getMetadata(win, null);</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=fileerror>fileerror</h1><h1>FileError</h1>
+<a class=top href=#top>Back to top.</a><h1 id=fileerror>Fileerror</h1><h1>FileError</h1>
 <p>A &#39;FileError&#39; object is set when an error occurs in any of the File API methods. 
 
 </p>
@@ -5953,7 +5953,7 @@ entry.getMetadata(win, null);</code></pre>
 </ul>
 <h2>Description</h2>
 <p>The <code>FileError</code> object is the only parameter of any of the File API&#39;s error callbacks.  Developers must read the code property to determine the type of error.</p>
-<a class=top href=#top>Back to top.</a><h1 id=filetransfererror>filetransfererror</h1><h1>FileTransferError</h1>
+<a class=top href=#top>Back to top.</a><h1 id=filetransfererror>Filetransfererror</h1><h1>FileTransferError</h1>
 <p>A <code>FileTransferError</code> object is returned via the error callback when an error occurs.
 
 </p>
@@ -5973,7 +5973,7 @@ entry.getMetadata(win, null);</code></pre>
 <h2>Description</h2>
 <p>The <code>FileTransferError</code> object is returned via the error callback when an error occurs when uploading or downloading a file.
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=geolocation>geolocation</h1><ul><li><a href=#geolocation>geolocation</a></li><li><a href=#geolocation.getCurrentPosition>geolocation.getCurrentPosition</a></li><li><a href=#geolocation.watchPosition>geolocation.watchPosition</a></li><li><a href=#geolocation.clearWatch>geolocation.clearWatch</a></li><li><a href=#coordinates>coordinates</a></li><li><a href=#position>position</a></li><li><a href=#positionError>positionError</a></li><li><a href=#geolocationSuccess>geolocationSuccess</a></li><li><a href=#geolocationError>geolocationError</a></li><li><a href=#geolocation.options>geolocation.options</a></li></ul><h1 id=geolocation>geolocation</h1><h1>Geolocation</h1>
+<a class=top href=#top>Back to top.</a><h1 id=geolocation>Geolocation</h1><ul><li><a href=#geolocation>geolocation</a></li><li><a href=#geolocation.getCurrentPosition>geolocation.getCurrentPosition</a></li><li><a href=#geolocation.watchPosition>geolocation.watchPosition</a></li><li><a href=#geolocation.clearWatch>geolocation.clearWatch</a></li><li><a href=#coordinates>coordinates</a></li><li><a href=#position>position</a></li><li><a href=#positionError>positionError</a></li><li><a href=#geolocationSuccess>geolocationSuccess</a></li><li><a href=#geolocationError>geolocationError</a></li><li><a href=#geolocation.options>geolocation.options</a></li></ul><h1 id=geolocation>Geolocation</h1><h1>Geolocation</h1>
 <blockquote>
 <p>The <code>geolocation</code> object provides access to the device&#39;s GPS sensor.
 
@@ -6006,41 +6006,41 @@ entry.getMetadata(win, null);</code></pre>
 <h2>Permissions</h2>
 <h3>Android</h3>
 <h4>app/res/xml/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;Geolocation&quot; value=&quot;org.apache.cordova.GeoBroker&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;plugin name=&quot;Geolocation&quot; value=&quot;org.apache.cordova.GeoBroker&quot; /&gt;</code></pre>
 <h4>app/AndroidManifest.xml</h4>
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.ACCESS_COARSE_LOCATION&quot; /&gt;
+<pre class=prettyprint><code>&lt;uses-permission android:name=&quot;android.permission.ACCESS_COARSE_LOCATION&quot; /&gt;
 &lt;uses-permission android:name=&quot;android.permission.ACCESS_FINE_LOCATION&quot; /&gt;
 &lt;uses-permission android:name=&quot;android.permission.ACCESS_LOCATION_EXTRA_COMMANDS&quot; /&gt;</code></pre>
 <h3>Bada</h3>
-<pre><code>No permissions are required.</code></pre>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
 <h3>BlackBerry WebWorks</h3>
 <h4>www/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;Geolocation&quot; value=&quot;org.apache.cordova.geolocation.Geolocation&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;plugin name=&quot;Geolocation&quot; value=&quot;org.apache.cordova.geolocation.Geolocation&quot; /&gt;</code></pre>
 <h4>www/config.xml</h4>
-<pre><code>&lt;rim:permissions&gt;
+<pre class=prettyprint><code>&lt;rim:permissions&gt;
     &lt;rim:permit&gt;read_geolocation&lt;/rim:permit&gt;
 &lt;/rim:permissions&gt;</code></pre>
 <h3>iOS</h3>
 <h4>App/Supporting Files/Cordova.plist</h4>
-<pre><code>&lt;key&gt;Plugins&lt;/key&gt;
+<pre class=prettyprint><code>&lt;key&gt;Plugins&lt;/key&gt;
 &lt;dict&gt;
     &lt;key&gt;Geolocation&lt;/key&gt;
     &lt;string&gt;CDVLocation&lt;/string&gt;
 &lt;/dict&gt;</code></pre>
 <h3>webOS</h3>
-<pre><code>No permissions are required.</code></pre>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
 <h3>Windows Phone</h3>
 <h4>Properties/WPAppManifest.xml</h4>
-<pre><code>&lt;Capabilities&gt;
+<pre class=prettyprint><code>&lt;Capabilities&gt;
     &lt;Capability Name=&quot;ID_CAP_LOCATION&quot; /&gt;
 &lt;/Capabilities&gt;</code></pre>
 <p>Reference: <a href="http://msdn.microsoft.com/en-us/library/ff769509%28v=vs.92%29.aspx">Application Manifest for Windows Phone</a>
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=geolocation.getCurrentPosition>geolocation.getCurrentPosition</h1><h1>geolocation.getCurrentPosition</h1>
+<a class=top href=#top>Back to top.</a><h1 id=geolocation.getCurrentPosition>Geolocation.getCurrentPosition</h1><h1>geolocation.getCurrentPosition</h1>
 <p>Returns the device&#39;s current position as a <code>Position</code> object.
 
 </p>
-<pre><code>navigator.geolocation.getCurrentPosition(geolocationSuccess, 
+<pre class=prettyprint><code>navigator.geolocation.getCurrentPosition(geolocationSuccess, 
                                          [geolocationError], 
                                          [geolocationOptions]);</code></pre>
 <h2>Parameters</h2>
@@ -6064,7 +6064,7 @@ entry.getMetadata(win, null);</code></pre>
 <li>webOS</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// onSuccess Callback
+<pre class=prettyprint><code>// onSuccess Callback
 //   This method accepts a `Position` object, which contains
 //   the current GPS coordinates
 //
@@ -6088,7 +6088,7 @@ function onError(error) {
 
 navigator.geolocation.getCurrentPosition(onSuccess, onError);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Device Properties Example&lt;/title&gt;
@@ -6133,11 +6133,11 @@ navigator.geolocation.getCurrentPosition(onSuccess, onError);</code></pre>
     &lt;p id=&quot;geolocation&quot;&gt;Finding geolocation...&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=geolocation.watchPosition>geolocation.watchPosition</h1><h1>geolocation.watchPosition</h1>
+<a class=top href=#top>Back to top.</a><h1 id=geolocation.watchPosition>Geolocation.watchPosition</h1><h1>geolocation.watchPosition</h1>
 <p>Watches for changes to the device&#39;s current position.
 
 </p>
-<pre><code>var watchId = navigator.geolocation.watchPosition(geolocationSuccess,
+<pre class=prettyprint><code>var watchId = navigator.geolocation.watchPosition(geolocationSuccess,
                                                   [geolocationError],
                                                   [geolocationOptions]);</code></pre>
 <h2>Parameters</h2>
@@ -6164,7 +6164,7 @@ navigator.geolocation.getCurrentPosition(onSuccess, onError);</code></pre>
 <li>webOS</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// onSuccess Callback
+<pre class=prettyprint><code>// onSuccess Callback
 //   This method accepts a `Position` object, which contains
 //   the current GPS coordinates
 //
@@ -6186,7 +6186,7 @@ function onError(error) {
 //
 var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { timeout: 30000 });</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Device Properties Example&lt;/title&gt;
@@ -6230,11 +6230,11 @@ var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { timeout:
     &lt;p id=&quot;geolocation&quot;&gt;Watching geolocation...&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=geolocation.clearWatch>geolocation.clearWatch</h1><h1>geolocation.clearWatch</h1>
+<a class=top href=#top>Back to top.</a><h1 id=geolocation.clearWatch>Geolocation.clearWatch</h1><h1>geolocation.clearWatch</h1>
 <p>Stop watching for changes to the device&#39;s location referenced by the <code>watchID</code> parameter.
 
 </p>
-<pre><code>navigator.geolocation.clearWatch(watchID);</code></pre>
+<pre class=prettyprint><code>navigator.geolocation.clearWatch(watchID);</code></pre>
 <h2>Parameters</h2>
 <ul>
 <li><strong>watchID:</strong> The id of the <code>watchPosition</code> interval to clear. (String)</li>
@@ -6253,7 +6253,7 @@ var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { timeout:
 <li>webOS</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// Options: watch for changes in position, and use the most
+<pre class=prettyprint><code>// Options: watch for changes in position, and use the most
 // accurate position acquisition method available.
 //
 var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { enableHighAccuracy: true });
@@ -6262,7 +6262,7 @@ var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { enableHi
 
 navigator.geolocation.clearWatch(watchID);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Device Properties Example&lt;/title&gt;
@@ -6317,7 +6317,7 @@ navigator.geolocation.clearWatch(watchID);</code></pre>
     &lt;button onclick=&quot;clearWatch();&quot;&gt;Clear Watch&lt;/button&gt;     
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=coordinates>coordinates</h1><h1>Coordinates</h1>
+<a class=top href=#top>Back to top.</a><h1 id=coordinates>Coordinates</h1><h1>Coordinates</h1>
 <p>A set of properties that describe the geographic coordinates of a position.
 
 </p>
@@ -6345,7 +6345,7 @@ navigator.geolocation.clearWatch(watchID);</code></pre>
 <li>webOS</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// onSuccess Callback
+<pre class=prettyprint><code>// onSuccess Callback
 //
 var onSuccess = function(position) {
     alert(&#39;Latitude: &#39;          + position.coords.latitude          + &#39;\n&#39; +
@@ -6366,7 +6366,7 @@ var onError = function() {
 
 navigator.geolocation.getCurrentPosition(onSuccess, onError);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Geolocation Position Example&lt;/title&gt;
@@ -6412,7 +6412,7 @@ navigator.geolocation.getCurrentPosition(onSuccess, onError);</code></pre>
 <h2>Android Quirks</h2>
 <p><strong>altitudeAccuracy:</strong> This property is not support by Android devices, it will always return null.
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=position>position</h1><h1>Position</h1>
+<a class=top href=#top>Back to top.</a><h1 id=position>Position</h1><h1>Position</h1>
 <p>Contains <code>Position</code> coordinates and timestamp, created by the geolocation API.
 
 </p>
@@ -6435,7 +6435,7 @@ navigator.geolocation.getCurrentPosition(onSuccess, onError);</code></pre>
 <li>webOS</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// onSuccess Callback
+<pre class=prettyprint><code>// onSuccess Callback
 //
 var onSuccess = function(position) {
     alert(&#39;Latitude: &#39;          + position.coords.latitude          + &#39;\n&#39; +
@@ -6457,7 +6457,7 @@ function onError(error) {
 
 navigator.geolocation.getCurrentPosition(onSuccess, onError);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Device Properties Example&lt;/title&gt;
@@ -6503,7 +6503,7 @@ navigator.geolocation.getCurrentPosition(onSuccess, onError);</code></pre>
     &lt;p id=&quot;geolocation&quot;&gt;Finding geolocation...&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=positionError>positionError</h1><h1>PositionError</h1>
+<a class=top href=#top>Back to top.</a><h1 id=positionError>PositionError</h1><h1>PositionError</h1>
 <p>A <code>PositionError</code> object is returned to the <code>geolocationError</code> callback when an error occurs.
 
 </p>
@@ -6539,11 +6539,11 @@ time specified in the <code>geolocationOptions</code>&#39; <code>timeout</code> 
 in conjunction with <code>geolocation.watchPosition</code>, this error could be
 called into the <code>geolocationError</code> callback every <code>timeout</code> milliseconds.
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=geolocationSuccess>geolocationSuccess</h1><h1>geolocationSuccess</h1>
+<a class=top href=#top>Back to top.</a><h1 id=geolocationSuccess>GeolocationSuccess</h1><h1>geolocationSuccess</h1>
 <p>The user&#39;s callback function that is called when a geolocation position becomes available (when using with <code>geolocation.getCurrentPosition</code>), or when the position changes (when using with <code>geolocation.watchPosition</code>).
 
 </p>
-<pre><code>function(position) {
+<pre class=prettyprint><code>function(position) {
     // Do something
 }</code></pre>
 <h2>Parameters</h2>
@@ -6551,7 +6551,7 @@ called into the <code>geolocationError</code> callback every <code>timeout</code
 <li><strong>position:</strong> The geolocation position returned by the device. (<code>Position</code>)</li>
 </ul>
 <h2>Example</h2>
-<pre><code>function geolocationSuccess(position) {
+<pre class=prettyprint><code>function geolocationSuccess(position) {
     alert(&#39;Latitude: &#39;          + position.coords.latitude          + &#39;\n&#39; +
           &#39;Longitude: &#39;         + position.coords.longitude         + &#39;\n&#39; +
           &#39;Altitude: &#39;          + position.coords.altitude          + &#39;\n&#39; +
@@ -6561,23 +6561,23 @@ called into the <code>geolocationError</code> callback every <code>timeout</code
           &#39;Speed: &#39;             + position.coords.speed             + &#39;\n&#39; +
           &#39;Timestamp: &#39;         + position.timestamp                + &#39;\n&#39;);
 }</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=geolocationError>geolocationError</h1><h1>geolocationError</h1>
+<a class=top href=#top>Back to top.</a><h1 id=geolocationError>GeolocationError</h1><h1>geolocationError</h1>
 <p>The user&#39;s callback function that is called when there is an error for geolocation functions.
 
 </p>
-<pre><code>function(error) {
+<pre class=prettyprint><code>function(error) {
     // Handle the error
 }</code></pre>
 <h2>Parameters</h2>
 <ul>
 <li><strong>error:</strong> The error returned by the device. (<code>PositionError</code>)</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=geolocation.options>geolocation.options</h1><h1>geolocationOptions</h1>
+<a class=top href=#top>Back to top.</a><h1 id=geolocation.options>Geolocation.options</h1><h1>geolocationOptions</h1>
 <p>Optional parameters to customize the retrieval of the geolocation
 <code>Position</code>.
 
 </p>
-<pre><code>{ maximumAge: 3000, timeout: 5000, enableHighAccuracy: true };</code></pre>
+<pre class=prettyprint><code>{ maximumAge: 3000, timeout: 5000, enableHighAccuracy: true };</code></pre>
 <h2>Options</h2>
 <ul>
 <li><strong>enableHighAccuracy:</strong> Provides a hint that the application would like to receive the best possible results. By default, the device will attempt to retrieve a <code>Position</code> using network-based methods. Setting this property to <code>true</code> tells the framework to use more accurate methods, such as satellite positioning. <em>(Boolean)</em></li>
@@ -6588,14 +6588,14 @@ called into the <code>geolocationError</code> callback every <code>timeout</code
 <p>The Android 2.x simulators will not return a geolocation result unless the enableHighAccuracy option is set to true.
 
 </p>
-<pre><code>{ enableHighAccuracy: true }</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=media>media</h1><ul><li><a href=#media>media</a></li><li><a href=#media.getCurrentPosition>media.getCurrentPosition</a></li><li><a href=#media.getDuration>media.getDuration</a></li><li><a href=#media.pause>media.pause</a></li><li><a href=#media.play>media.play</a></li><li><a href=#media.release>media.release</a></li><li><a href=#media.seekTo>media.seekTo</a></li><li><a href=#media.startRecord>media.startRecord</a></li><li><a href=#media.stop>media.stop</a></li><li><a href=#media.stopRecord>media.stopRecord</a></li><li><a href=#mediaError>mediaError</a></li><li><a href=#mediaError>mediaError</a></li></ul><h1 id=media>media</h1><h1>Media</h1>
+<pre class=prettyprint><code>{ enableHighAccuracy: true }</code></pre>
+<a class=top href=#top>Back to top.</a><h1 id=media>Media</h1><ul><li><a href=#media>media</a></li><li><a href=#media.getCurrentPosition>media.getCurrentPosition</a></li><li><a href=#media.getDuration>media.getDuration</a></li><li><a href=#media.pause>media.pause</a></li><li><a href=#media.play>media.play</a></li><li><a href=#media.release>media.release</a></li><li><a href=#media.seekTo>media.seekTo</a></li><li><a href=#media.startRecord>media.startRecord</a></li><li><a href=#media.stop>media.stop</a></li><li><a href=#media.stopRecord>media.stopRecord</a></li><li><a href=#mediaError>mediaError</a></li><li><a href=#mediaError>mediaError</a></li></ul><h1 id=media>Media</h1><h1>Media</h1>
 <blockquote>
 <p>The <code>Media</code> object provides the ability to record and play back audio files on a device.
 
 </p>
 </blockquote>
-<pre><code>var media = new Media(src, mediaSuccess, [mediaError], [mediaStatus]);</code></pre>
+<pre class=prettyprint><code>var media = new Media(src, mediaSuccess, [mediaError], [mediaStatus]);</code></pre>
 <p>Note: The current implementation does not adhere to a W3C specification for media capture, and is provided for convenience only.  A future implementation will adhere to the latest W3C specification and may deprecate the current APIs.
 
 </p>
@@ -6636,31 +6636,31 @@ called into the <code>geolocationError</code> callback every <code>timeout</code
 <h2>Permissions</h2>
 <h3>Android</h3>
 <h4>app/res/xml/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;Media&quot; value=&quot;org.apache.cordova.AudioHandler&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;plugin name=&quot;Media&quot; value=&quot;org.apache.cordova.AudioHandler&quot; /&gt;</code></pre>
 <h4>app/AndroidManifest.xml</h4>
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.RECORD_AUDIO&quot; /&gt;
+<pre class=prettyprint><code>&lt;uses-permission android:name=&quot;android.permission.RECORD_AUDIO&quot; /&gt;
 &lt;uses-permission android:name=&quot;android.permission.MODIFY_AUDIO_SETTINGS&quot; /&gt;
 &lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot; /&gt;</code></pre>
 <h3>Bada</h3>
 <h4>manifest.xml</h4>
-<pre><code>&lt;Privilege&gt;
+<pre class=prettyprint><code>&lt;Privilege&gt;
     &lt;Name&gt;RECORDING&lt;/Name&gt;
 &lt;/Privilege&gt;</code></pre>
 <h3>BlackBerry WebWorks</h3>
 <h4>www/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;Capture&quot; value=&quot;org.apache.cordova.media.MediaCapture&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;plugin name=&quot;Capture&quot; value=&quot;org.apache.cordova.media.MediaCapture&quot; /&gt;</code></pre>
 <h3>iOS</h3>
 <h4>App/Supporting Files/Cordova.plist</h4>
-<pre><code>&lt;key&gt;Plugins&lt;/key&gt;
+<pre class=prettyprint><code>&lt;key&gt;Plugins&lt;/key&gt;
 &lt;dict&gt;
     &lt;key&gt;Media&lt;/key&gt;
     &lt;string&gt;CDVSound&lt;/string&gt;
 &lt;/dict&gt;</code></pre>
 <h3>webOS</h3>
-<pre><code>No permissions are required.</code></pre>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
 <h3>Windows Phone</h3>
 <h4>Properties/WPAppManifest.xml</h4>
-<pre><code>&lt;Capabilities&gt;
+<pre class=prettyprint><code>&lt;Capabilities&gt;
     &lt;Capability Name=&quot;ID_CAP_MEDIALIB&quot; /&gt;
     &lt;Capability Name=&quot;ID_CAP_MICROPHONE&quot; /&gt;
     &lt;Capability Name=&quot;ID_HW_FRONTCAMERA&quot; /&gt;
@@ -6669,11 +6669,11 @@ called into the <code>geolocationError</code> callback every <code>timeout</code
 &lt;/Capabilities&gt;</code></pre>
 <p>Reference: <a href="http://msdn.microsoft.com/en-us/library/ff769509%28v=vs.92%29.aspx">Application Manifest for Windows Phone</a>
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=media.getCurrentPosition>media.getCurrentPosition</h1><h1>media.getCurrentPosition</h1>
+<a class=top href=#top>Back to top.</a><h1 id=media.getCurrentPosition>Media.getCurrentPosition</h1><h1>media.getCurrentPosition</h1>
 <p>Returns the current position within an audio file.
 
 </p>
-<pre><code>media.getCurrentPosition(mediaSuccess, [mediaError]);</code></pre>
+<pre class=prettyprint><code>media.getCurrentPosition(mediaSuccess, [mediaError]);</code></pre>
 <h2>Parameters</h2>
 <ul>
 <li><strong>mediaSuccess</strong>: The callback that is called with the current position in seconds.</li>
@@ -6691,7 +6691,7 @@ called into the <code>geolocationError</code> callback every <code>timeout</code
 <li>Windows Phone 7 ( Mango )</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>    // Audio player
+<pre class=prettyprint><code>    // Audio player
     //
     var my_media = new Media(src, onSuccess, onError);
 
@@ -6712,7 +6712,7 @@ called into the <code>geolocationError</code> callback every <code>timeout</code
         );
     }, 1000);</code></pre>
 <h2>Full Example</h2>
-<pre><code>    &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
+<pre class=prettyprint><code>    &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
                   &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
     &lt;html&gt;
       &lt;head&gt;
@@ -6812,11 +6812,11 @@ called into the <code>geolocationError</code> callback every <code>timeout</code
         &lt;p id=&quot;audio_position&quot;&gt;&lt;/p&gt;
       &lt;/body&gt;
     &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=media.getDuration>media.getDuration</h1><h1>media.getDuration</h1>
+<a class=top href=#top>Back to top.</a><h1 id=media.getDuration>Media.getDuration</h1><h1>media.getDuration</h1>
 <p>Returns the duration of an audio file.
 
 </p>
-<pre><code>media.getDuration();</code></pre>
+<pre class=prettyprint><code>media.getDuration();</code></pre>
 <h2>Description</h2>
 <p>Function <code>media.getDuration</code> is a synchronous function that returns the duration of the audio file in seconds, if known.  If the duration is unknown, a value of -1 is returned.
 
@@ -6829,7 +6829,7 @@ called into the <code>geolocationError</code> callback every <code>timeout</code
 <li>Windows Phone 7 ( Mango )</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>    // Audio player
+<pre class=prettyprint><code>    // Audio player
     //
     var my_media = new Media(src, onSuccess, onError);
 
@@ -6847,7 +6847,7 @@ called into the <code>geolocationError</code> callback every <code>timeout</code
         }
    }, 100);</code></pre>
 <h2>Full Example</h2>
-<pre><code>    &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
+<pre class=prettyprint><code>    &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
                           &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
     &lt;html&gt;
       &lt;head&gt;
@@ -6947,11 +6947,11 @@ called into the <code>geolocationError</code> callback every <code>timeout</code
         &lt;p id=&quot;audio_position&quot;&gt;&lt;/p&gt;
       &lt;/body&gt;
     &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=media.pause>media.pause</h1><h1>media.pause</h1>
+<a class=top href=#top>Back to top.</a><h1 id=media.pause>Media.pause</h1><h1>media.pause</h1>
 <p>Pauses playing an audio file.
 
 </p>
-<pre><code>media.pause();</code></pre>
+<pre class=prettyprint><code>media.pause();</code></pre>
 <h2>Description</h2>
 <p>Function <code>media.pause</code> is a synchronous function that pauses playing an audio file.
 
@@ -6964,7 +6964,7 @@ called into the <code>geolocationError</code> callback every <code>timeout</code
 <li>Windows Phone 7 ( Mango )</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// Play audio
+<pre class=prettyprint><code>// Play audio
 //
 function playAudio(url) {
     // Play the audio file at url
@@ -6987,7 +6987,7 @@ function playAudio(url) {
     }, 10000);        
 }</code></pre>
 <h2>Full Example</h2>
-<pre><code>    &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
+<pre class=prettyprint><code>    &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
                           &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
     &lt;html&gt;
       &lt;head&gt;
@@ -7087,11 +7087,11 @@ function playAudio(url) {
         &lt;p id=&quot;audio_position&quot;&gt;&lt;/p&gt;
       &lt;/body&gt;
     &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=media.play>media.play</h1><h1>media.play</h1>
+<a class=top href=#top>Back to top.</a><h1 id=media.play>Media.play</h1><h1>media.play</h1>
 <p>Starts or resumes playing an audio file.
 
 </p>
-<pre><code>media.play();</code></pre>
+<pre class=prettyprint><code>media.play();</code></pre>
 <h2>Description</h2>
 <p>Function <code>media.play</code> is a synchronous function that starts or resumes playing an audio file.
 
@@ -7104,7 +7104,7 @@ function playAudio(url) {
 <li>Windows Phone 7 ( Mango )</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// Play audio
+<pre class=prettyprint><code>// Play audio
 //
 function playAudio(url) {
     // Play the audio file at url
@@ -7122,7 +7122,7 @@ function playAudio(url) {
     my_media.play();
 }</code></pre>
 <h2>Full Example</h2>
-<pre><code>    &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
+<pre class=prettyprint><code>    &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
                           &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
     &lt;html&gt;
       &lt;head&gt;
@@ -7231,20 +7231,20 @@ function playAudio(url) {
 <ul>
 <li><p><strong>numberOfLoops</strong></p>
 <p>  Pass in this option to the <strong>play</strong> method to specify the number of times you want the media file to play. e.g:</p>
-<pre><code>  var myMedia = new Media(&quot;http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3&quot;)
+<pre class=prettyprint><code>  var myMedia = new Media(&quot;http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3&quot;)
   myMedia.play({ numberOfLoops: 2 })</code></pre>
 </li>
 <li><p><strong>playAudioWhenScreenIsLocked</strong></p>
 <p>  Pass in this option to the <strong>play</strong> method to specify whether you want to play the audio of the media file when the screen is locked (this defaults to true if not set). If this is set to true, it will ignore the state of the hardware mute button. e.g:</p>
-<pre><code>  var myMedia = new Media(&quot;http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3&quot;)
+<pre class=prettyprint><code>  var myMedia = new Media(&quot;http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3&quot;)
   myMedia.play({ playAudioWhenScreenIsLocked : false })</code></pre>
 </li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=media.release>media.release</h1><h1>media.release</h1>
+<a class=top href=#top>Back to top.</a><h1 id=media.release>Media.release</h1><h1>media.release</h1>
 <p>Releases the underlying operating systems audio resources.
 
 </p>
-<pre><code>media.release();</code></pre>
+<pre class=prettyprint><code>media.release();</code></pre>
 <h2>Description</h2>
 <p>Function <code>media.release</code> is a synchronous function that releases the underlying operating systems audio resources.  This function is particularly important for Android as there are a finite amount of OpenCore instances for media playback.  Developers should call the &#39;release&#39; function when they no longer need the Media resource.
 
@@ -7257,7 +7257,7 @@ function playAudio(url) {
 <li>Windows Phone 7 ( Mango )</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>    // Audio player
+<pre class=prettyprint><code>    // Audio player
     //
     var my_media = new Media(src, onSuccess, onError);
 
@@ -7265,7 +7265,7 @@ function playAudio(url) {
     my_media.stop();
     my_media.release();</code></pre>
 <h2>Full Example</h2>
-<pre><code>    &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
+<pre class=prettyprint><code>    &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
                           &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
     &lt;html&gt;
       &lt;head&gt;
@@ -7365,11 +7365,11 @@ function playAudio(url) {
         &lt;p id=&quot;audio_position&quot;&gt;&lt;/p&gt;
       &lt;/body&gt;
     &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=media.seekTo>media.seekTo</h1><h1>media.seekTo</h1>
+<a class=top href=#top>Back to top.</a><h1 id=media.seekTo>Media.seekTo</h1><h1>media.seekTo</h1>
 <p>Sets the current position within an audio file.
 
 </p>
-<pre><code>media.seekTo(milliseconds);</code></pre>
+<pre class=prettyprint><code>media.seekTo(milliseconds);</code></pre>
 <h2>Parameters</h2>
 <ul>
 <li><strong>milliseconds</strong>: The position to set the playback position within the audio in milliseconds. .</li>
@@ -7386,7 +7386,7 @@ function playAudio(url) {
 <li>Windows Phone 7 ( Mango )</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>    // Audio player
+<pre class=prettyprint><code>    // Audio player
     //
     var my_media = new Media(src, onSuccess, onError);
     my_media.play();
@@ -7395,7 +7395,7 @@ function playAudio(url) {
         my_media.seekTo(10000);
     }, 5000);</code></pre>
 <h2>Full Example</h2>
-<pre><code>    &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
+<pre class=prettyprint><code>    &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
                   &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
     &lt;html&gt;
       &lt;head&gt;
@@ -7490,11 +7490,11 @@ function playAudio(url) {
 <ul>
 <li>This API is not supported on BlackBerry OS 5 devices.</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=media.startRecord>media.startRecord</h1><h1>media.startRecord</h1>
+<a class=top href=#top>Back to top.</a><h1 id=media.startRecord>Media.startRecord</h1><h1>media.startRecord</h1>
 <p>Starts recording an audio file.
 
 </p>
-<pre><code>media.startRecord();</code></pre>
+<pre class=prettyprint><code>media.startRecord();</code></pre>
 <h2>Description</h2>
 <p>Function <code>media.startRecord</code> is a synchronous function that starts recording an audio file.
 
@@ -7507,7 +7507,7 @@ function playAudio(url) {
 <li>Windows Phone 7 ( Mango )</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// Record audio
+<pre class=prettyprint><code>// Record audio
 // 
 function recordAudio() {
     var src = &quot;myrecording.mp3&quot;;
@@ -7526,7 +7526,7 @@ function recordAudio() {
     mediaRec.startRecord();
 }</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Device Properties Example&lt;/title&gt;
@@ -7599,11 +7599,11 @@ function recordAudio() {
 <ul>
 <li>The file to record to must already exist and should be of type .wav. The File API&#39;s can be used to create the file.</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=media.stop>media.stop</h1><h1>media.stop</h1>
+<a class=top href=#top>Back to top.</a><h1 id=media.stop>Media.stop</h1><h1>media.stop</h1>
 <p>Stops playing an audio file.
 
 </p>
-<pre><code>media.stop();</code></pre>
+<pre class=prettyprint><code>media.stop();</code></pre>
 <h2>Description</h2>
 <p>Function <code>media.stop</code> is a synchronous function that stops playing an audio file.
 
@@ -7616,7 +7616,7 @@ function recordAudio() {
 <li>Windows Phone 7 ( Mango )</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// Play audio
+<pre class=prettyprint><code>// Play audio
 //
 function playAudio(url) {
     // Play the audio file at url
@@ -7639,7 +7639,7 @@ function playAudio(url) {
     }, 10000);        
 }</code></pre>
 <h2>Full Example</h2>
-<pre><code>    &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
+<pre class=prettyprint><code>    &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
                           &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
     &lt;html&gt;
       &lt;head&gt;
@@ -7739,11 +7739,11 @@ function playAudio(url) {
         &lt;p id=&quot;audio_position&quot;&gt;&lt;/p&gt;
       &lt;/body&gt;
     &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=media.stopRecord>media.stopRecord</h1><h1>media.stopRecord</h1>
+<a class=top href=#top>Back to top.</a><h1 id=media.stopRecord>Media.stopRecord</h1><h1>media.stopRecord</h1>
 <p>Stops recording an audio file.
 
 </p>
-<pre><code>media.stopRecord();</code></pre>
+<pre class=prettyprint><code>media.stopRecord();</code></pre>
 <h2>Description</h2>
 <p>Function <code>media.stopRecord</code> is a synchronous function that stops recording an audio file.
 
@@ -7756,7 +7756,7 @@ function playAudio(url) {
 <li>Windows Phone 7 ( Mango )</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// Record audio
+<pre class=prettyprint><code>// Record audio
 // 
 function recordAudio() {
     var src = &quot;myrecording.mp3&quot;;
@@ -7780,7 +7780,7 @@ function recordAudio() {
     }, 10000);
 }</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Device Properties Example&lt;/title&gt;
@@ -7845,7 +7845,7 @@ function recordAudio() {
     &lt;p id=&quot;audio_position&quot;&gt;&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=mediaError>mediaError</h1><h1>MediaError</h1>
+<a class=top href=#top>Back to top.</a><h1 id=mediaError>MediaError</h1><h1>MediaError</h1>
 <p>A <code>MediaError</code> object is returned to the <code>mediaError</code> callback function when an error occurs.
 
 </p>
@@ -7865,18 +7865,18 @@ function recordAudio() {
 <p>The <code>MediaError</code> object is returned to the user through the <code>mediaError</code> callback function when an error occurs.
 
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=mediaError>mediaError</h1><h1>mediaError</h1>
+<a class=top href=#top>Back to top.</a><h1 id=mediaError>MediaError</h1><h1>mediaError</h1>
 <p>A user specified callback function that is invoked when there is an error in media functions.
 
 </p>
-<pre><code>function(error) {
+<pre class=prettyprint><code>function(error) {
     // Handle the error
 }</code></pre>
 <h2>Parameters</h2>
 <ul>
 <li><strong>error:</strong> The error returned by the device. (<code>MediaError</code>)</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=connection>connection</h1><ul><li><a href=#connection>connection</a></li><li><a href=#connection.type>connection.type</a></li></ul><h1 id=connection>connection</h1><h1>Connection</h1>
+<a class=top href=#top>Back to top.</a><h1 id=connection>Connection</h1><ul><li><a href=#connection>connection</a></li><li><a href=#connection.type>connection.type</a></li></ul><h1 id=connection>Connection</h1><h1>Connection</h1>
 <blockquote>
 <p>The <code>connection</code> object gives access to the device&#39;s cellular and wifi connection information.
 
@@ -7902,35 +7902,35 @@ function recordAudio() {
 <h2>Permissions</h2>
 <h3>Android</h3>
 <h4>app/res/xml/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;NetworkStatus&quot; value=&quot;org.apache.cordova.NetworkManager&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;plugin name=&quot;NetworkStatus&quot; value=&quot;org.apache.cordova.NetworkManager&quot; /&gt;</code></pre>
 <h4>app/AndroidManifest.xml</h4>
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;
+<pre class=prettyprint><code>&lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;
 &lt;uses-permission android:name=&quot;android.permission.ACCESS_NETWORK_STATE&quot; /&gt;
 &lt;uses-permission android:name=&quot;android.permission.READ_PHONE_STATE&quot; /&gt;</code></pre>
 <h3>Bada</h3>
-<pre><code>&lt;Privilege&gt;
+<pre class=prettyprint><code>&lt;Privilege&gt;
     &lt;Name&gt;SYSTEM_SERVICE&lt;/Name&gt;
 &lt;/Privilege&gt;</code></pre>
 <h3>BlackBerry WebWorks</h3>
 <h4>www/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;Network Status&quot; value=&quot;org.apache.cordova.network.Network&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;plugin name=&quot;Network Status&quot; value=&quot;org.apache.cordova.network.Network&quot; /&gt;</code></pre>
 <h3>iOS</h3>
 <h4>App/Supporting Files/Cordova.plist</h4>
-<pre><code>&lt;key&gt;Plugins&lt;/key&gt;
+<pre class=prettyprint><code>&lt;key&gt;Plugins&lt;/key&gt;
 &lt;dict&gt;
     &lt;key&gt;NetworkStatus&lt;/key&gt;
     &lt;string&gt;CDVConnection&lt;/string&gt;
 &lt;/dict&gt;</code></pre>
 <h3>webOS</h3>
-<pre><code>No permissions are required.</code></pre>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
 <h3>Windows Phone</h3>
 <h4>Properties/WPAppManifest.xml</h4>
-<pre><code>&lt;Capabilities&gt;
+<pre class=prettyprint><code>&lt;Capabilities&gt;
     &lt;Capability Name=&quot;ID_CAP_NETWORKING&quot; /&gt;
 &lt;/Capabilities&gt;</code></pre>
 <p>Reference: <a href="http://msdn.microsoft.com/en-us/library/ff769509%28v=vs.92%29.aspx">Application Manifest for Windows Phone</a>
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=connection.type>connection.type</h1><h1>connection.type</h1>
+<a class=top href=#top>Back to top.</a><h1 id=connection.type>Connection.type</h1><h1>connection.type</h1>
 <p>Checks the active network connection that is being used.
 
 </p>
@@ -7948,7 +7948,7 @@ function recordAudio() {
 <li>webOS</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>function checkConnection() {
+<pre class=prettyprint><code>function checkConnection() {
     var networkState = navigator.network.connection.type;
 
     var states = {};
@@ -7965,7 +7965,7 @@ function recordAudio() {
 
 checkConnection();</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;navigator.network.connection.type Example&lt;/title&gt;
@@ -8026,7 +8026,7 @@ checkConnection();</code></pre>
 <ul>
 <li>Windows Phone Emulator always detects <code>navigator.network.connection.type</code> as <code>Connection.UNKNOWN</code>.</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=notification>notification</h1><ul><li><a href=#notification>notification</a></li><li><a href=#notification.alert>notification.alert</a></li><li><a href=#notification.confirm>notification.confirm</a></li><li><a href=#notification.beep>notification.beep</a></li><li><a href=#notification.vibrate>notification.vibrate</a></li></ul><h1 id=notification>notification</h1><h1>Notification</h1>
+<a class=top href=#top>Back to top.</a><h1 id=notification>Notification</h1><ul><li><a href=#notification>notification</a></li><li><a href=#notification.alert>notification.alert</a></li><li><a href=#notification.confirm>notification.confirm</a></li><li><a href=#notification.beep>notification.beep</a></li><li><a href=#notification.vibrate>notification.vibrate</a></li></ul><h1 id=notification>Notification</h1><h1>Notification</h1>
 <blockquote>
 <p>Visual, audible, and tactile device notifications.
 
@@ -8042,35 +8042,35 @@ checkConnection();</code></pre>
 <h2>Permissions</h2>
 <h3>Android</h3>
 <h4>app/res/xml/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;Notification&quot; value=&quot;org.apache.cordova.Notification&quot;/&gt;</code></pre>
+<pre class=prettyprint><code>&lt;plugin name=&quot;Notification&quot; value=&quot;org.apache.cordova.Notification&quot;/&gt;</code></pre>
 <h4>app/AndroidManifest.xml</h4>
-<pre><code>&lt;uses-permission android:name=&quot;android.permission.VIBRATE&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;uses-permission android:name=&quot;android.permission.VIBRATE&quot; /&gt;</code></pre>
 <h3>Bada</h3>
 <h4>manifest.xml</h4>
-<pre><code>&lt;Privilege&gt;
+<pre class=prettyprint><code>&lt;Privilege&gt;
     &lt;Name&gt;SYSTEM_SERVICE&lt;/Name&gt;
 &lt;/Privilege&gt;</code></pre>
 <h3>BlackBerry WebWorks</h3>
 <h4>www/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;Notification&quot; value=&quot;org.apache.cordova.notification.Notification&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;plugin name=&quot;Notification&quot; value=&quot;org.apache.cordova.notification.Notification&quot; /&gt;</code></pre>
 <h4>www/config.xml</h4>
-<pre><code>&lt;feature id=&quot;blackberry.ui.dialog&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;feature id=&quot;blackberry.ui.dialog&quot; /&gt;</code></pre>
 <h3>iOS</h3>
 <h4>App/Supporting Files/Cordova.plist</h4>
-<pre><code>&lt;key&gt;Plugins&lt;/key&gt;
+<pre class=prettyprint><code>&lt;key&gt;Plugins&lt;/key&gt;
 &lt;dict&gt;
     &lt;key&gt;Notification&lt;/key&gt;
     &lt;string&gt;CDVNotification&lt;/string&gt;
 &lt;/dict&gt;</code></pre>
 <h3>webOS</h3>
-<pre><code>No permissions are required.</code></pre>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
 <h3>Windows Phone</h3>
-<pre><code>No permissions are required.</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=notification.alert>notification.alert</h1><h1>notification.alert</h1>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
+<a class=top href=#top>Back to top.</a><h1 id=notification.alert>Notification.alert</h1><h1>notification.alert</h1>
 <p>Shows a custom alert or dialog box.
 
 </p>
-<pre><code>navigator.notification.alert(message, alertCallback, [title], [buttonName])</code></pre>
+<pre class=prettyprint><code>navigator.notification.alert(message, alertCallback, [title], [buttonName])</code></pre>
 <ul>
 <li><strong>message:</strong> Dialog message (<code>String</code>)</li>
 <li><strong>alertCallback:</strong> Callback to invoke when alert dialog is dismissed. (<code>Function</code>)</li>
@@ -8091,7 +8091,7 @@ checkConnection();</code></pre>
 <li>webOS</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// Android / BlackBerry WebWorks (OS 5.0 and higher) / iPhone
+<pre class=prettyprint><code>// Android / BlackBerry WebWorks (OS 5.0 and higher) / iPhone
 //
 function alertDismissed() {
     // do something
@@ -8104,7 +8104,7 @@ navigator.notification.alert(
     &#39;Done&#39;                  // buttonName
 );</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Notification Example&lt;/title&gt;
@@ -8154,11 +8154,11 @@ navigator.notification.alert(
 <ul>
 <li>alert uses javascript alert</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=notification.confirm>notification.confirm</h1><h1>notification.confirm</h1>
+<a class=top href=#top>Back to top.</a><h1 id=notification.confirm>Notification.confirm</h1><h1>notification.confirm</h1>
 <p>Shows a customizable confirmation dialog box.
 
 </p>
-<pre><code>navigator.notification.confirm(message, confirmCallback, [title], [buttonLabels])</code></pre>
+<pre class=prettyprint><code>navigator.notification.confirm(message, confirmCallback, [title], [buttonLabels])</code></pre>
 <ul>
 <li><strong>message:</strong> Dialog message (<code>String</code>)</li>
 <li><strong>confirmCallback:</strong> - Callback to invoke with index of button pressed (1, 2 or 3). (<code>Function</code>)</li>
@@ -8185,7 +8185,7 @@ navigator.notification.alert(
 <li>Bada 1.2 &amp; 2.x</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// process the confirmation dialog result
+<pre class=prettyprint><code>// process the confirmation dialog result
 function onConfirm(buttonIndex) {
     alert(&#39;You selected button &#39; + buttonIndex);
 }
@@ -8201,7 +8201,7 @@ function showConfirm() {
     );
 }</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Notification Example&lt;/title&gt;
@@ -8258,11 +8258,11 @@ function showConfirm() {
 <ul>
 <li>Ignore button names, always <code>&#39;OK|Cancel&#39;</code>.</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=notification.beep>notification.beep</h1><h1>notification.beep</h1>
+<a class=top href=#top>Back to top.</a><h1 id=notification.beep>Notification.beep</h1><h1>notification.beep</h1>
 <p>The device will play a beep sound.
 
 </p>
-<pre><code>navigator.notification.beep(times);</code></pre>
+<pre class=prettyprint><code>navigator.notification.beep(times);</code></pre>
 <ul>
 <li><strong>times:</strong> The number of times to repeat the beep (<code>Number</code>)</li>
 </ul>
@@ -8275,10 +8275,10 @@ function showConfirm() {
 <li>Bada 1.2 &amp; 2.x</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// Beep twice!
+<pre class=prettyprint><code>// Beep twice!
 navigator.notification.beep(2);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Notification Example&lt;/title&gt;
@@ -8344,11 +8344,11 @@ navigator.notification.beep(2);</code></pre>
 <ul>
 <li>WP7 Cordova lib includes a generic beep file that is used. </li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=notification.vibrate>notification.vibrate</h1><h1>notification.vibrate</h1>
+<a class=top href=#top>Back to top.</a><h1 id=notification.vibrate>Notification.vibrate</h1><h1>notification.vibrate</h1>
 <p>Vibrates the device for the specified amount of time.
 
 </p>
-<pre><code>navigator.notification.vibrate(milliseconds)</code></pre>
+<pre class=prettyprint><code>navigator.notification.vibrate(milliseconds)</code></pre>
 <ul>
 <li><strong>time:</strong> Milliseconds to vibrate the device. 1000 milliseconds equals 1 second (<code>Number</code>)</li>
 </ul>
@@ -8361,11 +8361,11 @@ navigator.notification.beep(2);</code></pre>
 <li>Bada 1.2 &amp; 2.x</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>// Vibrate for 2.5 seconds
+<pre class=prettyprint><code>// Vibrate for 2.5 seconds
 //
 navigator.notification.vibrate(2500);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Notification Example&lt;/title&gt;
@@ -8416,11 +8416,11 @@ navigator.notification.vibrate(2500);</code></pre>
 <h2>iPhone Quirks</h2>
 <ul>
 <li><p><strong>time:</strong> Ignores the time and vibrates for a pre-set amount of time.</p>
-<pre><code>  navigator.notification.vibrate();
+<pre class=prettyprint><code>  navigator.notification.vibrate();
   navigator.notification.vibrate(2500);   // 2500 is ignored</code></pre>
 </li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=storage>storage</h1><ul><li><a href=#storage>storage</a></li><li><a href=#storage.opendatabase>storage.opendatabase</a></li><li><a href=#name>name</a></li><li><a href=#version>version</a></li><li><a href=#display_name>display_name</a></li><li><a href=#size>size</a></li><li><a href=#database>database</a></li><li><a href=#sqltransaction>sqltransaction</a></li><li><a href=#sqlresultset>sqlresultset</a></li><li><a href=#sqlresultsetlist>sqlresultsetlist</a></li><li><a href=#sqlerror>sqlerror</a></li><li><a href=#localstorage>localstorage</a></li></ul><h1 id=storage>storage</h1><h1>Storage</h1>
+<a class=top href=#top>Back to top.</a><h1 id=storage>Storage</h1><ul><li><a href=#storage>storage</a></li><li><a href=#storage.opendatabase>storage.opendatabase</a></li><li><a href=#name>name</a></li><li><a href=#version>version</a></li><li><a href=#display_name>display_name</a></li><li><a href=#size>size</a></li><li><a href=#database>database</a></li><li><a href=#sqltransaction>sqltransaction</a></li><li><a href=#sqlresultset>sqlresultset</a></li><li><a href=#sqlresultsetlist>sqlresultsetlist</a></li><li><a href=#sqlerror>sqlerror</a></li><li><a href=#localstorage>localstorage</a></li></ul><h1 id=storage>Storage</h1><h1>Storage</h1>
 <blockquote>
 <p>Provides access to the devices storage options.
 
@@ -8452,23 +8452,23 @@ navigator.notification.vibrate(2500);</code></pre>
 <h2>Permissions</h2>
 <h3>Android</h3>
 <h4>app/res/xml/plugins.xml</h4>
-<pre><code>&lt;plugin name=&quot;Storage&quot; value=&quot;org.apache.cordova.Storage&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;plugin name=&quot;Storage&quot; value=&quot;org.apache.cordova.Storage&quot; /&gt;</code></pre>
 <h3>Bada</h3>
-<pre><code>No permissions are required.</code></pre>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
 <h3>BlackBerry WebWorks</h3>
 <h4>www/config.xml</h4>
-<pre><code>&lt;feature id=&quot;blackberry.widgetcache&quot; required=&quot;true&quot; version=&quot;1.0.0.0&quot; /&gt;</code></pre>
+<pre class=prettyprint><code>&lt;feature id=&quot;blackberry.widgetcache&quot; required=&quot;true&quot; version=&quot;1.0.0.0&quot; /&gt;</code></pre>
 <h3>iOS</h3>
-<pre><code>No permissions are required.</code></pre>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
 <h3>webOS</h3>
-<pre><code>No permissions are required.</code></pre>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
 <h3>Windows Phone</h3>
-<pre><code>No permissions are required.</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=storage.opendatabase>storage.opendatabase</h1><h1>openDatabase</h1>
+<pre class=prettyprint><code>No permissions are required.</code></pre>
+<a class=top href=#top>Back to top.</a><h1 id=storage.opendatabase>Storage.opendatabase</h1><h1>openDatabase</h1>
 <p>Returns a new Database object.
 
 </p>
-<pre><code>var dbShell = window.openDatabase(database_name, database_version, database_displayname, database_size);</code></pre>
+<pre class=prettyprint><code>var dbShell = window.openDatabase(database_name, database_version, database_displayname, database_size);</code></pre>
 <h2>Description</h2>
 <p>window.openDatabase returns a new Database object.
 
@@ -8484,9 +8484,9 @@ navigator.notification.vibrate(2500);</code></pre>
 <li>webOS</li>
 </ul>
 <h2>Quick Example</h2>
-<pre><code>var db = window.openDatabase(&quot;test&quot;, &quot;1.0&quot;, &quot;Test DB&quot;, 1000000);</code></pre>
+<pre class=prettyprint><code>var db = window.openDatabase(&quot;test&quot;, &quot;1.0&quot;, &quot;Test DB&quot;, 1000000);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Storage Example&lt;/title&gt;
@@ -8511,16 +8511,16 @@ navigator.notification.vibrate(2500);</code></pre>
     &lt;p&gt;Open Database&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=name>name</h1><h1>database_name</h1>
+<a class=top href=#top>Back to top.</a><h1 id=name>Name</h1><h1>database_name</h1>
 <p>The name of the database.</p>
-<a class=top href=#top>Back to top.</a><h1 id=version>version</h1><h1>database_version</h1>
+<a class=top href=#top>Back to top.</a><h1 id=version>Version</h1><h1>database_version</h1>
 <p>The version of the database.
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=display_name>display_name</h1><h1>database_displayname</h1>
+<a class=top href=#top>Back to top.</a><h1 id=display_name>Display_name</h1><h1>database_displayname</h1>
 <p>The display name of the database.</p>
-<a class=top href=#top>Back to top.</a><h1 id=size>size</h1><h1>database_size</h1>
+<a class=top href=#top>Back to top.</a><h1 id=size>Size</h1><h1>database_size</h1>
 <p>The size of the database in bytes.</p>
-<a class=top href=#top>Back to top.</a><h1 id=database>database</h1><h1>Database</h1>
+<a class=top href=#top>Back to top.</a><h1 id=database>Database</h1><h1>Database</h1>
 <p>Contains methods that allow the user to manipulate the Database
 
 </p>
@@ -8541,7 +8541,7 @@ navigator.notification.vibrate(2500);</code></pre>
 <li>webOS</li>
 </ul>
 <h2>Transaction Quick Example</h2>
-<pre><code>function populateDB(tx) {
+<pre class=prettyprint><code>function populateDB(tx) {
      tx.executeSql(&#39;DROP TABLE IF EXISTS DEMO&#39;);
      tx.executeSql(&#39;CREATE TABLE IF NOT EXISTS DEMO (id unique, data)&#39;);
      tx.executeSql(&#39;INSERT INTO DEMO (id, data) VALUES (1, &quot;First row&quot;)&#39;);
@@ -8559,10 +8559,10 @@ function successCB() {
 var db = window.openDatabase(&quot;Database&quot;, &quot;1.0&quot;, &quot;Cordova Demo&quot;, 200000);
 db.transaction(populateDB, errorCB, successCB);</code></pre>
 <h2>Change Version Quick Example</h2>
-<pre><code>var db = window.openDatabase(&quot;Database&quot;, &quot;1.0&quot;, &quot;Cordova Demo&quot;, 200000);
+<pre class=prettyprint><code>var db = window.openDatabase(&quot;Database&quot;, &quot;1.0&quot;, &quot;Cordova Demo&quot;, 200000);
 db.changeVersion(&quot;1.0&quot;, &quot;1.1&quot;);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Storage Example&lt;/title&gt;
@@ -8613,7 +8613,7 @@ db.changeVersion(&quot;1.0&quot;, &quot;1.1&quot;);</code></pre>
 <ul>
 <li><strong>changeVersion:</strong> This method is not support by Android 1.X devices.</li>
 </ul>
-<a class=top href=#top>Back to top.</a><h1 id=sqltransaction>sqltransaction</h1><h1>SQLTransaction</h1>
+<a class=top href=#top>Back to top.</a><h1 id=sqltransaction>Sqltransaction</h1><h1>SQLTransaction</h1>
 <p>Contains methods that allow the user to execute SQL statements against the Database.
 
 </p>
@@ -8633,7 +8633,7 @@ db.changeVersion(&quot;1.0&quot;, &quot;1.1&quot;);</code></pre>
 <li>webOS</li>
 </ul>
 <h2>Execute SQL Quick Example</h2>
-<pre><code>function populateDB(tx) {
+<pre class=prettyprint><code>function populateDB(tx) {
      tx.executeSql(&#39;DROP TABLE IF EXISTS DEMO&#39;);
      tx.executeSql(&#39;CREATE TABLE IF NOT EXISTS DEMO (id unique, data)&#39;);
      tx.executeSql(&#39;INSERT INTO DEMO (id, data) VALUES (1, &quot;First row&quot;)&#39;);
@@ -8651,7 +8651,7 @@ function successCB() {
 var db = window.openDatabase(&quot;Database&quot;, &quot;1.0&quot;, &quot;Cordova Demo&quot;, 200000);
 db.transaction(populateDB, errorCB, successCB);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Storage Example&lt;/title&gt;
@@ -8698,7 +8698,7 @@ db.transaction(populateDB, errorCB, successCB);</code></pre>
     &lt;p&gt;SQLTransaction&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=sqlresultset>sqlresultset</h1><h1>SQLResultSet</h1>
+<a class=top href=#top>Back to top.</a><h1 id=sqlresultset>Sqlresultset</h1><h1>SQLResultSet</h1>
 <p>When the executeSql method of a SQLTransaction is called it will invoke it&#39;s callback with a SQLResultSet.
 
 </p>
@@ -8720,7 +8720,7 @@ db.transaction(populateDB, errorCB, successCB);</code></pre>
 <li>webOS</li>
 </ul>
 <h2>Execute SQL Quick Example</h2>
-<pre><code>function queryDB(tx) {
+<pre class=prettyprint><code>function queryDB(tx) {
     tx.executeSql(&#39;SELECT * FROM DEMO&#39;, [], querySuccess, errorCB);
 }
 
@@ -8742,7 +8742,7 @@ function errorCB(err) {
 var db = window.openDatabase(&quot;Database&quot;, &quot;1.0&quot;, &quot;Cordova Demo&quot;, 200000);
 db.transaction(queryDB, errorCB);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Storage Example&lt;/title&gt;
@@ -8809,7 +8809,7 @@ db.transaction(queryDB, errorCB);</code></pre>
     &lt;p&gt;Database&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=sqlresultsetlist>sqlresultsetlist</h1><h1>SQLResultSetList</h1>
+<a class=top href=#top>Back to top.</a><h1 id=sqlresultsetlist>Sqlresultsetlist</h1><h1>SQLResultSetList</h1>
 <p>One of the properties of the SQLResultSet containing the rows returned from a SQL query.
 
 </p>
@@ -8833,7 +8833,7 @@ db.transaction(queryDB, errorCB);</code></pre>
 <li>webOS</li>
 </ul>
 <h2>Execute SQL Quick Example</h2>
-<pre><code>function queryDB(tx) {
+<pre class=prettyprint><code>function queryDB(tx) {
     tx.executeSql(&#39;SELECT * FROM DEMO&#39;, [], querySuccess, errorCB);
 }
 
@@ -8852,7 +8852,7 @@ function errorCB(err) {
 var db = window.openDatabase(&quot;Database&quot;, &quot;1.0&quot;, &quot;Cordova Demo&quot;, 200000);
 db.transaction(queryDB, errorCB);</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Storage Example&lt;/title&gt;
@@ -8916,7 +8916,7 @@ db.transaction(queryDB, errorCB);</code></pre>
     &lt;p&gt;Database&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<a class=top href=#top>Back to top.</a><h1 id=sqlerror>sqlerror</h1><h1>SQLError</h1>
+<a class=top href=#top>Back to top.</a><h1 id=sqlerror>Sqlerror</h1><h1>SQLError</h1>
 <p>A <code>SQLError</code> object is thrown when an error occurs.
 
 </p>
@@ -8940,11 +8940,11 @@ db.transaction(queryDB, errorCB);</code></pre>
 <p>The <code>SQLError</code> object is thrown when an error occurs when manipulating a database.
 
 </p>
-<a class=top href=#top>Back to top.</a><h1 id=localstorage>localstorage</h1><h1>localStorage</h1>
+<a class=top href=#top>Back to top.</a><h1 id=localstorage>Localstorage</h1><h1>localStorage</h1>
 <p>Provides access to a W3C Storage interface (<a href="http://dev.w3.org/html5/webstorage/#the-localstorage-attribute">http://dev.w3.org/html5/webstorage/#the-localstorage-attribute</a>)
 
 </p>
-<pre><code>var storage = window.localStorage;</code></pre>
+<pre class=prettyprint><code>var storage = window.localStorage;</code></pre>
 <h2>Methods</h2>
 <ul>
 <li><strong>key</strong>: Returns the name of the key at the position specified. </li>
@@ -8969,18 +8969,18 @@ db.transaction(queryDB, errorCB);</code></pre>
 <li>webOS</li>
 </ul>
 <h2>Key Quick Example</h2>
-<pre><code>var keyName = window.localStorage.key(0);</code></pre>
+<pre class=prettyprint><code>var keyName = window.localStorage.key(0);</code></pre>
 <h2>Set Item Quick Example</h2>
-<pre><code>window.localStorage.setItem(&quot;key&quot;, &quot;value&quot;);</code></pre>
+<pre class=prettyprint><code>window.localStorage.setItem(&quot;key&quot;, &quot;value&quot;);</code></pre>
 <h2>Get Item Quick Example</h2>
-<pre><code>var value = window.localStorage.getItem(&quot;key&quot;);
+<pre class=prettyprint><code>var value = window.localStorage.getItem(&quot;key&quot;);
 // value is now equal to &quot;value&quot;</code></pre>
 <h2>Remove Item Quick Example</h2>
-<pre><code>window.localStorage.removeItem(&quot;key&quot;);</code></pre>
+<pre class=prettyprint><code>window.localStorage.removeItem(&quot;key&quot;);</code></pre>
 <h2>Clear Quick Example</h2>
-<pre><code>window.localStorage.clear();</code></pre>
+<pre class=prettyprint><code>window.localStorage.clear();</code></pre>
 <h2>Full Example</h2>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class=prettyprint><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Storage Example&lt;/title&gt;
