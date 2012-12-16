@@ -134,14 +134,6 @@
             "cordova/media/MediaError/mediaError.md",
             "cordova/media/Parameters/mediaError.md"
         ],
-        "network.md": [
-            "cordova/network/network.md",
-            "cordova/network/network.isReachable.md",
-            "cordova/network/NetworkStatus/NetworkStatus.md",
-            "cordova/network/parameters/reachableCallback.md",
-            "cordova/network/parameters/reachableHostname.md",
-            "cordova/network/parameters/reachableOptions.md"
-        ],
         "connection.md": [
             "cordova/connection/connection.md",
             "cordova/connection/connection.type.md"
