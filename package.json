@@ -1,0 +1,20 @@
+{
+  "name": "pidgeon-park",
+  "version": "0.1.0",
+  "description": "Recurse directories of markdown and output :wHTML.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/brianleroux/pidgeon-park"
+  },
+  "keywords": [
+    "markdown",
+    "cordova",
+    "docs"
+  ],
+  "author": "brianleroux",
+  "license": "Apache2"
+}
