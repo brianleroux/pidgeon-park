@@ -10,7 +10,7 @@ var toHTML            = require('./to-html')
 
 module.exports = function (dir, callback) {
 
-    var out = '<h1 id=top>Cordova/Docs</h1>'
+    var out = ''
     // this parses the config.json file in cordova folder
     // it dictates ordering for the api docs
     Object.keys(config.merge).forEach(function (concatFile) {

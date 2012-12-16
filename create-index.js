@@ -8,7 +8,7 @@ module.exports = function createIndex (dir, callback) {
                     return '<li><a href=#' + title + '>' + title + '</a></li>'
                  })
     // wrap it up and slap it out
-    callback(null, index.join("\n") + '</ul>')
+    callback(null, '<h1 id=top>Cordova/Docs</h1><ul>' + index.join("\n") + '</ul>')
 }
 
 if (module === require.main) module.exports(dir)
